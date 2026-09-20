@@ -1,30 +1,11 @@
 # Run Manifest
 
-- spec_commit: `4c4bec3efcc82eab29f2fc58b50fd5e92b44d0ea`
+- spec_commit: `0e7c13d80b4be8ae2f47959801959e1161400d37`
 - workflow: `workflows/opportunity-discovery.md`
 - started_from_keyword: `開始`
 - status: `completed`
-- research_date: `2026-09-20`
-- primary_outputs:
-  - `memory/opportunity_shortlist.md`
-  - `memory/opportunity_hypotheses.md`
-  - `memory/opportunity_competitor_map.md`
-  - `memory/evidence_audit.json`
-  - `memory/problem_evidence/taiwan_ecommerce_backoffice_operations.json`
-  - `memory/problem_evidence/taiwan_ecommerce_reconciliation_2026.json`
-  - `memory/problem_evidence/taiwan_tender_preflight_2026.json`
-  - `memory/problem_evidence/taiwan_public_data_monitoring_2026.json`
-  - `memory/problem_evidence/taiwan_pdf_data_entry_2026.json`
-  - `memory/problem_evidence/taiwan_construction_billing_2026.json`
-- preserved_previous_run:
-  - `memory/discovery_runs/run-c5c2548/`
-- major_unknowns:
-  - exact fixed-scope e-commerce operations commitment;
-  - exact month-close package payment and month-two repeat;
-  - founder-hours per recurring customer and exception rate;
-  - standalone tender preflight purchase;
-  - common vertical for public-data monitoring;
-  - recurring document family for PDF/data-entry work.
+- research_date: `2026-09-21`
+- preserved_previous_run: `memory/discovery_runs/run-44ab644/`
 - delivery_checks:
   - latest remote specs fetched before research: passed;
   - generated outputs committed with `RUN:` message: passed;

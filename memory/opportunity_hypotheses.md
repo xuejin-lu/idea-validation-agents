@@ -1,28 +1,28 @@
 # Opportunity Hypotheses
 
-Fresh run date: 2026-09-20. Commercial stages are conservative: buyer requests are not payments.
+Fresh run date: 2026-09-21. Exact-wedge payment is not inferred from broad category reviews.
 
-| ID | Target user / buyer | Exact job | Observed pain / workaround | Smallest testable offer | Evidence refs | Largest unknown | Classification |
-|---|---|---|---|---|---|---|---|
-| H1 | Taiwan microbrand owner / operations lead | Keep one platform’s listings, orders, customer replies and inventory exceptions current | Internal generalist or broad agency; recurring admin interruptions | Fixed recurring operations bundle for one platform and SKU/order band | PRO360 e-commerce reviews; Tasker long-term requests; 104 roles | Fixed-scope acceptance and founder-hours per unit | startup-ready-to-test |
-| H2 | Taiwan multi-channel brand / finance lead | Close one month of settlements, invoices, refunds and handoff files | Excel/manual reconciliation and internal finance labor | One-month reconciliation diagnostic and fixed-scope continuation quote | Tasker 2026-08-28; 104 e-commerce accounting; PRO360 accounting reviews | Exact wedge payment and month-two repeat | startup-ready-to-test |
-| H3 | Taiwan tender-active SME / bid lead | Check go/no-go, qualifications and missing attachments before bidding | Internal bid staff or full proposal consultant | Preflight-only red-flag and checklist review | PRO360 tender reviews; Tasker proposal requests; 104備標 | Preflight-only buying and vertical bid frequency | service-ready-to-test |
-| H4 | Taiwan ops/accounting team | Convert one repeated document family into a validated spreadsheet | Manual key-in or freelancer per batch | One document-family batch with QA report | Tasker conversion requests/provider | Repeated same-customer volume | service-ready-to-test |
-| H5 | Taiwan contractor/subcontractor | Prepare one trade-specific progress/billing packet | Site staff and estimator labor; custom spreadsheets | One phase’s billing packet | Tasker construction requests; 104 roles | Delegability and repeat customer | service-ready-to-test |
-| H6 | Taiwan operator with a known public data source | Receive scheduled updates and decision alerts | Manual search or custom scraper | One-source, fixed-field recurring report | PRO360 crawler reviews/weekly request; Tasker recurring scraper requests | Common vertical and alert value | research-more |
-| H7 | Taiwan small employer / food brand | Payroll or label-data compliance coordination | Internal staff/consultant/regulatory process | Not ready to test until current buyer evidence is refreshed | archived prior runs | external buying and narrow repeatable scope | research-more |
+| ID | Target segment | Job | Observed evidence | Smallest testable offer | Category demand | Segment match | Exact-wedge demand | Largest unknown | Classification |
+|---|---|---|---|---|---|---|---|---|---|
+| H1 | Taiwan companies using website + multiple e-commerce channels | Reconcile one month of settlement, invoices, refunds and accountant handoff | 2026-08 Tasker buyer request + 104 paid roles + comparable accounting reviews | Fixed-scope month-close quote from one redacted month | observed | observed | inferred | accepted quote and month-two repeat | startup-ready-to-test |
+| H2 | Taiwan e-commerce businesses seeking long-term channel operations | Keep one platform’s listings, orders, replies and inventory exceptions current | 2026 Tasker long-term requests + PRO360 completed category reviews + 104 paid roles | One-platform/one-task-bundle recurring quote | observed | observed | inferred | fixed scope and labor leverage | startup-ready-to-test |
+| H3 | Taiwan tender-active company | Decide go/no-go and check documents before bidding | PRO360 completed full-proposal reviews + Tasker requests + 104 bid roles | Preflight-only checklist/red-flag quote | observed | inferred | unproven | preflight-only commitment | service-ready-to-test |
+| H4 | Taiwan ops/accounting team with repeatable reports | Convert one document family into validated Excel | PRO360 data-entry reviews + Tasker requests/provider | One document-family batch + QA report | observed | inferred | unproven | same buyer recurrence | service-ready-to-test |
+| H5 | Taiwan contractor/subcontractor in one trade | Prepare phase billing packet | Tasker requests + 104 paid roles | One trade-specific billing packet quote | observed | unproven | unproven | delegation and repeat customer | service-ready-to-test |
+| H6 | Taiwan operator using a specific public source | Receive scheduled updates/alerts | PRO360 crawler completed reviews + recurring requests | One-source fixed-field report | observed | unproven | unproven | common vertical/decision value | research-more |
+| H7 | Taiwan small employer/food brand | Coordinate payroll or label data | archived evidence and current context | None until new buyer evidence | unproven | unproven | unproven | external demand | research-more |
 
-## Commercial proof ladder used in this run
+## Commercial proof ladder
 
-- H1: comparable category `paid_transaction`; exact fixed bundle `buyer_request/unknown`.
-- H2: exact request `buyer_request`; comparable bookkeeping `paid_transaction`; exact wedge payment unproven.
-- H3: full proposal category `paid_transaction`/`buyer_request`; preflight-only `unknown`.
-- H4–H6: category/service evidence varies; no exact standardized offer payment proven.
+- H1: exact scope = `buyer_request`; comparable accounting category = `paid_transaction`; exact payment unproven.
+- H2: exact scope = `buyer_request`; broad e-commerce outsourcing = `paid_transaction`; exact package payment unproven.
+- H3: full proposal = `paid_transaction`/`buyer_request`; preflight-only = unproven.
+- H4–H6: category/service payment may be observed, but exact standardized wedge is unproven.
 
 ## Falsification order
 
-1. H2: ask for one redacted month and an accepted quote/second-month commitment.
-2. H1: constrain to one platform and one task bundle; seek an accepted recurring scope.
-3. H3: sell only preflight, not proposal writing; observe whether the wedge is purchased.
+1. H1: request a redacted month and an accepted quote or scheduled continuation.
+2. H2: restrict to one platform and one task bundle; seek a concrete recurring commitment.
+3. H3: offer preflight-only and record whether the buyer accepts that scope instead of full proposal writing.
 
-No hypothesis should be implemented as software before a buyer commits to the repeated workflow.
+No software implementation should start before repeated scope and buyer commitment are observed.

@@ -1,32 +1,8 @@
 {
-  "run_date": "2026-09-20",
+  "run_date": "2026-09-21",
   "status": "validated-enough-to-test",
   "scope": "Taiwan-first opportunity discovery; no build or paid-pilot recommendation",
   "claim_audit": [
-    {
-      "candidate": "taiwan_ecommerce_backoffice_operations",
-      "startup_classification": "startup-ready-to-test",
-      "evidence_status": "strong",
-      "external_demand_stage": "paid_transaction",
-      "payment_proven": true,
-      "payment_evidence": "Completed customer-review language and platform contract/payment description on https://www.pro360.com.tw/category/ec_third_partner; applies to broad e-commerce outsourcing category, not the exact fixed bundle.",
-      "exact_wedge_payment_proven": false,
-      "buyer": "Observed: Taiwan microbrands and e-commerce buyers appear in PRO360 requests, Tasker requests and 104 roles.",
-      "problem": "Observed: recurring platform operations, listings, orders, customer service, inventory and returns are paid internal duties and outsourced requests.",
-      "externalizability": "Observed: completed comparable outsourcing reviews plus recent Tasker buyer requests; exact narrow bundle remains Unknown.",
-      "recurrence": "Observed/inferred: daily/weekly operations and campaign cycles recur; same-customer repeat for a fixed scope is Unknown.",
-      "standardization": "Inferred: platform/task bundle, SLA, checklist and exception queue can be standardized; broad strategy/creative scope cannot be assumed.",
-      "leverage": "Inferred: SOPs, batch operations, trained operators and selective automation may reduce founder-hours; not measured.",
-      "founder_labor_scaling_risk": "medium-high",
-      "evidence_items": [
-        {"source":"https://www.pro360.com.tw/category/ec_third_partner","source_date":"2026-09 page","evidence_role":"transaction","commercial_stage":"paid_transaction","claim_type":"observed","tier":"A","independence":"Taiwan marketplace category with completed-review language","freshness":"recent","limitations":"comparable broad category; exact fixed package not verified"},
-        {"source":"https://www.tasker.com.tw/cases?selected_tags=133%2C140%2C447","source_date":"2026-04","evidence_role":"buyer_request","commercial_stage":"buyer_request","claim_type":"observed","tier":"A","independence":"separate Taiwan marketplace buyer requests","freshness":"recent","limitations":"posted requests and budgets are not proof of payment"},
-        {"source":"https://www.104.com.tw/jobs/search/?keyword=%E9%9B%BB%E5%95%86","source_date":"2026-08/09","evidence_role":"paid_labor","commercial_stage":"not_applicable","claim_type":"observed","tier":"A","independence":"Taiwan employer listings","freshness":"recent","limitations":"internal hiring does not prove outsourcing"}
-      ],
-      "contradictions": ["full-service incumbents may already cover the need", "quality and exceptions may make labor linear", "narrow package may be too small"],
-      "critical_unknowns": ["fixed-scope acceptance", "repeat request", "operator-hours per unit", "customer-data access/trust"],
-      "next_evidence_to_collect": "Offer one platform/one task bundle via an existing marketplace and seek a concrete start commitment; compare scope and exceptions across two buyers."
-    },
     {
       "candidate": "taiwan_ecommerce_reconciliation_month_close",
       "startup_classification": "startup-ready-to-test",
@@ -34,22 +10,55 @@
       "external_demand_stage": "buyer_request",
       "payment_proven": false,
       "payment_evidence": null,
-      "exact_wedge_payment_proven": false,
-      "buyer": "Observed: Taiwan e-commerce buyers, finance roles and accounting outsourcing customers exist.",
-      "problem": "Observed: multi-channel settlement, invoices, refunds/allowances and monthly close are described in a buyer request and paid jobs.",
-      "externalizability": "Observed: 2026-08-28 buyer request explicitly seeks long-term outsourcing; comparable accounting category has paid customer reviews.",
-      "recurrence": "Observed/inferred: monthly close and tax handoff recur; second-month repeat is Unknown.",
-      "standardization": "Inferred: channel mapping, exception taxonomy, QA and handoff packet can be reused.",
-      "leverage": "Inferred: rules/templates, standardized intake, operator QA and selective automation.",
+      "category_demand": "observed",
+      "target_segment": "Taiwan companies using a website plus multiple e-commerce channels",
+      "segment_match": "observed",
+      "segment_evidence": ["https://www.tasker.com.tw/cases?selected_tags=250%2C60%2C64"],
+      "exact_wedge_demand": "inferred",
+      "buyer": "Observed: the Tasker buyer is a Taiwan company using website and multiple e-commerce channels; broader accounting buyers also appear in PRO360.",
+      "problem": "Observed: multi-channel reconciliation, invoices, refunds/allowances and monthly close are described in a buyer request and paid jobs.",
+      "externalizability": "Observed: recent buyer request seeks long-term outsourcing; comparable accounting category has completed-service reviews.",
+      "recurrence": "Observed/inferred: monthly close recurs; second-month repeat is Unknown.",
+      "standardization": "Inferred: channel map, exception taxonomy, QA and handoff packet may be reusable.",
+      "leverage": "Inferred: templates, rules, operator QA and selective automation may reduce founder-hours.",
       "founder_labor_scaling_risk": "medium",
       "evidence_items": [
-        {"source":"https://www.tasker.com.tw/cases?selected_tags=250%2C60%2C64","source_date":"2026-08-28","evidence_role":"buyer_request","commercial_stage":"buyer_request","claim_type":"observed","tier":"A","independence":"Taiwan buyer-side marketplace request","freshness":"recent","limitations":"budget/proposal count not payment"},
+        {"source":"https://www.tasker.com.tw/cases?selected_tags=250%2C60%2C64","source_date":"2026-08-28","evidence_role":"buyer_request","commercial_stage":"buyer_request","claim_type":"observed","tier":"A","independence":"Taiwan buyer-side marketplace request","freshness":"recent","limitations":"stated budget/proposal count are not payment"},
         {"source":"https://www.104.com.tw/jobs/search/?jobcat=2003001000&keyword=%E5%B0%8D%E5%B8%B3%E5%96%AE","source_date":"2026-06/07","evidence_role":"paid_labor","commercial_stage":"not_applicable","claim_type":"observed","tier":"A","independence":"Taiwan employer listings","freshness":"recent","limitations":"internal labor only"},
-        {"source":"https://www.pro360.com.tw/category/accounting_service","source_date":"2026-08/09 current page","evidence_role":"transaction","commercial_stage":"paid_transaction","claim_type":"observed","tier":"A","independence":"Taiwan marketplace completed reviews","freshness":"recent","limitations":"comparable accounting service, not exact e-commerce exception package"}
+        {"source":"https://www.pro360.com.tw/category/accounting_service","source_date":"2026-09 current page","evidence_role":"transaction","commercial_stage":"paid_transaction","claim_type":"observed","tier":"A","independence":"Taiwan marketplace completed-service reviews","freshness":"recent","limitations":"comparable accounting category, not exact wedge"}
       ],
-      "contradictions": ["licensed accounting firms/ERP may already solve the workflow", "customer-specific exceptions may defeat standardization", "exact payment is unproven"],
-      "critical_unknowns": ["month-two repeat", "fixed-scope accepted quote", "exception rate", "regulated scope boundary"],
-      "next_evidence_to_collect": "Obtain one redacted month and an accepted quote or scheduled continuation; compare two sellers' exception schemas."
+      "contradictions": ["licensed firms/ERP may already cover it", "exceptions may be customer-specific", "exact payment unproven"],
+      "critical_unknowns": ["accepted quote", "month-two repeat", "exception rate", "regulated scope boundary"],
+      "next_evidence_to_collect": "Ask for one redacted month and an accepted quote or scheduled continuation; compare two company schemas."
+    },
+    {
+      "candidate": "taiwan_ecommerce_backoffice_operations",
+      "startup_classification": "startup-ready-to-test",
+      "evidence_status": "strong",
+      "external_demand_stage": "buyer_request",
+      "payment_proven": true,
+      "payment_evidence": "Completed customer-review language and contract/payment workflow on https://www.pro360.com.tw/category/ec_third_partner; broad category only.",
+      "category_demand": "observed",
+      "target_segment": "Taiwan e-commerce businesses seeking long-term channel operations support",
+      "segment_match": "observed",
+      "segment_evidence": ["https://www.tasker.com.tw/cases?selected_tags=133", "https://www.pro360.com.tw/category/ec_third_partner"],
+      "exact_wedge_demand": "inferred",
+      "buyer": "Observed: Taiwan e-commerce businesses request long-term platform operations; company size/vertical remain unknown.",
+      "problem": "Observed: listing, orders, customer replies, inventory, returns and campaign setup are recurring paid duties and external requests.",
+      "externalizability": "Observed: recent buyer requests plus completed broad category reviews.",
+      "recurrence": "Observed/inferred: daily/weekly execution recurs; fixed-scope repeat is Unknown.",
+      "standardization": "Inferred: one-platform/task-bundle/SLA/checklist could standardize work.",
+      "leverage": "Inferred: SOPs, batching, trained operators and selective automation.",
+      "founder_labor_scaling_risk": "medium-high",
+      "evidence_items": [
+        {"source":"https://www.tasker.com.tw/cases?selected_tags=133","source_date":"2026-08","evidence_role":"buyer_request","commercial_stage":"buyer_request","claim_type":"observed","tier":"A","independence":"Taiwan marketplace requests","freshness":"recent","limitations":"requests/budgets are not payment"},
+        {"source":"https://www.tasker.com.tw/cases?selected_tags=133%2C140%2C447","source_date":"2026-04/05","evidence_role":"buyer_request","commercial_stage":"buyer_request","claim_type":"observed","tier":"A","independence":"separate Taiwan marketplace requests","freshness":"recent","limitations":"broad scope and payment unverified"},
+        {"source":"https://www.pro360.com.tw/category/ec_third_partner","source_date":"2026-09 current page","evidence_role":"transaction","commercial_stage":"paid_transaction","claim_type":"observed","tier":"A","independence":"Taiwan completed-review marketplace category","freshness":"recent","limitations":"broad category, not exact fixed package"},
+        {"source":"https://www.104.com.tw/jobs/search/?keyword=%E9%9B%BB%E5%95%86","source_date":"2026-08/09","evidence_role":"paid_labor","commercial_stage":"not_applicable","claim_type":"observed","tier":"A","independence":"Taiwan employer listings","freshness":"recent","limitations":"internal employment"}
+      ],
+      "contradictions": ["full-service incumbents already exist", "creative/strategy expectations may expand scope", "labor may scale 1:1"],
+      "critical_unknowns": ["fixed bundle acceptance", "exact package payment", "hours per order/SKU band", "segment size/vertical"],
+      "next_evidence_to_collect": "Seek a concrete recurring commitment for one platform and one task bundle from two comparable businesses."
     },
     {
       "candidate": "taiwan_tender_preflight",
@@ -57,23 +66,27 @@
       "evidence_status": "moderate",
       "external_demand_stage": "paid_transaction",
       "payment_proven": true,
-      "payment_evidence": "Completed-review language on PRO360 tender proposal category; applies to full proposal services, not preflight-only.",
-      "exact_wedge_payment_proven": false,
-      "buyer": "Observed: Taiwan tender-active SMEs and bid staff.",
-      "problem": "Observed: paid roles and buyer guides cover tender reading, document preparation and format/qualification risk.",
-      "externalizability": "Observed for full proposal writing; preflight-only external demand is Unknown.",
-      "recurrence": "Inferred per tender; target vertical frequency Unknown.",
-      "standardization": "Inferred through company profiles/checklists; bid-specific interpretation remains custom.",
-      "leverage": "Inferred via reusable profiles and delegated QA.",
+      "payment_evidence": "Completed-review language on PRO360 full proposal category; not preflight-only.",
+      "category_demand": "observed",
+      "target_segment": "Taiwan tender-active company",
+      "segment_match": "inferred",
+      "segment_evidence": ["https://www.pro360.com.tw/category/tender_proposal", "https://www.tasker.com.tw/cases?selected_tags=442%2C88"],
+      "exact_wedge_demand": "unproven",
+      "buyer": "Observed: Taiwan tender buyers and paid bid roles.",
+      "problem": "Observed: full proposal and bid-preparation work exists; preflight-only is an inference.",
+      "externalizability": "Observed for full proposal services; exact wedge Unknown.",
+      "recurrence": "Inferred per tender; frequency Unknown.",
+      "standardization": "Inferred through company profiles/checklists.",
+      "leverage": "Inferred via reusable profiles/delegated QA.",
       "founder_labor_scaling_risk": "medium-high",
       "evidence_items": [
-        {"source":"https://www.pro360.com.tw/category/tender_proposal","source_date":"2026-06/2026-09 page","evidence_role":"transaction","commercial_stage":"paid_transaction","claim_type":"observed","tier":"A","independence":"Taiwan marketplace completed-review category","freshness":"recent","limitations":"full proposal, not preflight"},
-        {"source":"https://www.tasker.com.tw/cases?selected_tags=442%2C88","source_date":"2026-05-21","evidence_role":"buyer_request","commercial_stage":"buyer_request","claim_type":"observed","tier":"A","independence":"separate Taiwan marketplace request","freshness":"recent","limitations":"proposal-writing request; budget not payment"},
-        {"source":"https://www.104.com.tw/jobs/search/?keyword=%E5%82%99%E6%A8%99","source_date":"2026-06","evidence_role":"paid_labor","commercial_stage":"not_applicable","claim_type":"observed","tier":"A","independence":"Taiwan job source","freshness":"recent","limitations":"internal roles"}
+        {"source":"https://www.pro360.com.tw/category/tender_proposal","source_date":"2026-06/09","evidence_role":"transaction","commercial_stage":"paid_transaction","claim_type":"observed","tier":"A","independence":"Taiwan completed-service reviews","freshness":"recent","limitations":"full proposal only"},
+        {"source":"https://www.tasker.com.tw/cases?selected_tags=442%2C88","source_date":"2026-05-21","evidence_role":"buyer_request","commercial_stage":"buyer_request","claim_type":"observed","tier":"A","independence":"Taiwan buyer request","freshness":"recent","limitations":"proposal writing; not payment"},
+        {"source":"https://www.104.com.tw/jobs/search/?keyword=%E5%82%99%E6%A8%99","source_date":"2026-06","evidence_role":"paid_labor","commercial_stage":"not_applicable","claim_type":"observed","tier":"A","independence":"Taiwan job source","freshness":"recent","limitations":"internal labor"}
       ],
-      "contradictions": ["buyers may only want full proposal writing", "credentials/liability may dominate", "per-customer tender frequency unknown"],
-      "critical_unknowns": ["preflight-only commitment", "vertical frequency", "repeat purchase"],
-      "next_evidence_to_collect": "Offer preflight-only in one vertical and record accepted quotes and repeat requests."
+      "contradictions": ["full proposal may be only valued scope", "trust/credentials may dominate", "frequency unknown"],
+      "critical_unknowns": ["preflight-only commitment", "specific vertical/size", "repeat purchase"],
+      "next_evidence_to_collect": "Offer preflight-only in one explicitly chosen segment and record accepted quotes/repeats."
     },
     {
       "candidate": "taiwan_public_data_monitoring",
@@ -81,22 +94,26 @@
       "evidence_status": "moderate",
       "external_demand_stage": "paid_transaction",
       "payment_proven": true,
-      "payment_evidence": "Recent completed customer reviews on PRO360 crawler category; generic crawler work, not a single monitoring niche.",
-      "exact_wedge_payment_proven": false,
-      "buyer": "Observed: Taiwan buyers request weekly/periodic collection and ETL.",
-      "problem": "Observed: recurring collection and transformation is externally requested; decision value is Unknown.",
-      "externalizability": "Observed for generic crawler development; one productized vertical is not established.",
-      "recurrence": "Observed for some individual requests, cross-customer recurrence Unknown.",
-      "standardization": "Potentially high only after selecting one source/field/trigger.",
-      "leverage": "Potentially high through scheduling/alerts; maintenance burden Unknown.",
+      "payment_evidence": "Recent completed reviews on PRO360 generic crawler category; not a common monitoring niche.",
+      "category_demand": "observed",
+      "target_segment": "Taiwan operator using a specific recurring public data source",
+      "segment_match": "unproven",
+      "segment_evidence": null,
+      "exact_wedge_demand": "unproven",
+      "buyer": "Observed: recurring crawler/data requests, but common economic buyer is unclear.",
+      "problem": "Observed: periodic collection/ETL is requested; decision value is Unknown.",
+      "externalizability": "Observed generic crawler transactions; productized niche not established.",
+      "recurrence": "Observed in individual requests; cross-customer recurrence Unknown.",
+      "standardization": "Potentially high after source/fields/trigger selected.",
+      "leverage": "Potentially high via schedules/alerts; maintenance burden Unknown.",
       "founder_labor_scaling_risk": "medium",
       "evidence_items": [
-        {"source":"https://www.pro360.com.tw/category/web_crawler","source_date":"2026-08/09 page","evidence_role":"transaction","commercial_stage":"paid_transaction","claim_type":"observed","tier":"A","independence":"Taiwan marketplace completed reviews and recurring request examples","freshness":"recent","limitations":"generic crawler category"},
-        {"source":"https://www.tasker.com.tw/cases/top?selected_tags=120","source_date":"2026-08/09","evidence_role":"buyer_request","commercial_stage":"buyer_request","claim_type":"observed","tier":"A","independence":"Taiwan marketplace requests","freshness":"recent","limitations":"heterogeneous sources and buyers"}
+        {"source":"https://www.pro360.com.tw/category/web_crawler","source_date":"2026-08/09","evidence_role":"transaction","commercial_stage":"paid_transaction","claim_type":"observed","tier":"A","independence":"Taiwan completed category reviews","freshness":"recent","limitations":"generic crawler category"},
+        {"source":"https://www.tasker.com.tw/cases/top?selected_tags=120","source_date":"2026-08/09","evidence_role":"buyer_request","commercial_stage":"buyer_request","claim_type":"observed","tier":"A","independence":"Taiwan buyer requests","freshness":"recent","limitations":"heterogeneous sources/buyers"}
       ],
-      "contradictions": ["custom scraper work may not productize", "sources/anti-bot behavior may change"],
-      "critical_unknowns": ["common vertical", "economic buyer", "alert value", "retention"],
-      "next_evidence_to_collect": "Identify three Taiwan buyers sharing source, fields and decision trigger."
+      "contradictions": ["custom maintenance may dominate", "no common segment or decision trigger"],
+      "critical_unknowns": ["segment", "economic buyer", "alert value", "retention"],
+      "next_evidence_to_collect": "Find three Taiwan buyers sharing source, fields and decision trigger."
     },
     {
       "candidate": "taiwan_pdf_data_entry",
@@ -104,46 +121,50 @@
       "evidence_status": "moderate",
       "external_demand_stage": "paid_transaction",
       "payment_proven": true,
-      "payment_evidence": "Current PRO360 data-entry page shows recent customer reviews and ongoing cooperation language; generic data-entry category.",
-      "exact_wedge_payment_proven": false,
-      "buyer": "Observed: Taiwan buyers use data-entry/document services.",
-      "problem": "Observed: external data-entry service is purchased and customers value speed/coordination; exact PDF-family pain remains broad.",
-      "externalizability": "Observed category transactions and prior Tasker document requests.",
-      "recurrence": "Some reviews say ongoing cooperation, but recurring document family is Unknown.",
-      "standardization": "Potentially high for one document family; not yet proven.",
+      "payment_evidence": "Recent completed reviews on PRO360 generic data-entry category; not a recurring PDF schema.",
+      "category_demand": "observed",
+      "target_segment": "Taiwan team with repeated documents of one family",
+      "segment_match": "unproven",
+      "segment_evidence": null,
+      "exact_wedge_demand": "unproven",
+      "buyer": "Observed: Taiwan data-entry/document buyers; exact recurring family Unknown.",
+      "problem": "Observed: external data-entry work is purchased; PDF-specific recurring pain is not isolated.",
+      "externalizability": "Observed generic category transactions and document requests.",
+      "recurrence": "Some ongoing-cooperation language, but same document family Unknown.",
+      "standardization": "Potentially high for one family; unproven.",
       "leverage": "Scripts/templates/QA possible.",
       "founder_labor_scaling_risk": "medium-high",
       "evidence_items": [
-        {"source":"https://www.pro360.com.tw/category/data_entry","source_date":"2026-06/09 page","evidence_role":"transaction","commercial_stage":"paid_transaction","claim_type":"observed","tier":"A","independence":"Taiwan marketplace completed customer reviews","freshness":"recent","limitations":"generic data entry, not PDF-specific recurring schema"},
-        {"source":"https://www.tasker.com.tw/workroom/tinobrief/service-detail/47337","source_date":"2026-09-18","evidence_role":"competition","commercial_stage":"not_applicable","claim_type":"observed","tier":"A","independence":"Taiwan provider page","freshness":"recent","limitations":"provider pricing is not demand proof"}
+        {"source":"https://www.pro360.com.tw/category/data_entry","source_date":"2026-06/09","evidence_role":"transaction","commercial_stage":"paid_transaction","claim_type":"observed","tier":"A","independence":"Taiwan completed reviews","freshness":"recent","limitations":"generic data entry"},
+        {"source":"https://www.tasker.com.tw/workroom/tinobrief/service-detail/47337","source_date":"2026-09-18","evidence_role":"competition","commercial_stage":"not_applicable","claim_type":"observed","tier":"A","independence":"Taiwan provider page","freshness":"recent","limitations":"provider price not demand proof"}
       ],
-      "contradictions": ["document formats may be heterogeneous", "per-job work may stay one-off"],
+      "contradictions": ["formats heterogeneous", "generic reviews may not represent PDF work"],
       "critical_unknowns": ["same buyer recurrence", "shared schema", "error liability"],
       "next_evidence_to_collect": "Find two buyers with the same document family and recurring volume."
     }
   ],
   "strongest_evidence": [
-    "Completed-review/payment workflow is visible for Taiwan e-commerce outsourcing, accounting, crawler and data-entry categories.",
-    "Recent Tasker buyer requests expose recurring e-commerce operations and month-close outsourcing intent.",
-    "104 listings independently show the labor burden in Taiwan employers."
+    "Recent Taiwan buyer requests show recurring e-commerce operations and month-close outsourcing intent.",
+    "Independent 104 listings show the same workflows consume paid labor.",
+    "PRO360 completed-service reviews prove category-level transactions for e-commerce outsourcing, accounting, tender proposals, crawler work and data entry."
   ],
   "weakest_claims": [
-    "Exact fixed-scope package payment for either e-commerce candidate.",
-    "Standalone tender preflight demand.",
-    "Cross-customer standardization for generic data conversion or monitoring."
+    "Exact fixed-scope payment for either e-commerce wedge.",
+    "Narrow segment fit when sources do not disclose company size/vertical.",
+    "Standalone tender preflight and recurring document/monitoring product demand."
   ],
   "contradictions": [
     "Broad incumbents may already satisfy buyers.",
-    "Marketplace reviews are selected and do not measure prevalence.",
-    "Recurring workflows can remain labor-linear despite recurring demand."
+    "Marketplace reviews are selected and do not establish prevalence.",
+    "Recurring demand can still be labor-linear."
   ],
-  "unsupported_precision": ["No TAM, CAC, LTV, retention, conversion or exact savings estimate is asserted."],
+  "unsupported_precision": ["No TAM, CAC, LTV, retention, conversion or exact savings estimates are asserted."],
   "critical_unknowns": [
-    "Exact fixed-scope e-commerce package commitment",
-    "Month-two reconciliation repeat",
-    "Founder-hours per recurring customer",
-    "Exact wedge payment vs comparable category payment",
-    "Common vertical for public-data monitoring"
+    "exact-wedge commitment/payment",
+    "month-two reconciliation repeat",
+    "founder-hours per recurring customer",
+    "narrow segment size/vertical fit",
+    "common vertical for public-data monitoring"
   ],
-  "next_evidence_to_collect": "Seek concrete commitment for the two e-commerce scopes through existing marketplaces, preserving the distinction between category payment and exact-wedge payment."
+  "next_evidence_to_collect": "Seek accepted quotes or scheduled commitments for the two e-commerce scopes and record segment details without widening category evidence into exact-wedge claims."
 }
