@@ -35,6 +35,9 @@ Assign evidence tier:
 8. **Commercial signal** — is there evidence of spend/commitment, or only interest?
 9. **Externalizability** — does the evidence show buyers will purchase/outsourced the workflow, or only that they hire employees to do it internally?
 10. **Recency of buyer pain** — is there recent Taiwan buyer-side evidence, especially within the last 24 months?
+11. **Repeatability** — does the workflow recur for the same customer or repeat across similar customers?
+12. **Standardization** — is there a reusable unit of work, or is every job fully bespoke?
+13. **Leverage** — can templates, delegation, automation, or software reduce founder-hours per unit of revenue?
 
 ## Hard-stop conditions
 
@@ -43,6 +46,8 @@ Return `research-more` or `insufficient` when:
 - the candidate relies on job postings to infer external demand,
 - the only direct buyer pain evidence is older than 24 months,
 - no recent Taiwan-specific evidence shows outsourcing, vendor search, purchase, quote request, or comparable external buying behavior,
+- the candidate is only a one-off paid service with no credible recurrence or cross-customer standardization,
+- founder labor appears likely to scale 1:1 with revenue and no leverage path is identified,
 - only Tier C/D evidence supports demand,
 - willingness-to-pay is asserted without spend/behavioral evidence,
 - TAM/CAC/LTV is mostly assumption-driven,
@@ -70,3 +75,15 @@ The status means:
 - **validated-enough-to-test** — enough evidence to justify a cheap behavioral experiment, not a full build.
 - **research-more** — promising, but a critical gate is still unknown.
 - **insufficient** — evidence does not currently justify more founder time.
+
+
+## Startup-vs-service classification
+
+Every reviewed opportunity must receive one of:
+
+- `startup-ready-to-test` — external demand + recurrence/standardization + plausible leverage path.
+- `service-ready-to-test` — external demand exists, but repeatability/leverage is not yet strong enough for startup classification.
+- `research-more` — one or more commercial gates remain unresolved.
+- `insufficient` — evidence does not justify more time now.
+
+A `service-ready-to-test` result is not a failure. It may be a useful cash-flow business or manual discovery vehicle, but do not label it a Top Startup Opportunity until repeatability/leverage improves.
