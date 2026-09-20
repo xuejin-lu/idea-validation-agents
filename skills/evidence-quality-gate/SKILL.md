@@ -33,11 +33,16 @@ Assign evidence tier:
 6. **Precision** — are precise numbers backed by data, or created by a model?
 7. **Selection bias** — are complaints/reviews being mistaken for population prevalence?
 8. **Commercial signal** — is there evidence of spend/commitment, or only interest?
+9. **Externalizability** — does the evidence show buyers will purchase/outsourced the workflow, or only that they hire employees to do it internally?
+10. **Recency of buyer pain** — is there recent Taiwan buyer-side evidence, especially within the last 24 months?
 
 ## Hard-stop conditions
 
 Return `research-more` or `insufficient` when:
 - buyer is unclear,
+- the candidate relies on job postings to infer external demand,
+- the only direct buyer pain evidence is older than 24 months,
+- no recent Taiwan-specific evidence shows outsourcing, vendor search, purchase, quote request, or comparable external buying behavior,
 - only Tier C/D evidence supports demand,
 - willingness-to-pay is asserted without spend/behavioral evidence,
 - TAM/CAC/LTV is mostly assumption-driven,
