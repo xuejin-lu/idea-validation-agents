@@ -1,59 +1,59 @@
 # Opportunity Competitor Map
 
-Scope: Taiwan-first alternatives for the reviewed workflows. Prices are only recorded where a source displays them; no market share is inferred from listing or review counts.
+Taiwan-first alternatives; commercial stages are not inferred from vendor pages or posted budgets.
 
-## A. E-commerce reconciliation
+## A. E-commerce back-office operations
 
-| Alternative | Type | What buyer gets | Price/labor anchor | Strength | Switching friction / limitation | Evidence |
-|---|---|---|---|---|---|---|
-| Internal e-commerce accountant | Manual/internal | Daily platform settlement, invoices, refunds, monthly close | 104 listings show NT$30,000–33,000 and NT$45,000–60,000 monthly salaries | Context and business familiarity | Hiring/management; knowledge is employee-specific | [104](https://www.104.com.tw/jobs/search/?jobcat=2003001000&keyword=%E5%B0%8D%E5%B8%B3%E5%96%AE) |
-| External bookkeeper/accountant | Service substitute | Monthly bookkeeping/tax handoff and related account processing | Tasker buyer request shows NT$6,000 budget for a defined outsourced scope | Trust, accounting context, compliance handoff | May bundle unrelated work; less flexible for operational exception cleanup | [Tasker](https://www.tasker.com.tw/cases?selected_tags=250%2C60%2C64) |
-| ERP/platform invoice integrations | Direct/indirect | Automated invoice issuance or data flow | Vendor pricing not used as demand proof in this run | Reduces repeated entry when integrations fit | Cross-platform exceptions, refunds and settlement differences remain | 104 listings + Tasker scope |
-| Excel/CSV + do nothing | Manual/internal | Tolerate manual monthly close | Unpriced internal labor | Cheapest cash outlay | Error/delay/leakage risk; no standard QA | Tasker buyer description |
-
-Validated gap: a narrow operational “reconciliation + exception packet” may sit between generic bookkeeping and a full ERP integration. This gap is only a testable hypothesis; it is not proven that incumbents fail.
-
-## B. Tender preflight
-
-| Alternative | Type | What buyer gets | Price/labor anchor | Strength | Limitation | Evidence |
-|---|---|---|---|---|---|---|
-| Internal bid specialist | Manual/internal | Tender search, document reading, coordination, proposal production | 104 listings show paid duties; no total market size inferred | Domain/trust and bid history | Fixed headcount; deadline spikes | [104備標](https://www.104.com.tw/jobs/search/?keyword=%E5%82%99%E6%A8%99) |
-| Tender consultant/proposal writer | Service/direct | Full proposal strategy and writing | PRO360 review + Tasker proposal request; specific prices vary | Existing buyer behavior and expertise | May be expensive or over-scoped for simple go/no-go checks | [PRO360](https://www.pro360.com.tw/category/tender_proposal), [Tasker](https://www.tasker.com.tw/cases?selected_tags=442%2C88) |
-| Tender-search / document portals | Direct/indirect | Find and inspect opportunities | Price not used here | Data access and workflow context | Does not guarantee company-document readiness or reduce interpretation work | [Taiwan Tender guide](https://twbuying.org/guide/tender-doc-reading) |
-| Do nothing / submit manually | Manual/internal | Use existing files and hope format is correct | Unpriced risk | No switching cost | Missed deadlines, missing attachments, avoidable disqualification | [Common mistakes](https://www.taiwanbid.com.tw/guide/common-mistakes) |
-
-Validated gap: a fixed-scope preflight may be a lower-friction entry than full proposal writing, but no direct purchase of that exact wedge is yet observed.
-
-## C. PDF/scanned-data conversion
-
-| Alternative | Type | What buyer gets | Price/labor anchor | Strength | Limitation | Evidence |
-|---|---|---|---|---|---|---|
-| Internal data-entry staff | Manual/internal | Key-in, cleanup and spreadsheet delivery | Paid labor is visible in prior archived 104 evidence | Data context and immediate access | Slow and error-prone for large batches | Archived run evidence |
-| Freelancer with scripts | Service/direct | Batch extraction and QA | Taiwan Tasker service lists NT$3,000+ per job | Fast for known formats | Project-by-project; schema may vary | [Tasker service](https://www.tasker.com.tw/workroom/tinobrief/service-detail/47337) |
-| OCR/PDF/Excel tools | Direct/indirect | Self-serve conversion | Vendor prices not used as demand evidence | Cheap for clean, repeated formats | Scans, merged cells and domain QA remain difficult | Current service description |
-
-Validated gap: narrow recurring document families could support a productized workflow; no evidence yet that one family recurs enough.
-
-## D. Construction quantity/billing
-
-| Alternative | Type | What buyer gets | Strength | Limitation | Evidence |
+| Alternative | Type | Workflow | Commercial evidence | Strength | Switching friction / limitation |
 |---|---|---|---|---|---|
-| Internal estimator/site staff | Manual/internal | Measurement, estimate, progress and billing | Domain trust | Skilled labor and project-specific judgment | [104 estimate search](https://www.104.com.tw/jobs/search?isnew=3&keyword=%E4%BC%B0%E9%A9%97%E8%A8%88%E5%83%B9) |
-| Quantity-survey / engineering freelancer | Service/direct | Remote takeoff or estimate | Buyers visibly request external work | Custom scope and high trust | [Tasker construction](https://www.tasker.com.tw/cases?selected_tags=49%2C58%2C472) |
-| Excel/PDF plan workflow | Manual/internal | Existing forms and spreadsheets | Low cash cost | Rework and inconsistent formats | Tasker/104 workflow descriptions |
+| Internal e-commerce assistant | Manual/internal | Listings, orders, inventory, customer service, returns | 104 Taiwan jobs show paid recurring duties and salaries; `paid_labor` | Context, immediate access | Hiring/turnover; owner still manages exceptions |
+| Full-service e-commerce operator | Direct/service | Strategy, listings, campaigns, ads, customer service, reporting | PRO360 page has completed-review language and platform contract/payment flow; `paid_transaction` for category | Existing trust and broad capability | Over-scoped for a tiny brand; performance/creative scope raises price and risk |
+| Narrow remote operator via Tasker | Service/buyer-request | Listing, customer reply, logistics/inventory support | Tasker buyer requests in 2026 with long-term/monthly structures; `buyer_request` | Low-friction discovery and remote delivery | Quality variance; labor may scale linearly |
+| Platform native tools/ERP | Indirect/direct | Batch listing, order, inventory or data sync | Competition context only | Automation for clean flows | Cross-platform exceptions and customer-service judgment remain |
+| Do nothing / owner does it | Manual baseline | Night/weekend admin work | No payment evidence | No cash outlay | Interruptions, missed updates and inconsistent execution |
 
-Validated gap: one trade-specific billing packet might be standardizable; a general construction estimator is too bespoke for current evidence.
+Potential gap: a narrow, fixed recurring operations bundle between “hire a generalist” and “buy full-service growth.” This is a hypothesis; category incumbents may already serve it.
+
+## B. Multi-channel reconciliation/month close
+
+| Alternative | Type | Workflow | Commercial evidence | Strength | Limitation |
+|---|---|---|---|---|---|
+| Internal e-commerce accountant | Manual/internal | Settlement, invoices, refunds, monthly close | 104 paid roles; `paid_labor` | Business context and control | Fixed headcount; difficult hiring/turnover |
+| Bookkeeping/accounting firm | Service/direct | Recurring bookkeeping/tax handoff | PRO360 completed reviews and recurring pricing context; `paid_transaction` for comparable accounting service | Trust and regulated handoff | May not own platform-level exception cleanup |
+| ERP/invoice integrations | Indirect/direct | Automated data movement and invoice issuance | Vendor/feature competition context | Reduces duplicate entry | Setup/integration and exception handling remain |
+| Spreadsheet/manual reconciliation | Internal baseline | Export and compare files | Tasker buyer request describes need; `buyer_request` | Flexible and familiar | Slow, error-prone, hard to audit |
+
+Potential gap: operational exception packet + accountant handoff. Exact buying of this wedge is unproven.
+
+## C. Tender preflight
+
+| Alternative | Type | Workflow | Commercial evidence | Strength | Limitation |
+|---|---|---|---|---|---|
+| Internal bid specialist | Manual/internal | Search/read/prepare/coordinate | 104 paid duties; `paid_labor` | Deep context | Deadline spikes and headcount cost |
+| Proposal consultant/writer | Service/direct | Full proposal and strategy | PRO360 reviews and Tasker requests; `paid_transaction`/`buyer_request` | Buyer-trusted category | May be too broad/expensive for a checklist-only need |
+| Tender search portals/guides | Indirect | Find and interpret notices | Competition/market context | Discovery and education | Does not ensure company documents are ready |
+| Manual submission/do nothing | Baseline | Reuse files and check by hand | Pain/workflow sources; `pain` | No switch | Avoidable errors and deadline pressure |
+
+Potential gap: preflight-only review. Not validated as a standalone purchase.
+
+## D. Recurring public-data monitoring
+
+| Alternative | Type | Workflow | Commercial evidence | Strength | Limitation |
+|---|---|---|---|---|---|
+| Internal analyst/manual search | Manual/internal | Periodic search, copy, clean, report | 104 paid labor context; `paid_labor` | Flexible | Repetitive, inconsistent timing |
+| Custom crawler freelancer | Service/direct | Build/maintain scraper and ETL | PRO360 completed reviews; `paid_transaction` for generic crawler category | Technical capability | Each source/custom rule may require maintenance |
+| Scheduled report/alert service | Emerging | Fixed source/fields/schedule | Tasker recurring requests; `buyer_request` | Productizable if narrow | No common vertical/customer trigger proven |
 
 ## Cross-cutting switching costs
 
-- Data access and confidentiality.
-- Existing ERP/accounting/tender-document history.
-- Trust and liability where errors affect tax, bid eligibility or payments.
-- Customer-specific formats and exceptions.
-- Learning cost for vertical terminology.
+- Existing platform/accounting/tender data and access permissions.
+- Confidentiality and customer-data handling.
+- Trust/liability when errors affect tax, bids, orders or refunds.
+- Customer-specific exceptions and terminology.
+- Migration or staff training cost.
 
 ## Competitor research limits
 
-- Listing counts and reviews are signals of supply/transactions, not market size.
-- Vendor pages and prices prove alternatives exist, not demand volume.
-- No CAC, TAM, LTV or retention estimates are included.
+- Review counts and “TOP PRO” criteria are evidence that transactions/reviews exist in a category, not market size.
+- Posted budgets and proposal counts remain buyer requests, not payments.
+- No TAM/CAC/LTV/retention or conversion estimates are included.

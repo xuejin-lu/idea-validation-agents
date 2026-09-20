@@ -1,0 +1,66 @@
+{
+  "problem": "Recurring public-data collection/ETL/alerting for a narrow Taiwan vertical",
+  "user": "Taiwan operator or analyst relying on updated public records",
+  "economic_buyer": "Business owner, sales/operations lead or analyst",
+  "problem_evidence_status": "moderate",
+  "evidence_items": [
+    {
+      "source": "https://www.pro360.com.tw/category/web_crawler",
+      "source_type": "Taiwan crawler-service marketplace category",
+      "publication_or_update_date": "2026-08/09 page",
+      "target_user_or_buyer": "Taiwan buyers of crawler/ETL work",
+      "claim_supported": "Recent customer reviews describe completed crawler services; the page also shows weekly frequency and cleaning/ETL request examples.",
+      "evidence_role": "transaction",
+      "commercial_stage": "paid_transaction",
+      "claim_type": "observed",
+      "tier": "A",
+      "independence": "Taiwan marketplace completed-review/category evidence",
+      "geography": "Taiwan",
+      "freshness": "recent",
+      "limitations": "generic crawler projects; no common vertical"
+    },
+    {
+      "source": "https://www.tasker.com.tw/cases/top?selected_tags=120",
+      "source_type": "Taiwan marketplace buyer requests",
+      "publication_or_update_date": "2026-08/09",
+      "target_user_or_buyer": "Taiwan buyers requesting recurring data automation",
+      "claim_supported": "Requests include twice-monthly collection of about 150 items and periodic updates of government contact data.",
+      "evidence_role": "buyer_request",
+      "commercial_stage": "buyer_request",
+      "claim_type": "observed",
+      "tier": "A",
+      "independence": "separate Taiwan buyer requests",
+      "geography": "Taiwan",
+      "freshness": "recent",
+      "limitations": "heterogeneous requests; no proof of accepted paid work for a common niche"
+    },
+    {
+      "source": "https://www.104.com.tw/jobs/search/?keyword=%E5%82%99%E6%A8%99",
+      "source_type": "Taiwan job listings",
+      "publication_or_update_date": "2026-06",
+      "target_user_or_buyer": "Taiwan tender/operations employers",
+      "claim_supported": "Paid role includes collecting and analyzing tender data.",
+      "evidence_role": "paid_labor",
+      "commercial_stage": "not_applicable",
+      "claim_type": "observed",
+      "tier": "A",
+      "independence": "Taiwan job source",
+      "geography": "Taiwan",
+      "freshness": "recent",
+      "limitations": "internal labor, not product demand"
+    }
+  ],
+  "current_workaround": ["manual searching", "internal analyst", "custom crawler", "periodic spreadsheet report"],
+  "spend_or_labor_evidence": ["completed generic crawler services", "recurring buyer requests", "paid data collection labor"],
+  "willingness_to_pay_evidence": ["generic crawler paid transactions; exact monitoring niche unproven", "recurring buyer requests"],
+  "recurrence_and_leverage": {
+    "recurrence_trigger": "weekly, twice-monthly, half-yearly or yearly source updates",
+    "expected_recurrence_type": "same-customer observed in requests; cross-customer standardization unknown",
+    "standardizable_unit": "one source, fixed fields, schedule, change detection and report template",
+    "leverage_path": "scheduled collection, parsers, change alerts and standardized reports",
+    "founder_labor_scaling_risk": "medium"
+  },
+  "contradictory_evidence": ["custom source maintenance may dominate", "no common vertical/decision trigger"],
+  "unknowns": ["economic buyer", "alert value", "retention", "common source/fields"],
+  "research_gaps": ["three same-vertical buyers", "same source and trigger", "accepted recurring commitment"]
+}

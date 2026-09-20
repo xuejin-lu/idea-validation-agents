@@ -1,0 +1,126 @@
+{
+  "run_date": "2026-09-20",
+  "status": "validated-enough-to-test",
+  "scope": "Taiwan-first opportunity discovery; no build or paid-pilot recommendation",
+  "claim_audit": [
+    {
+      "candidate": "taiwan_ecommerce_monthly_reconciliation",
+      "startup_classification": "startup-ready-to-test",
+      "status": "validated-enough-to-test",
+      "buyer": "Observed: Taiwan e-commerce buyer/finance role is explicit in Tasker and 104 listings.",
+      "problem": "Observed: multi-channel invoice, settlement, refund/allowance and monthly-close work is described in an external buyer request and paid job duties.",
+      "externalizability": "Observed: 2026-08-28 Tasker buyer requests long-term outsourcing after removing an internal finance role; this is a recent demand-side signal.",
+      "recurrence": "Observed/inferred: monthly close is explicit; same-customer month-two recurrence remains Unknown.",
+      "standardization": "Inferred: channel intake schema, exception taxonomy and handoff checklist can be reused across similar sellers; must be tested.",
+      "leverage": "Inferred: templates, QA delegation and selective automation could reduce founder-hours; not yet measured.",
+      "founder_labor_scaling_risk": "medium",
+      "evidence_items": [
+        {"source":"https://www.tasker.com.tw/cases?selected_tags=250%2C60%2C64","source_date":"2026-08-28","evidence_role":"transaction","claim_type":"observed","tier":"A","independence":"buyer request on Taiwan marketplace","freshness":"recent","limitations":"one visible request; budget/long-term intent shown by listing, payment completion not independently verified"},
+        {"source":"https://www.104.com.tw/jobs/search/?jobcat=2003001000&keyword=%E5%B0%8D%E5%B8%B3%E5%96%AE","source_date":"2026-06/07","evidence_role":"paid_labor","claim_type":"observed","tier":"A","independence":"separate Taiwan job listings","freshness":"recent","limitations":"internal employment proves work and payroll, not SaaS demand"},
+        {"source":"https://www.104.com.tw/jobs/search/?jobcat=2003001000&keyword=%E9%9B%BB%E5%95%86%E5%B9%B3%E5%8F%B0&page=1","source_date":"2026-07","evidence_role":"paid_labor","claim_type":"observed","tier":"A","independence":"separate Taiwan job-search result","freshness":"recent","limitations":"employer need may be solved internally"}
+      ],
+      "contradictions": ["ERP and accountants may already handle sufficient scope", "one buyer may represent a narrow segment", "unknown whether standardized service survives custom tax/bookkeeping requests"],
+      "critical_unknowns": ["second-month repeat", "same schema across 3 buyers", "fixed-scope willingness to pay", "exception handling time"],
+      "next_evidence_to_collect": "Obtain redacted sample and a second-month commitment from at least one target seller; compare exception taxonomy across a second seller."
+    },
+    {
+      "candidate": "taiwan_tender_preflight",
+      "startup_classification": "startup-ready-to-test",
+      "status": "validated-enough-to-test",
+      "buyer": "Observed: Taiwan tender-active SMEs and bid staff are represented in PRO360, Tasker and 104.",
+      "problem": "Observed/inferred: buyers and paid roles handle tender reading, proposal preparation and document/format risk; standalone preflight is inferred from this workflow.",
+      "externalizability": "Observed: PRO360 buyer review and Tasker external proposal request support buying external tender help, but not the exact preflight wedge.",
+      "recurrence": "Inferred: per-tender trigger; target vertical bid frequency is Unknown.",
+      "standardization": "Inferred: company profile, qualification matrix and attachment checklist can be reused; bid-specific judgment remains custom.",
+      "leverage": "Inferred: reusable profiles/checklists and delegated QA; founder expertise may still scale linearly.",
+      "founder_labor_scaling_risk": "medium-high",
+      "evidence_items": [
+        {"source":"https://www.pro360.com.tw/category/tender_proposal","source_date":"2026-06-22 review shown on current page","evidence_role":"transaction","claim_type":"observed","tier":"A","independence":"Taiwan service marketplace buyer review","freshness":"recent","limitations":"full proposal service, not preflight-only"},
+        {"source":"https://www.tasker.com.tw/cases?selected_tags=442%2C88","source_date":"2026-05-21","evidence_role":"transaction","claim_type":"observed","tier":"A","independence":"separate Taiwan marketplace request","freshness":"recent","limitations":"request is for proposal writing and includes scope/award terms"},
+        {"source":"https://www.104.com.tw/jobs/search/?keyword=%E5%82%99%E6%A8%99","source_date":"2026-06","evidence_role":"paid_labor","claim_type":"observed","tier":"A","independence":"Taiwan job listing source","freshness":"recent","limitations":"internal paid labor cannot alone prove outsourcing"},
+        {"source":"https://twbuying.org/guide/tender-doc-reading","source_date":"2026-07-10","evidence_role":"pain","claim_type":"observed","tier":"B","independence":"Taiwan buyer-facing guide","freshness":"recent","limitations":"educational source may have selection bias"}
+      ],
+      "contradictions": ["observed buyers may want full proposal writing, not a light preflight", "credentials/trust may dominate price", "per-customer tender frequency unknown"],
+      "critical_unknowns": ["preflight-only purchase", "vertical frequency", "time saved", "liability/trust boundary"],
+      "next_evidence_to_collect": "Run a preflight-only offer in one vertical and record requests, paid commitments and repeat bids."
+    },
+    {
+      "candidate": "taiwan_pdf_to_structured_data",
+      "startup_classification": "service-ready-to-test",
+      "status": "research-more",
+      "buyer": "Observed: Taiwan service buyers and ops/accounting users exist.",
+      "problem": "Observed: manual key-in and inconsistent PDFs are costly/slow; external service supply exists.",
+      "externalizability": "Observed: Tasker service market and prior archived buyer requests; recent same-buyer repeat is Unknown.",
+      "recurrence": "Unknown; visible requests are mostly one-off batches.",
+      "standardization": "Inferred only if one document family is selected.",
+      "leverage": "Inferred via scripts/QA; founder-labor risk remains medium-high.",
+      "founder_labor_scaling_risk": "medium-high",
+      "evidence_items": [
+        {"source":"https://www.tasker.com.tw/workroom/tinobrief/service-detail/47337","source_date":"2026-09-18","evidence_role":"competition","claim_type":"observed","tier":"A","independence":"Taiwan provider page","freshness":"recent","limitations":"provider supply/pricing is not demand volume"}
+      ],
+      "contradictions": ["provider has no visible completed transaction on page", "document formats may be too heterogeneous"],
+      "critical_unknowns": ["repeat volume", "shared schema", "buyer budget", "error liability"],
+      "next_evidence_to_collect": "Find two buyers in the same document family with recurring files."
+    },
+    {
+      "candidate": "taiwan_construction_quantity_billing",
+      "startup_classification": "service-ready-to-test",
+      "status": "research-more",
+      "buyer": "Observed: Taiwan contractors/subcontractors and paid estimator/billing roles.",
+      "problem": "Observed: external requests and job duties cover quantity takeoff, estimate, progress evidence and billing.",
+      "externalizability": "Observed: Tasker buyer requests; more independent recent buyer requests are required before ranking strongest.",
+      "recurrence": "Inferred: project phases and periodic billing, but repeat customer evidence is weak.",
+      "standardization": "Unknown for a narrow trade; general scope is bespoke.",
+      "leverage": "Unknown; professional judgment likely keeps labor linear.",
+      "founder_labor_scaling_risk": "high",
+      "evidence_items": [
+        {"source":"https://www.tasker.com.tw/cases?selected_tags=49%2C58%2C472","source_date":"2026-02 to 2026-07 indexed requests","evidence_role":"transaction","claim_type":"observed","tier":"A","independence":"Taiwan marketplace requests","freshness":"recent","limitations":"category aggregation; request details vary"},
+        {"source":"https://www.104.com.tw/jobs/search?isnew=3&keyword=%E4%BC%B0%E9%A9%97%E8%A8%88%E5%83%B9","source_date":"2026-06","evidence_role":"paid_labor","claim_type":"observed","tier":"A","independence":"Taiwan jobs source","freshness":"recent","limitations":"internal work does not prove outsourcing"}
+      ],
+      "contradictions": ["custom measurement and expertise may dominate", "one marketplace category may overstate breadth"],
+      "critical_unknowns": ["repeat customer", "trade-specific standardization", "delegation without trust loss"],
+      "next_evidence_to_collect": "Test one trade-specific billing packet and measure whether the same buyer returns for the next phase."
+    },
+    {
+      "candidate": "taiwan_recurring_public_data_monitoring",
+      "startup_classification": "research-more",
+      "status": "research-more",
+      "buyer": "Observed: Taiwan buyers request recurring public-data collection, but the common vertical is not identified.",
+      "problem": "Observed: requests seek periodic collection/updates; exact painful decision workflow is Unknown.",
+      "externalizability": "Observed: Tasker buyer requests for periodic automation; not enough to establish one product category.",
+      "recurrence": "Observed for individual requests (twice-monthly / half-yearly), but cross-customer recurrence is Unknown.",
+      "standardization": "Potentially high for a single source and field set; not yet demonstrated.",
+      "leverage": "Potentially high through scheduled collection and standardized reports.",
+      "founder_labor_scaling_risk": "medium",
+      "evidence_items": [
+        {"source":"https://www.tasker.com.tw/cases/top?selected_tags=120","source_date":"2026-08 to 2026-09","evidence_role":"transaction","claim_type":"observed","tier":"A","independence":"Taiwan marketplace buyer requests","freshness":"recent","limitations":"heterogeneous requests; same product wedge not established"}
+      ],
+      "contradictions": ["custom scraper projects may not repeat", "data-source terms/availability may change"],
+      "critical_unknowns": ["common source", "economic buyer", "alert value", "retention"],
+      "next_evidence_to_collect": "Locate three buyers with the same source, fields and update trigger."
+    }
+  ],
+  "strongest_evidence": [
+    "Recent Taiwan buyer explicitly requests long-term outsourcing of multi-channel reconciliation and monthly handoff.",
+    "Independent Taiwan job listings repeatedly pay for the same e-commerce reconciliation workflow.",
+    "Taiwan tender services have buyer reviews and external proposal requests, but the preflight-only wedge remains unproven."
+  ],
+  "weakest_claims": [
+    "Any exact savings, market size, CAC, conversion, retention or LTV.",
+    "Standalone tender preflight willingness to pay.",
+    "Repeat purchase and shared schema for generic PDF conversion."
+  ],
+  "contradictions": [
+    "Existing accountants, ERP systems and proposal consultants may already satisfy the strongest candidates.",
+    "Marketplace demand may be selection-biased toward people actively seeking help.",
+    "A recurring workflow can still be a labor-linear service if exceptions dominate."
+  ],
+  "unsupported_precision": ["No TAM, CAC, LTV, retention, market-share or conversion estimate is asserted."],
+  "critical_unknowns": [
+    "E-commerce month-two repeat and fixed-scope acceptance",
+    "Tender preflight-only purchase and vertical bid frequency",
+    "Exception rate and founder-hours per e-commerce close",
+    "Whether any PDF/document family repeats across customers"
+  ],
+  "next_evidence_to_collect": "Run low-cost behavioral tests: fixed-scope e-commerce close first, tender preflight second, and record sample sharing, payment/commitment and repeat requests."
+}

@@ -1,0 +1,66 @@
+{
+  "problem": "Taiwan multi-channel e-commerce month-close and reconciliation",
+  "user": "Taiwan e-commerce operator, finance staff or accounting handoff owner",
+  "economic_buyer": "Brand owner, finance lead or operations lead",
+  "problem_evidence_status": "strong",
+  "evidence_items": [
+    {
+      "source": "https://www.tasker.com.tw/cases?selected_tags=250%2C60%2C64",
+      "source_type": "Taiwan service marketplace buyer request",
+      "publication_or_update_date": "2026-08-28",
+      "target_user_or_buyer": "Taiwan company using website and multiple e-commerce channels",
+      "claim_supported": "Buyer requests long-term outsourcing after cancelling internal finance; scope includes invoices, sales aggregation, reconciliation, refunds/allowances, monthly reports and accountant handoff.",
+      "evidence_role": "buyer_request",
+      "commercial_stage": "buyer_request",
+      "claim_type": "observed",
+      "tier": "A",
+      "independence": "buyer-side Taiwan marketplace request",
+      "geography": "Taiwan",
+      "freshness": "recent",
+      "limitations": "stated NT$6,000 budget and proposal count are not payment/commitment proof"
+    },
+    {
+      "source": "https://www.104.com.tw/jobs/search/?jobcat=2003001000&keyword=%E5%B0%8D%E5%B8%B3%E5%96%AE",
+      "source_type": "Taiwan job listings",
+      "publication_or_update_date": "2026-06/07",
+      "target_user_or_buyer": "Taiwan e-commerce employers",
+      "claim_supported": "Paid roles include platform/bank reconciliation, invoices, refunds/allowances, monthly close and accountant handoff; visible salary ranges include NT$30,000–33,000 and NT$45,000–60,000/month.",
+      "evidence_role": "paid_labor",
+      "commercial_stage": "not_applicable",
+      "claim_type": "observed",
+      "tier": "A",
+      "independence": "separate Taiwan employer source",
+      "geography": "Taiwan",
+      "freshness": "recent",
+      "limitations": "internal labor only"
+    },
+    {
+      "source": "https://www.pro360.com.tw/category/accounting_service",
+      "source_type": "Taiwan accounting outsourcing marketplace category",
+      "publication_or_update_date": "current page with 2026 review",
+      "target_user_or_buyer": "Taiwan SMEs outsourcing bookkeeping/accounting",
+      "claim_supported": "Page displays customer reviews clearly referring to completed professional accounting service and recurring external bookkeeping context.",
+      "evidence_role": "transaction",
+      "commercial_stage": "paid_transaction",
+      "claim_type": "observed",
+      "tier": "A",
+      "independence": "Taiwan marketplace completed-review evidence",
+      "geography": "Taiwan",
+      "freshness": "recent",
+      "limitations": "comparable accounting category; not exact e-commerce reconciliation package"
+    }
+  ],
+  "current_workaround": ["internal e-commerce accountant", "Excel/CSV manual reconciliation", "ERP/platform exports", "external bookkeeping/accounting handoff"],
+  "spend_or_labor_evidence": ["paid e-commerce accounting roles", "comparable paid accounting outsourcing category", "explicit buyer request"],
+  "willingness_to_pay_evidence": ["buyer request with stated budget; payment unproven", "completed comparable accounting service reviews"],
+  "recurrence_and_leverage": {
+    "recurrence_trigger": "monthly close, refunds/allowances and tax/accounting handoff",
+    "expected_recurrence_type": "same-customer and cross-customer",
+    "standardizable_unit": "channel intake map, exception taxonomy, evidence pack, QA and handoff file",
+    "leverage_path": "reusable rules/templates, standardized intake, trained QA operators and selective automation",
+    "founder_labor_scaling_risk": "medium"
+  },
+  "contradictory_evidence": ["regulated/established accounting providers may already cover it", "exceptions may be customer-specific", "exact wedge payment is unproven"],
+  "unknowns": ["month-two repeat", "accepted quote", "exception rate", "regulated scope boundary"],
+  "research_gaps": ["redacted sample", "second-month commitment", "two comparable schemas"]
+}

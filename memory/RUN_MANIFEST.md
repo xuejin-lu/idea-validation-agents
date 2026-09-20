@@ -1,6 +1,6 @@
 # Run Manifest
 
-- spec_commit: `2c678abedcb389fc253ac7bba597fe74befaf31c`
+- spec_commit: `4c4bec3efcc82eab29f2fc58b50fd5e92b44d0ea`
 - workflow: `workflows/opportunity-discovery.md`
 - started_from_keyword: `開始`
 - status: `completed`
@@ -10,18 +10,21 @@
   - `memory/opportunity_hypotheses.md`
   - `memory/opportunity_competitor_map.md`
   - `memory/evidence_audit.json`
-  - `memory/problem_evidence/taiwan_ecommerce_monthly_reconciliation.json`
-  - `memory/problem_evidence/taiwan_tender_preflight.json`
-  - `memory/problem_evidence/taiwan_pdf_structured_data_service.json`
-  - `memory/problem_evidence/taiwan_public_data_monitoring_research_more.json`
+  - `memory/problem_evidence/taiwan_ecommerce_backoffice_operations.json`
+  - `memory/problem_evidence/taiwan_ecommerce_reconciliation_2026.json`
+  - `memory/problem_evidence/taiwan_tender_preflight_2026.json`
+  - `memory/problem_evidence/taiwan_public_data_monitoring_2026.json`
+  - `memory/problem_evidence/taiwan_pdf_data_entry_2026.json`
+  - `memory/problem_evidence/taiwan_construction_billing_2026.json`
 - preserved_previous_run:
-  - `memory/discovery_runs/run-9281428/`
+  - `memory/discovery_runs/run-c5c2548/`
 - major_unknowns:
-  - e-commerce month-two repeat and fixed-scope acceptance;
-  - tender preflight-only willingness to pay and target-vertical frequency;
-  - whether PDF conversion has a recurring shared document family;
-  - whether public-data monitoring can be narrowed to one repeatable vertical;
-  - founder-hours per unit after exceptions and QA.
+  - exact fixed-scope e-commerce operations commitment;
+  - exact month-close package payment and month-two repeat;
+  - founder-hours per recurring customer and exception rate;
+  - standalone tender preflight purchase;
+  - common vertical for public-data monitoring;
+  - recurring document family for PDF/data-entry work.
 - delivery_checks:
   - latest remote specs fetched before research: passed;
   - generated outputs committed with `RUN:` message: passed;
