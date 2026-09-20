@@ -2,196 +2,94 @@
 
 ## Phase
 
-**Launch Asset Finalization — Candidate A**
+**WAITING_FOR_EXTERNAL_BEHAVIOR**
 
-Do not reopen broad discovery.
+Do not run broad discovery.
+Do not repeat focused validation.
+Do not regenerate launch assets.
 Do not build software.
-Do not claim the market test has launched.
 
 Selected candidate:
 
 > Taiwan multi-channel e-commerce month-close / reconciliation preparation
 
-Current status:
+Current state:
 
-- research: complete enough for behavioral testing
+- posting_state: `READY_TO_POST`
+- delivery_state: `DELIVERY_BLOCKED_PENDING_PRO_REVIEW`
 - exact-wedge payment: unproven
-- posting/lead-generation assets: mostly prepared
-- actual delivery boundary: not yet professionally confirmed
-- next objective: make the test package executable without fabricating external actions
+- next gate: real buyer behavior
 
 Read and obey:
 - `FOUNDER_CONSTRAINTS.md`
 - `RESEARCH_GATES.md`
 - `PROJECT_STATE.md`
-- latest behavioral-test package files under `memory/`
+- `memory/launch_handoff.md`
+- `memory/measurement_log.csv`
 
-## Important state split
+## On every 「開始」
 
-Do not use one generic `READY_TO_LAUNCH` state.
+First inspect whether new external evidence exists.
 
-Separate:
+New external evidence means at least one real, non-header row in `memory/measurement_log.csv`, or a clearly identified new evidence file under `memory/external_behavior/`.
 
-1. `READY_TO_POST`
-   - listing copy, intake, privacy notice, demo and measurement log are ready;
-   - founder may publish the offer to collect real buyer behavior.
+### If NO new external evidence exists
 
-2. `READY_TO_DELIVER`
-   - actual buyer-data handling and service delivery are allowed only after the professional/accounting boundary has been reviewed and the data-handling process is acceptable.
+Do not research.
+Do not regenerate files.
+Do not invent prospects.
+Do not change conclusions.
 
-3. `DELIVERY_BLOCKED_PENDING_PRO_REVIEW`
-   - posting/commitment-seeking may proceed, but real delivery must not start yet.
+Return only a short Traditional-Chinese status:
 
-The goal of this run is to finish Stage 1 assets and make the Stage 2 blocker explicit.
+> WAITING_FOR_EXTERNAL_BEHAVIOR：目前尚無新的真實買方行為可分析。刊登資產已準備好；正式交付仍需專業邊界審查。
 
-## Required outputs
+Do not create a new RUN commit merely for repeating the waiting state.
 
-Create/update all of the following in Traditional Chinese.
+### If new external evidence DOES exist
 
-### 1. Direct-use intake asset
+Analyze only the new real-world evidence.
 
-Create:
-
-`memory/intake_form.md`
-
-It must be directly copyable into a form tool or sent to a prospect.
-
-Include:
-- minimum qualification questions,
-- explicit request for redacted sample only,
-- no password/OTP/backend login,
-- privacy/data-handling notice,
-- professional-boundary disclaimer,
-- request for a fixed-scope quote/commitment.
-
-Do not merely describe what a form should contain.
-
-### 2. Actual synthetic demo package
-
-Create a small demo directory using only synthetic data:
-
-`memory/demo/`
-
-At minimum:
-- `normalized_demo.csv`
-- `exceptions_demo.csv`
-- `accountant_handoff_demo.md`
-- `README.md`
-
-The data must be invented/demo-only and clearly labeled as such.
-
-The demo must demonstrate:
-- traceability back to source IDs,
-- at least one matched item,
-- at least one missing/refund/fee exception,
-- unresolved items,
-- accountant-review flags,
-- no tax/accounting conclusion.
-
-### 3. Measurement log
-
-Create:
-
-`memory/measurement_log.csv`
-
-Columns must cover:
-- timestamp
-- channel
-- listing/version
-- inbound case ID
+For each observed prospect/action classify:
 - segment match
-- commercial stage
-- redacted sample offered
-- fixed-scope quote accepted
-- scheduled start
-- paid commitment
-- exception categories
-- operator hours
-- professional review required
+- channel
+- commercial stage: interest | buyer_request | commitment | paid_transaction
+- redacted sample provided: yes/no
+- fixed-scope quote accepted: yes/no
+- scheduled start: yes/no
+- paid commitment: yes/no
+- professional review required: yes/no
 - stop/rejection reason
-- month-two continuation
+- month-two continuation: yes/no/unknown
 
-Seed with header only. Do not fabricate prospects.
+Then decide one of:
 
-### 4. Privacy/data-handling notice
+- `CONTINUE_TEST`
+- `ADVANCE_TO_DELIVERY_REVIEW`
+- `PIVOT_SCOPE`
+- `KILL_TEST`
 
-Create:
+Do not infer payment from inquiries or posted budgets.
 
-`memory/data_handling_notice.md`
+## Delivery gate
 
-It must state:
-- what data is requested,
-- what must be redacted,
-- what must never be sent,
-- temporary storage expectations,
-- access limitation,
-- deletion/retention procedure,
-- no reuse for model training/public portfolio,
-- what happens if regulated/professional accounting judgment is required.
+Even if a buyer commits:
 
-Do not claim compliance certifications that do not exist.
+- do not start real buyer-data delivery while `delivery_state = DELIVERY_BLOCKED_PENDING_PRO_REVIEW`;
+- require completed professional boundary review before changing delivery state;
+- never fabricate professional approval.
 
-### 5. Professional-boundary review brief
+## Output when evidence exists
 
-Create:
+Update:
+- `memory/measurement_log.csv` only with real observed facts
+- `memory/behavioral_test_review.md`
+- `memory/RUN_MANIFEST.md`
 
-`memory/professional_review_brief.md`
+Commit and push as a `RUN:` commit, then verify remote SHA.
 
-This is a short question list that can be handed to a Taiwan-qualified accountant/bookkeeping/tax professional.
+## External action boundary
 
-Ask them to review:
-- whether the proposed data-preparation/reconciliation scope crosses into regulated bookkeeping/accounting/tax representation,
-- which wording should be removed,
-- which output fields require professional review,
-- whether accepting a paid fixed-scope data-preparation engagement is acceptable before formal bookkeeping/tax work,
-- minimum contract/disclaimer/data-handling precautions.
+Repository/Codex can analyze evidence after it is recorded.
 
-Do not answer these questions yourself unless directly supported by authoritative Taiwan law.
-
-### 6. Launch handoff
-
-Create:
-
-`memory/launch_handoff.md`
-
-It must contain exactly:
-- which listing copy to use,
-- which demo files to attach/show,
-- which intake asset to send,
-- what counts as commitment,
-- what NOT to promise,
-- where human/external account action is required,
-- how to record responses in `measurement_log.csv`.
-
-## State decision
-
-At the end, set both states separately:
-
-- `posting_state: READY_TO_POST | NOT_READY_TO_POST`
-- `delivery_state: READY_TO_DELIVER | DELIVERY_BLOCKED_PENDING_PRO_REVIEW | NOT_READY_TO_DELIVER`
-
-Expected default if assets are complete but no professional review has occurred:
-
-- `posting_state: READY_TO_POST`
-- `delivery_state: DELIVERY_BLOCKED_PENDING_PRO_REVIEW`
-
-Do not label the whole project simply `READY_TO_LAUNCH`.
-
-## External action rule
-
-If Codex does not have authorized external marketplace/account access:
-- do not attempt to fabricate posting;
-- do not claim a buyer was contacted;
-- mark `EXTERNAL_ACTION_REQUIRED`.
-
-This run ends after assets are created, committed, pushed, and remote delivery is verified.
-
-## Next phase
-
-After this run, further `開始` commands must **not** regenerate the same assets.
-
-If no real buyer behavior has been imported into the repository yet, stop with:
-
-`WAITING_FOR_EXTERNAL_BEHAVIOR`
-
-and identify the missing external evidence rather than repeating research or preparation.
+Actual posting, marketplace login, buyer messaging, quote acceptance, file receipt, payment, and professional review require authorized external action. Never claim these occurred unless evidence is actually present.
