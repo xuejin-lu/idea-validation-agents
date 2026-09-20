@@ -1,0 +1,22 @@
+# Run Manifest
+- spec_commit: 8a0677b718a58c35a9c28844929f48b13db53f1a
+- workflow: workflows/opportunity-discovery.md
+- started_from_keyword: 開始
+- status: completed
+- primary_outputs:
+  - memory/opportunity_shortlist.md
+  - memory/opportunity_hypotheses.md
+  - memory/opportunity_competitor_map.md
+  - memory/evidence_audit.json
+  - memory/problem_evidence/taiwan_document_to_structured_data.json
+  - memory/problem_evidence/taiwan_ecommerce_outsourced_reconciliation.json
+  - memory/problem_evidence/taiwan_tender_external_demand_recent.json
+  - memory/problem_evidence/taiwan_construction_external_demand_recent.json
+  - memory/problem_evidence/taiwan_payroll_externalization_unproven.json
+  - memory/problem_evidence/taiwan_food_label_externalization_unproven.json
+- major_unknowns:
+  - Repeat frequency and standardization of the document-conversion workflows.
+  - Month-two retention and data-access trust for e-commerce reconciliation.
+  - Whether tender preflight and remote construction sub-wedges can be sold separately from full-service providers.
+  - Qualified partner and responsibility boundaries for accounting/engineering/regulated work.
+  - Whether first ten prospects can be reached through marketplaces and content without cold outbound.

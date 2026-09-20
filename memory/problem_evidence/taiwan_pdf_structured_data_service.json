@@ -1,0 +1,49 @@
+{
+  "problem": "Taiwan PDF/scanned report/document conversion into validated structured data",
+  "user": "Taiwan operations, accounting, research or admin staff",
+  "economic_buyer": "SME owner, operations lead, accountant or project manager",
+  "problem_evidence_status": "moderate",
+  "evidence_items": [
+    {
+      "source": "https://www.tasker.com.tw/workroom/tinobrief/service-detail/47337",
+      "source_type": "Taiwan service provider page",
+      "publication_or_update_date": "2026-09-18",
+      "target_user_or_buyer": "Taiwan buyers with large PDFs, scans, statements or inconsistent files",
+      "claim_supported": "Provider offers batch PDF/scan/statement-to-Excel conversion, consistency checks, statistics and NT$3,000+ per-job pricing.",
+      "evidence_role": "competition",
+      "claim_type": "observed",
+      "tier": "A",
+      "independence": "local provider page",
+      "geography": "Taiwan",
+      "freshness": "recent",
+      "limitations": "supply/price is not buyer demand volume; page shows zero completed transactions"
+    },
+    {
+      "source": "https://www.tasker.com.tw/cases?selected_tags=393%2C1%2C89%2C63",
+      "source_type": "Taiwan service marketplace buyer requests",
+      "publication_or_update_date": "2026-06-18 and related 2026 requests",
+      "target_user_or_buyer": "Taiwan organizations with PDF/image tables",
+      "claim_supported": "Marketplace requests include multiple PDF/image files and complex tables to be converted into Excel/Word.",
+      "evidence_role": "transaction",
+      "claim_type": "observed",
+      "tier": "A",
+      "independence": "buyer-side requests on local marketplace",
+      "geography": "Taiwan",
+      "freshness": "recent",
+      "limitations": "visible jobs appear batch/project-based; repeat buyer not shown"
+    }
+  ],
+  "current_workaround": ["manual key-in", "Excel cleanup", "freelance conversion", "custom scripts"],
+  "spend_or_labor_evidence": ["visible per-job external pricing and marketplace requests"],
+  "willingness_to_pay_evidence": ["service listings and buyer requests; completed payment not verified"],
+  "recurrence_and_leverage": {
+    "recurrence_trigger": "unknown; possibly recurring reports within a narrow document family",
+    "expected_recurrence_type": "cross-customer only until proven",
+    "standardizable_unit": "document-family extraction and QA rules",
+    "leverage_path": "scripts, templates, batch QA",
+    "founder_labor_scaling_risk": "medium-high"
+  },
+  "contradictory_evidence": ["formats may be heterogeneous", "provider page has no completed transaction signal"],
+  "unknowns": ["repeat volume", "shared schema", "buyer budget", "error liability"],
+  "research_gaps": ["same document family across two buyers", "month-two volume", "payment/commitment"]
+}

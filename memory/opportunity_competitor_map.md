@@ -1,56 +1,59 @@
 # Opportunity Competitor Map
 
-## A. 專業 PDF／圖片文件轉換
+Scope: Taiwan-first alternatives for the reviewed workflows. Prices are only recorded where a source displays them; no market share is inferred from listing or review counts.
 
-| Alternative | Evidence / price anchor | Strength | Switching friction | Gap to test |
-|---|---|---|---|---|
-| 內部行政／文件人員 | [104 文件整理職缺](https://www.104.com.tw/jobs/search/?keyword=%E6%AA%94%E6%A1%88%E6%95%B4%E7%90%86) | 最懂公司格式與例外 | 固定人力、尖峰排程 | 專業垂直的尖峰外包 |
-| 通用 OCR／AI 工具 | 工具類型，需在測試中比較 | 低單價、即時 | 表格／圖片／術語錯誤需人工校正 | 交付「可直接用」的結構化資料 |
-| Tasker 資料輸入服務 | [PDF→Excel NT$6,000、52 人提案](https://www.tasker.com.tw/cases?selected_tags=393%2C1%2C89%2C63) | 有即時供需市場 | 品質與保密信任 | 選一個格式垂直、建立 QA 規格 |
-| 客製腳本／系統 | [PDF→內部 Word 案例](https://www.tasker.com.tw/cases?selected_tags=1) | 長期可自動化 | 前期開發成本、需求不穩 | 先人工完成 5–10 份，再判斷自動化 |
-| 不處理／延後 | 企業常把文件堆給兼職人員 | 無額外現金成本 | 延誤與錯誤 | 用截止日前交付時間作價值指標 |
+## A. E-commerce reconciliation
 
-Assessment: recent external requests are strong, but the market is broad. The test must be a narrow document family with clear accuracy and confidentiality boundaries.
+| Alternative | Type | What buyer gets | Price/labor anchor | Strength | Switching friction / limitation | Evidence |
+|---|---|---|---|---|---|---|
+| Internal e-commerce accountant | Manual/internal | Daily platform settlement, invoices, refunds, monthly close | 104 listings show NT$30,000–33,000 and NT$45,000–60,000 monthly salaries | Context and business familiarity | Hiring/management; knowledge is employee-specific | [104](https://www.104.com.tw/jobs/search/?jobcat=2003001000&keyword=%E5%B0%8D%E5%B8%B3%E5%96%AE) |
+| External bookkeeper/accountant | Service substitute | Monthly bookkeeping/tax handoff and related account processing | Tasker buyer request shows NT$6,000 budget for a defined outsourced scope | Trust, accounting context, compliance handoff | May bundle unrelated work; less flexible for operational exception cleanup | [Tasker](https://www.tasker.com.tw/cases?selected_tags=250%2C60%2C64) |
+| ERP/platform invoice integrations | Direct/indirect | Automated invoice issuance or data flow | Vendor pricing not used as demand proof in this run | Reduces repeated entry when integrations fit | Cross-platform exceptions, refunds and settlement differences remain | 104 listings + Tasker scope |
+| Excel/CSV + do nothing | Manual/internal | Tolerate manual monthly close | Unpriced internal labor | Cheapest cash outlay | Error/delay/leakage risk; no standard QA | Tasker buyer description |
 
-## B. 多通路電商帳務／發票委外
+Validated gap: a narrow operational “reconciliation + exception packet” may sit between generic bookkeeping and a full ERP integration. This gap is only a testable hypothesis; it is not proven that incumbents fail.
 
-| Alternative | Evidence / price anchor | Strength | Switching friction | Gap to test |
-|---|---|---|---|---|
-| 委外記帳／會計 | [Tasker 多通路委外案](https://www.tasker.com.tw/cases?selected_tags=250%2C60%2C64) | 兼具帳務責任與申報能力 | 資格、信任、既有關係 | 只做前置資料包與例外整理 |
-| 內部電商會計 | [104 電商會計職缺](https://www.104.com.tw/jobs/search/?keyword=%E9%9B%BB%E5%95%86%E6%9C%83%E8%A8%88) | 熟悉平台與公司流程 | 薪資與招募 | 處理離職／尖峰的外包彈性 |
-| ERP／電子發票整合 | [PureInvoice](https://www.puredata.com.tw/products/pureeinvoice) | 可自動化、長期資料整合 | 導入與欄位維護 | 先人工驗證規則，不做整合 |
-| Excel／平台後台 | [在地流程說明](https://inflow.com.tw/blog/inflow-channel-reconciliation) | 免費、彈性 | 手動錯漏與月結延遲 | 交付固定格式、減少資料往返 |
+## B. Tender preflight
 
-Assessment: strongest externalization evidence in this run. Regulatory/accounting boundary must be explicit, and data privacy is a gating risk.
+| Alternative | Type | What buyer gets | Price/labor anchor | Strength | Limitation | Evidence |
+|---|---|---|---|---|---|---|
+| Internal bid specialist | Manual/internal | Tender search, document reading, coordination, proposal production | 104 listings show paid duties; no total market size inferred | Domain/trust and bid history | Fixed headcount; deadline spikes | [104備標](https://www.104.com.tw/jobs/search/?keyword=%E5%82%99%E6%A8%99) |
+| Tender consultant/proposal writer | Service/direct | Full proposal strategy and writing | PRO360 review + Tasker proposal request; specific prices vary | Existing buyer behavior and expertise | May be expensive or over-scoped for simple go/no-go checks | [PRO360](https://www.pro360.com.tw/category/tender_proposal), [Tasker](https://www.tasker.com.tw/cases?selected_tags=442%2C88) |
+| Tender-search / document portals | Direct/indirect | Find and inspect opportunities | Price not used here | Data access and workflow context | Does not guarantee company-document readiness or reduce interpretation work | [Taiwan Tender guide](https://twbuying.org/guide/tender-doc-reading) |
+| Do nothing / submit manually | Manual/internal | Use existing files and hope format is correct | Unpriced risk | No switching cost | Missed deadlines, missing attachments, avoidable disqualification | [Common mistakes](https://www.taiwanbid.com.tw/guide/common-mistakes) |
 
-## C. 標案文件準備／預檢
+Validated gap: a fixed-scope preflight may be a lower-friction entry than full proposal writing, but no direct purchase of that exact wedge is yet observed.
 
-| Alternative | Evidence / price anchor | Strength | Switching friction | Gap to test |
-|---|---|---|---|---|
-| 完整標案顧問／提案撰寫 | [PRO360 987 評論與近期合作](https://www.pro360.com.tw/category/tender_proposal) | 已有交易與信任 | 顧問經驗與案例 | 低風險前置預檢與附件索引 |
-| 內部行政／老闆 | [104 標案職缺](https://www.104.com.tw/jobs/search/?keyword=%E6%A8%99%E6%A1%88) | 最懂自身實績 | 時間分散、截止日壓力 | 只處理閱讀與缺件清單 |
-| 標案資料平台 | [QBID 標案軍師](https://qbid.bluesign.com.tw/) | 找案、歷史資料與 AI 拆解 | 資料與訂閱依賴 | 垂直文件包／人工核對 |
-| 不投／錯過 | 隱性替代 | 無現金支出 | 放棄商機 | 讓「不值得投」也有可交付的判斷 |
+## C. PDF/scanned-data conversion
 
-Assessment: category demand is externalized; exact preflight wedge is still an inference and must be tested separately.
+| Alternative | Type | What buyer gets | Price/labor anchor | Strength | Limitation | Evidence |
+|---|---|---|---|---|---|---|
+| Internal data-entry staff | Manual/internal | Key-in, cleanup and spreadsheet delivery | Paid labor is visible in prior archived 104 evidence | Data context and immediate access | Slow and error-prone for large batches | Archived run evidence |
+| Freelancer with scripts | Service/direct | Batch extraction and QA | Taiwan Tasker service lists NT$3,000+ per job | Fast for known formats | Project-by-project; schema may vary | [Tasker service](https://www.tasker.com.tw/workroom/tinobrief/service-detail/47337) |
+| OCR/PDF/Excel tools | Direct/indirect | Self-serve conversion | Vendor prices not used as demand evidence | Cheap for clean, repeated formats | Scans, merged cells and domain QA remain difficult | Current service description |
 
-## D. 工程前期丈量／估算資料
+Validated gap: narrow recurring document families could support a productized workflow; no evidence yet that one family recurs enough.
 
-| Alternative | Evidence / price anchor | Strength | Switching friction | Gap to test |
-|---|---|---|---|---|
-| 工程公司內部工務／估算 | [104 估驗計價職缺](https://www.104.com.tw/jobs/search?isnew=3&keyword=%E4%BC%B0%E9%A9%97%E8%A8%88%E5%83%B9) | 工程脈絡與現場責任 | 人力與尖峰排程 | 責任可分離的資料準備 |
-| 工程估算師／設計工作室 | [Tasker 數量估算案](https://www.tasker.com.tw/cases/TK26010208DNOV49) | 專業判讀 | 資格、品質、排程 | 先做單一工種資料整理 |
-| 全包統包／裝修承攬商 | [Tasker 工程案件集合](https://www.tasker.com.tw/cases?selected_tags=49%2C58%2C472) | 一站式交付 | 價格高、範圍大 | 把前期丈量／初估拆成小服務 |
-| 營建 ERP | [華薪營建 ERP](https://www.hssoft.com.tw/services/construction-interior-erp) | 全流程管理 | 導入成本與維護 | 不先導入，先做人工 overflow |
+## D. Construction quantity/billing
 
-Assessment: buyer requests are recent but mix業主與工程公司；keep below the top three until exact-match outsourcing is replicated.
+| Alternative | Type | What buyer gets | Strength | Limitation | Evidence |
+|---|---|---|---|---|---|
+| Internal estimator/site staff | Manual/internal | Measurement, estimate, progress and billing | Domain trust | Skilled labor and project-specific judgment | [104 estimate search](https://www.104.com.tw/jobs/search?isnew=3&keyword=%E4%BC%B0%E9%A9%97%E8%A8%88%E5%83%B9) |
+| Quantity-survey / engineering freelancer | Service/direct | Remote takeoff or estimate | Buyers visibly request external work | Custom scope and high trust | [Tasker construction](https://www.tasker.com.tw/cases?selected_tags=49%2C58%2C472) |
+| Excel/PDF plan workflow | Manual/internal | Existing forms and spreadsheets | Low cash cost | Rework and inconsistent formats | Tasker/104 workflow descriptions |
 
-## E. 薪資／考勤例外
+Validated gap: one trade-specific billing packet might be standardizable; a general construction estimator is too bespoke for current evidence.
 
-| Alternative | Evidence | Strength | Switching friction | Gap to test |
-|---|---|---|---|---|
-| 內部 HR／行政 | [104 薪資職缺](https://www.104.com.tw/jobs/search/?keyword=%E8%96%AA%E8%B3%87%E7%AE%A1%E7%90%86%E5%B8%AB) | 熟悉制度 | 固定薪資與個資 | 暫代／資料收集服務 |
-| 薪資 SaaS | [104 薪資系統](https://marketing.pro.104.com.tw/hrm/payroll.html) | 法規與計算整合 | 導入與信任 | 找 SaaS 後仍靠人工追例外 |
-| 考勤薪酬外包供應商 | [Tasker 服務頁](https://tasker.com.tw/workroom/voMYE2/service-detail/41147) | 已有外包服務 | 買方需求未驗證 | 先驗證雇主端需求 |
+## Cross-cutting switching costs
 
-Assessment: real workflow, external demand unproven; do not promote to top.
+- Data access and confidentiality.
+- Existing ERP/accounting/tender-document history.
+- Trust and liability where errors affect tax, bid eligibility or payments.
+- Customer-specific formats and exceptions.
+- Learning cost for vertical terminology.
+
+## Competitor research limits
+
+- Listing counts and reviews are signals of supply/transactions, not market size.
+- Vendor pages and prices prove alternatives exist, not demand volume.
+- No CAC, TAM, LTV or retention estimates are included.

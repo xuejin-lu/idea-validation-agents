@@ -1,22 +1,29 @@
 # Run Manifest
-- spec_commit: 8a0677b718a58c35a9c28844929f48b13db53f1a
-- workflow: workflows/opportunity-discovery.md
-- started_from_keyword: 開始
-- status: completed
+
+- spec_commit: `2c678abedcb389fc253ac7bba597fe74befaf31c`
+- workflow: `workflows/opportunity-discovery.md`
+- started_from_keyword: `開始`
+- status: `completed`
+- research_date: `2026-09-20`
 - primary_outputs:
-  - memory/opportunity_shortlist.md
-  - memory/opportunity_hypotheses.md
-  - memory/opportunity_competitor_map.md
-  - memory/evidence_audit.json
-  - memory/problem_evidence/taiwan_document_to_structured_data.json
-  - memory/problem_evidence/taiwan_ecommerce_outsourced_reconciliation.json
-  - memory/problem_evidence/taiwan_tender_external_demand_recent.json
-  - memory/problem_evidence/taiwan_construction_external_demand_recent.json
-  - memory/problem_evidence/taiwan_payroll_externalization_unproven.json
-  - memory/problem_evidence/taiwan_food_label_externalization_unproven.json
+  - `memory/opportunity_shortlist.md`
+  - `memory/opportunity_hypotheses.md`
+  - `memory/opportunity_competitor_map.md`
+  - `memory/evidence_audit.json`
+  - `memory/problem_evidence/taiwan_ecommerce_monthly_reconciliation.json`
+  - `memory/problem_evidence/taiwan_tender_preflight.json`
+  - `memory/problem_evidence/taiwan_pdf_structured_data_service.json`
+  - `memory/problem_evidence/taiwan_public_data_monitoring_research_more.json`
+- preserved_previous_run:
+  - `memory/discovery_runs/run-9281428/`
 - major_unknowns:
-  - Repeat frequency and standardization of the document-conversion workflows.
-  - Month-two retention and data-access trust for e-commerce reconciliation.
-  - Whether tender preflight and remote construction sub-wedges can be sold separately from full-service providers.
-  - Qualified partner and responsibility boundaries for accounting/engineering/regulated work.
-  - Whether first ten prospects can be reached through marketplaces and content without cold outbound.
+  - e-commerce month-two repeat and fixed-scope acceptance;
+  - tender preflight-only willingness to pay and target-vertical frequency;
+  - whether PDF conversion has a recurring shared document family;
+  - whether public-data monitoring can be narrowed to one repeatable vertical;
+  - founder-hours per unit after exceptions and QA.
+- delivery_checks:
+  - latest remote specs fetched before research: passed;
+  - generated outputs committed with `RUN:` message: passed;
+  - pushed to `origin/startup-research-v1`: passed;
+  - remote SHA verified against local RUN commit SHA: passed.
