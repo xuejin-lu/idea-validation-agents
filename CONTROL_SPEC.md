@@ -109,3 +109,50 @@ The previous run over-credited some evidence:
 - vendor blog posts may describe a workflow but can have sales bias.
 
 Re-research prior candidates under the stricter Evidence Role Gate. Preserve any candidate that still passes; demote candidates that do not. Search for new Taiwan candidates if needed.
+
+
+## Externalizability Gate — Mandatory
+
+A recurring paid workflow is not automatically a startup opportunity.
+
+Evidence role `paid_labor` proves that the work exists and consumes payroll. It does **not** prove that the buyer wants an external vendor, software product, or new service.
+
+To enter **Top Opportunities**, a candidate must now satisfy BOTH:
+
+### A. Problem-existence evidence
+At least two independent Taiwan-specific items across `pain`, `paid_labor`, or `transaction`.
+
+### B. Externalizability / buying evidence
+At least one **recent Taiwan-specific demand-side signal** showing one of:
+- a buyer actively requests an external service or quote,
+- a marketplace contains actual customer requests/reviews for that service category,
+- a company publicly describes outsourcing the workflow,
+- a customer pays for a comparable external service,
+- repeated buyer-side discussions ask for a provider/tool rather than merely describing internal work.
+
+A job posting alone cannot satisfy B.
+A vendor pricing page alone cannot satisfy B.
+A government requirement cannot satisfy B.
+
+If A passes but B does not, classify the candidate as:
+
+`Real workflow, external demand unproven`
+
+not Top Opportunity.
+
+## Recency Gate
+
+For pain/externalizability evidence:
+- prefer evidence from the last 24 months;
+- evidence older than 24 months may support workflow continuity, but cannot be the sole direct pain signal;
+- if the only buyer-side pain evidence is stale, the candidate must be `research-more` until refreshed.
+
+## Review correction for next run
+
+Re-check the current candidates:
+
+- Construction quantity/billing: the Tasker request is useful buyer-side externalization evidence, but one request and an unconfirmed budget are not enough to call the opportunity strongest. Find additional independent recent buyer-side requests or demote.
+- Tender readiness: PRO360 buyer requests/reviews are stronger externalization evidence; verify that the specific wedge is preflight/readiness rather than full proposal writing.
+- E-commerce reconciliation: paid-labor evidence is strong, but the direct seller pain source is old. Find 2025–2026 buyer-side evidence for external help or demote.
+
+Do not rank a candidate above another merely because the internal labor burden is larger. External buying behavior matters.
