@@ -156,3 +156,72 @@ Re-check the current candidates:
 - E-commerce reconciliation: paid-labor evidence is strong, but the direct seller pain source is old. Find 2025–2026 buyer-side evidence for external help or demote.
 
 Do not rank a candidate above another merely because the internal labor burden is larger. External buying behavior matters.
+
+
+## Repeatability & Leverage Gate — Mandatory
+
+A paid external service is not automatically a startup opportunity.
+
+A candidate may be commercially real but still behave like one-off freelancing if every customer requires fully custom founder labor.
+
+To appear in **Top Startup Opportunities**, a candidate must satisfy at least one of:
+
+### A. Customer recurrence
+There is evidence or a highly credible workflow reason that the same customer needs the service repeatedly:
+- monthly,
+- quarterly,
+- per shipment,
+- per tender,
+- per project phase,
+- or another recurring trigger.
+
+### B. Cross-customer standardization
+The workflow can plausibly reuse the same:
+- input format,
+- checklist,
+- template,
+- rules,
+- QA process,
+- or automation across multiple similar customers.
+
+And the candidate must have a plausible **leverage path**:
+- automation,
+- reusable templates,
+- delegation to trained operators,
+- software-assisted processing,
+- standardized intake/output,
+- or another way to avoid founder-hours scaling 1:1 with revenue.
+
+Do not require software from day one. Manual-first remains valid.
+But if repeatability and leverage are both unproven, classify the candidate as:
+
+`Real paid service, startup repeatability unproven`
+
+not Top Startup Opportunity.
+
+## Ranking rule
+
+Separate these concepts:
+
+1. **External demand strength** — will someone pay an outsider?
+2. **Repeatability** — will the same workflow recur?
+3. **Standardization** — can similar jobs share a process?
+4. **Leverage** — can revenue grow without founder labor growing 1:1?
+
+Do not rank a one-off freelance task above a recurring workflow solely because its marketplace evidence is newer or its visible budget is larger.
+
+## Review correction for next run
+
+Re-check current candidates:
+
+- Vertical PDF/image conversion: external demand is real, but repeat purchase and reusable schema are not yet proven. Demote unless a narrow document family shows recurring volume and shared structure.
+- E-commerce reconciliation: monthly recurrence is structurally stronger; verify whether the same input/output pattern repeats and whether customers need month-two service.
+- Tender preflight: per-tender recurrence may exist; measure how often the target vertical bids and whether reusable company-document profiles reduce marginal work.
+- Construction preconstruction/estimation: project recurrence exists, but professional expertise and custom scope may keep labor linear; require evidence of a standardizable sub-workflow.
+
+For each candidate, explicitly output:
+- recurrence trigger,
+- expected recurrence type: same-customer | cross-customer | none/unknown,
+- standardizable unit,
+- leverage path,
+- founder-labor scaling risk: low | medium | high.
