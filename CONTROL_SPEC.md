@@ -87,14 +87,15 @@ For every evidence item, assign exactly one primary role:
 
 - `pain` — directly shows the target user experiences the problem/workaround.
 - `paid_labor` — shows people are paid to perform the workflow.
-- `transaction` — shows customers actually purchase a solution/service.
+- `buyer_request` — shows a buyer actively asks for an external provider, quote, proposal, or service; this is external-demand evidence but **not proof of payment**.
+- `transaction` — shows a completed purchase, paid engagement, signed contract, verified completed order, or buyer review that clearly refers to a completed service.
 - `competition` — proves an alternative/vendor exists.
 - `regulatory_context` — proves a legal/process requirement.
 - `market_context` — shows market size/infrastructure/attention, but not pain.
 
 A candidate may enter Top Opportunities only if it has:
-- at least two independent Taiwan-specific items across `pain`, `paid_labor`, or `transaction`;
-- and at least one of those is `paid_labor` or `transaction`, or an unusually strong buyer-side `pain` signal.
+- at least two independent Taiwan-specific items across `pain`, `paid_labor`, `buyer_request`, or `transaction`;
+- and at least one of those is `paid_labor`, `buyer_request`, or `transaction`, or an unusually strong buyer-side `pain` signal.
 
 Do not count a regulation plus two vendor pricing pages as three confirmations of customer pain.
 
@@ -120,7 +121,7 @@ Evidence role `paid_labor` proves that the work exists and consumes payroll. It 
 To enter **Top Opportunities**, a candidate must now satisfy BOTH:
 
 ### A. Problem-existence evidence
-At least two independent Taiwan-specific items across `pain`, `paid_labor`, or `transaction`.
+At least two independent Taiwan-specific items across `pain`, `paid_labor`, `buyer_request`, or `transaction`.
 
 ### B. Externalizability / buying evidence
 At least one **recent Taiwan-specific demand-side signal** showing one of:
@@ -225,3 +226,40 @@ For each candidate, explicitly output:
 - standardizable unit,
 - leverage path,
 - founder-labor scaling risk: low | medium | high.
+
+
+## Commercial Proof Ladder — Mandatory
+
+Do not collapse buyer interest into payment.
+
+For every demand-side evidence item, assign one commercial stage:
+
+1. `interest` — discussion, complaint, or generic intent.
+2. `buyer_request` — active request for quote/provider/service; may include a stated budget or proposal count.
+3. `commitment` — deposit, signed LOI/order, scheduled paid work, accepted quote, or equivalent concrete commitment.
+4. `paid_transaction` — verified completed payment/purchase/engagement, or a buyer review clearly referring to a completed paid service.
+
+Rules:
+- A marketplace listing with a budget is `buyer_request`, **not** `transaction`.
+- Proposal count is supply response, **not** payment.
+- A vendor price page is `competition`, not willingness-to-pay evidence.
+- A buyer review may be `paid_transaction` only when the text/context clearly indicates completed service; otherwise classify conservatively.
+- Never write "customers pay", "transaction evidence", or "willingness to pay proven" when the strongest evidence is only a buyer request.
+
+## Ranking implication
+
+A candidate may still be `startup-ready-to-test` with strong buyer-request evidence, because the purpose is to justify a cheap behavioral test.
+
+But the report must separately state:
+- `external demand: observed`
+- `payment/commitment: observed | unproven`
+
+When two candidates are otherwise similar, prefer:
+`paid_transaction > commitment > buyer_request > interest`.
+
+## Review correction for next run
+
+Re-audit the current shortlist:
+- E-commerce reconciliation: Tasker listings are buyer requests, not completed transactions. Keep as a test candidate only if the distinction is explicit.
+- Tender preflight: PRO360 completed-service reviews may count as transaction evidence for the broad category; Tasker proposal listings are buyer requests. The narrow preflight wedge still has no payment evidence.
+- PDF conversion and construction: visible marketplace budgets/requests must not be described as transactions unless completion/payment is independently supported.
