@@ -39,7 +39,7 @@ The original app-focused workflows remain in the repository as upstream referenc
 
 ## Founder Constraints — Mandatory
 
-Before running any startup research workflow, read `FOUNDER_CONSTRAINTS.md`.
+Before running any startup research workflow, read `FOUNDER_CONSTRAINTS.md` and `RESEARCH_GATES.md`.
 
 Those constraints are authoritative. In particular:
 - research **Taiwan-first** opportunities,
