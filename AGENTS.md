@@ -12,15 +12,16 @@ This repository is operated with a two-keyword human workflow.
 
 If the user's entire message, after trimming whitespace, is exactly `開始`, **do not route through the normal Intent Router first**. Immediately execute `OPERATOR_PROTOCOL.md`.
 
-Critical rule: **synchronization happens before research**. Never begin research using the currently loaded local spec.
+The protocol is not complete until all four delivery checks pass:
 
-Codex normally builds its AGENTS instruction chain when the session starts, so after the sync step you must explicitly re-read the freshly pulled files from disk:
-- `OPERATOR_PROTOCOL.md`
-- `CONTROL_SPEC.md`
-- `FOUNDER_CONSTRAINTS.md`
-- the workflow and skills named by `CONTROL_SPEC.md`
+1. latest remote specs were fetched before research;
+2. generated outputs were committed in a commit whose message starts with `RUN:`;
+3. that commit was pushed to `origin/startup-research-v1`;
+4. the remote branch SHA was verified to equal the local RUN commit SHA.
 
-The remote branch `origin/startup-research-v1` is the authoritative source for specs. Local generated research is disposable until committed and pushed as a `RUN:` commit.
+Never tell the user a run is complete before all four checks pass.
+
+The remote branch `origin/startup-research-v1` is the authoritative source for specs. `OPERATOR_PROTOCOL.md` is the stable bootstrap; after every sync, explicitly re-read `CONTROL_SPEC.md`, `FOUNDER_CONSTRAINTS.md`, and the referenced workflow/skills from disk.
 
 ## Intent Router
 
