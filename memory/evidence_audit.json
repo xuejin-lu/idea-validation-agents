@@ -1,0 +1,77 @@
+{
+  "run_scope": "Fresh Taiwan-first opportunity discovery",
+  "date": "2026-09-20",
+  "evidence_policy": "Every material claim is labeled Observed, Inferred, Estimated, or Unknown in the supporting records and report.",
+  "candidates": [
+    {
+      "id": "A",
+      "slug": "taiwan_tender_bid_readiness",
+      "taiwan_evidence_gate": "PASS",
+      "buyer_identified": true,
+      "repeated_or_tier_ab_pain": true,
+      "current_workaround_known": true,
+      "value_mechanism_measurable": true,
+      "online_acquisition_path": "Plausible: PRO360, tender communities, LINE/content/search; no cold outbound required for the test.",
+      "cheap_validation": "Public vertical checklist + live-document intake; no build, no payment, no legal advice.",
+      "confidence": "medium",
+      "critical_unknowns": ["vertical-level volume", "preflight willingness to pay", "founder credibility"],
+      "contradictory_evidence": ["CITYGLOW and PRO360 already provide adjacent services", "proposal quality needs experience"],
+      "source_count": 5,
+      "tier_a_or_b_source_count": 5
+    },
+    {
+      "id": "B",
+      "slug": "taiwan_food_label_preflight",
+      "taiwan_evidence_gate": "PASS_WITH_REGULATORY_BOUNDARY",
+      "buyer_identified": true,
+      "repeated_or_tier_ab_pain": true,
+      "current_workaround_known": true,
+      "value_mechanism_measurable": true,
+      "online_acquisition_path": "Plausible: food-brand/design communities, directories, search/content, qualified practitioner referrals.",
+      "cheap_validation": "Lead-generation and referral intake only; founder must not provide formal compliance sign-off.",
+      "confidence": "medium-low",
+      "critical_unknowns": ["qualified practitioner partner", "real SKU change frequency", "data completeness/trust"],
+      "contradictory_evidence": ["existing food technicians and report agencies", "regulated responsibility cannot be delegated casually"],
+      "source_count": 5,
+      "tier_a_or_b_source_count": 5
+    },
+    {
+      "id": "C",
+      "slug": "taiwan_multichannel_ecommerce_reconciliation",
+      "taiwan_evidence_gate": "PASS",
+      "buyer_identified": true,
+      "repeated_or_tier_ab_pain": true,
+      "current_workaround_known": true,
+      "value_mechanism_measurable": true,
+      "online_acquisition_path": "Plausible: seller communities, accounting/e-commerce content, existing platform ecosystems; no cold outbound required for test.",
+      "cheap_validation": "Manual one-month exception report from de-identified CSV; no API or software build.",
+      "confidence": "medium",
+      "critical_unknowns": ["best vertical", "report sharing willingness", "repeatability across months"],
+      "contradictory_evidence": ["ERP/e-invoice/outsourced accounting alternatives are established", "platform schema maintenance may be costly"],
+      "source_count": 5,
+      "tier_a_or_b_source_count": 5
+    },
+    {
+      "id": "D",
+      "slug": "taiwan_sme_payroll_close",
+      "taiwan_evidence_gate": "PASS",
+      "buyer_identified": true,
+      "repeated_or_tier_ab_pain": true,
+      "current_workaround_known": true,
+      "value_mechanism_measurable": true,
+      "online_acquisition_path": "Plausible: HR/admin communities, accounting firms, existing payroll ecosystems; no cold outbound required for test.",
+      "cheap_validation": "Anonymous workflow study and exception checklist; no payroll data handling or legal advice.",
+      "confidence": "medium-low",
+      "critical_unknowns": ["pain after existing SaaS/outsourcing", "privacy/trust", "partner channel with accounting firms"],
+      "contradictory_evidence": ["low-price incumbents and payroll outsourcers", "regulated personal data and labor-law trust burden"],
+      "source_count": 5,
+      "tier_a_or_b_source_count": 5
+    }
+  ],
+  "not_recommended": [
+    {"claim": "Generic payroll SaaS", "reason": "Incumbents and price anchors are strong; no differentiated wedge evidenced."},
+    {"claim": "Generic e-invoice/ERP integration", "reason": "Established local vendors; no narrow repeatable exception proven."},
+    {"claim": "Generic AI tender writer", "reason": "Trust and domain experience are unresolved; adjacent vendors already combine AI and consultants."}
+  ],
+  "foreign_inspiration_taiwan_unvalidated": []
+}

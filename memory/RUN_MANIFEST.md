@@ -1,0 +1,20 @@
+# Run Manifest
+- spec_commit: ea4ef23598dbe8ea91502f5937aec74c5c903a3d
+- workflow: workflows/opportunity-discovery.md
+- started_from_keyword: 開始
+- status: completed
+- primary_outputs:
+  - memory/opportunity_shortlist.md
+  - memory/opportunity_hypotheses.md
+  - memory/opportunity_competitor_map.md
+  - memory/evidence_audit.json
+  - memory/problem_evidence/taiwan_sme_payroll_close.json
+  - memory/problem_evidence/taiwan_multichannel_ecommerce_reconciliation.json
+  - memory/problem_evidence/taiwan_tender_bid_readiness.json
+  - memory/problem_evidence/taiwan_food_label_preflight.json
+- major_unknowns:
+  - Vertical-level frequency and urgency for tender preflight.
+  - Willingness to provide real tender, label, or e-commerce files online.
+  - Whether an appropriately qualified food-safety practitioner can partner within the validation period.
+  - Whether the founder has credibility or a channel advantage in any selected niche.
+  - Whether existing SaaS/outsourcing already resolves payroll and reconciliation pain for the target segment.

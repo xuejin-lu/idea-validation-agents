@@ -1,0 +1,53 @@
+{
+  "slug": "taiwan_multichannel_ecommerce_reconciliation",
+  "title": "台灣多平台電商月結對帳與毛利例外",
+  "market": "Taiwan",
+  "buyer": "多平台品牌主、電商營運主管、記帳士／外包會計",
+  "user": "每月把蝦皮、momo、官網訂單、退款、物流、平台費與入帳對起來的人員",
+  "evidence": [
+    {
+      "claim": "台灣多通路電商對帳需拆解訂單、退款、物流、平台費、稅與實際入帳。",
+      "classification": "Observed",
+      "tier": "B",
+      "source": "映流數位：蝦皮、momo 與官網的訂單款項怎麼對帳",
+      "url": "https://inflow.com.tw/blog/inflow-channel-reconciliation",
+      "note": "台灣在地數位服務商以蝦皮、momo、官網為例，描述訂單與款項的月結拆解；供應商內容可能有銷售偏誤。"
+    },
+    {
+      "claim": "台灣在地系統商把開票、上傳、對獎、對帳與 ERP／POS 串接當成付費企業系統需求。",
+      "classification": "Observed",
+      "tier": "B",
+      "source": "PureInvoice 電子發票系統",
+      "url": "https://www.puredata.com.tw/products/pureeinvoice",
+      "note": "公開訂閱 NT$4,800／帳號／年、買斷 NT$38,600，並明確提供對帳與系統互通；這證明付費供應與價格錨點，不證明新的細分服務可切入。"
+    },
+    {
+      "claim": "台灣電商／平台業多通路記帳已有公開外包價格範圍。",
+      "classification": "Observed",
+      "tier": "B",
+      "source": "瓦奇維 2026 Q2 台灣會計記帳費用行情",
+      "url": "https://wachiwi.com/research/2026-q2-accounting-tax-pricing/",
+      "note": "多通路電商記帳約 NT$3,000–8,000／月；屬彙整型價格資料，需以目標垂直類別驗證。"
+    },
+    {
+      "claim": "台灣公開職缺把蝦皮、momo、官網的收款、退款與對帳列為付費工作。",
+      "classification": "Observed",
+      "tier": "B",
+      "source": "104 電商會計職缺搜尋",
+      "url": "https://www.104.com.tw/jobs/search/?keyword=%E9%9B%BB%E5%95%86%E6%9C%83%E8%A8%88",
+      "note": "職缺是勞動支出訊號；搜尋結果會變動，應以當期職缺樣本重複驗證。"
+    },
+    {
+      "claim": "台灣官方持續維護電子發票統計與開放資料，說明該流程是普遍商業基礎設施。",
+      "classification": "Observed",
+      "tier": "A",
+      "source": "財政部財政資訊中心與政府資料開放平台",
+      "url": "https://www.fia.gov.tw/singlehtml/43?cntId=98b6af69d7074f5f87c40760ceda7e9e",
+      "note": "官方資料支持交易基礎設施的普遍性，但不能單獨證明對帳痛點或購買意願。"
+    }
+  ],
+  "current_workarounds": ["平台後台 CSV／報表 + Excel", "記帳士或兼任會計人工核對", "導入電子發票、ERP、POS 或整合服務"],
+  "value_mechanism": ["縮短月結時間", "找出退款、平台費、物流與入帳差異", "改善商品／通路毛利可見度"],
+  "contradictions": ["已有多家整合與會計服務，通用型產品競爭激烈", "不同平台欄位與結算規則變動，維護成本可能侵蝕毛利"],
+  "unknowns": ["目標垂直類別每月實際例外筆數", "品牌是否把對帳延後或接受粗略帳務", "沒有深度 API 時僅靠檔案匯入能否產生足夠價值"]
+}

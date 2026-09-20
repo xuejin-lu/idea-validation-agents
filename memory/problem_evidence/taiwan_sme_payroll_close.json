@@ -1,0 +1,53 @@
+{
+  "slug": "taiwan_sme_payroll_close",
+  "title": "台灣 10–50 人企業的薪資、勞健保與出勤月結",
+  "market": "Taiwan",
+  "buyer": "小型企業負責人、行政／人資兼任者、記帳士事務所",
+  "user": "每月彙整出勤、加班、請假、勞健保與薪資單的人員",
+  "evidence": [
+    {
+      "claim": "台灣薪資作業包含法規更新、勞健保、稅務、加班與薪資單等反覆工作。",
+      "classification": "Observed",
+      "tier": "B",
+      "source": "104企業大師薪資系統頁",
+      "url": "https://marketing.pro.104.com.tw/hrm/payroll.html",
+      "note": "在地供應商將自動同步法令、勞健保與稅務、加班計算、電子薪資列為核心功能，並宣稱已有 7,500+ 企業使用；企業數量為供應商自述，未獨立驗證。"
+    },
+    {
+      "claim": "台灣小型企業可用薪資代辦或 SaaS 付費處理，市場已有明確價格錨點。",
+      "classification": "Observed",
+      "tier": "B",
+      "source": "瓦奇維 2026 Q2 台灣會計記帳費用行情",
+      "url": "https://wachiwi.com/research/2026-q2-accounting-tax-pricing/",
+      "note": "整理 30+ 事務所報價；薪資代辦 1–5 人每月 NT$1,500–3,000、6–20 人 NT$3,000–6,000、21–50 人 NT$6,000–12,000；此為媒體彙整，不等於每家報價。"
+    },
+    {
+      "claim": "台灣輕量薪資工具對 30 人以下企業主張可處理 Excel、出勤、勞健保、加班與薪資單問題，公開年費 NT$3,888。",
+      "classification": "Observed",
+      "tier": "B",
+      "source": "雲端秘書 Mirro 薪資小工具",
+      "url": "https://www.mirro.com.tw/products/salary-tool",
+      "note": "供應商公開定價與免費試用；產品行銷文字是供應商主張，尚未證明實際留存或錯誤率改善。"
+    },
+    {
+      "claim": "台灣職缺會把出勤、薪資、勞健保與法規作業放在同一個行政／人資職務中。",
+      "classification": "Observed",
+      "tier": "B",
+      "source": "104／台灣就業通公開職缺搜尋與職缺頁",
+      "url": "https://www.104.com.tw/jobs/search/?keyword=%E8%96%AA%E8%B3%87%20%E5%8B%9E%E5%81%A5%E4%BF%9D",
+      "note": "職缺是付費勞動需求的代理訊號；搜尋結果會變動，需在訪談時重新抽樣。"
+    },
+    {
+      "claim": "雇主必須依台灣現行法規計算勞保、健保、勞退與工資相關項目。",
+      "classification": "Observed",
+      "tier": "A",
+      "source": "經濟部中小及新創企業署／官方計算與規定整理",
+      "url": "https://0800280280.sme.gov.tw/accounting/run.php?file=detail&id=452&name=kw",
+      "note": "法規與級距是強制背景，不代表所有企業都願意換供應商。"
+    }
+  ],
+  "current_workarounds": ["Excel／Google Sheet + 打卡資料", "記帳士或薪資代辦", "導入 104、MAYOHR 等 SaaS"],
+  "value_mechanism": ["減少每月核薪與追資料時間", "降低勞健保、加班、扣款與薪資單錯誤風險"],
+  "contradictions": ["已有低價 SaaS 與成熟代辦，單純做計算工具的差異化弱", "涉及勞動法規與個資，創辦人不能在未具資格／合約邊界下提供法律意見"],
+  "unknowns": ["小企業每月實際耗時與錯誤成本", "願意由新供應商處理薪資的信任條件", "記帳士是否願意把例外整理外包給第三方"]
+}
