@@ -1,0 +1,4 @@
+exception_id,record_id,exception_type,source_file_id,source_row_ref,observed_difference,customer_action,professional_review_flag,status
+EX-DEMO-001,DEMO-001-002,fee_difference,DEMO-SHOP-202608,r4,-12,Confirm fee rule and settlement detail with platform,YES,unresolved
+EX-DEMO-002,DEMO-001-003,refund_or_allowance,DEMO-SHOP-202608,r8,300,Confirm refund evidence and hand off to qualified professional if accounting or tax treatment is needed,YES,unresolved
+EX-DEMO-003,DEMO-001-004,missing_bank_settlement,DEMO-BANK-202608,r7,570,Provide missing bank settlement evidence or mark as not received,YES,unresolved

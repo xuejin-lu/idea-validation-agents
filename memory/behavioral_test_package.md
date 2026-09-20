@@ -1,6 +1,8 @@
 # 行為測試包：一個月多通路對帳準備包
 
-狀態：`READY_TO_LAUNCH`
+posting_state：`READY_TO_POST`
+
+delivery_state：`DELIVERY_BLOCKED_PENDING_PRO_REVIEW`
 
 這是一份可供創辦人自行執行的手動測試規格，不代表測試已上線、已有客戶或已有付款。從 repository 內無法代替創辦人登入 Tasker、PRO360、社團或聯絡買方，因此外部執行標記為 `EXTERNAL_ACTION_REQUIRED`。
 

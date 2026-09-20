@@ -1,19 +1,26 @@
 # Run Manifest
 
-- spec_commit: `a2662a5dcfa370f9fd4d2a17074a0d96af5e58a4`
-- workflow: `behavioral test preparation / CONTROL_SPEC.md`
+- spec_commit: `3d0c66c631c7b6630ba85773399919a23967433b`
+- workflow: `launch asset finalization / CONTROL_SPEC.md`
 - started_from_keyword: `開始`
 - status: `completed`
 - research_date: `2026-09-21`
 - primary_outputs:
+  - `memory/intake_form.md`
+  - `memory/demo/README.md`
+  - `memory/demo/normalized_demo.csv`
+  - `memory/demo/exceptions_demo.csv`
+  - `memory/demo/accountant_handoff_demo.md`
+  - `memory/measurement_log.csv`
+  - `memory/data_handling_notice.md`
+  - `memory/professional_review_brief.md`
+  - `memory/launch_handoff.md`
   - `memory/behavioral_test_package.md`
-  - `memory/marketplace_listing_copy.md`
-  - `memory/intake_form_spec.md`
-  - `memory/sample_deliverable_spec.md`
-  - `memory/test_launch_checklist.md`
-- preserved_previous_run:
-  - `memory/discovery_runs/run-d83a792/`
-- output_state: `READY_TO_LAUNCH`
+- preserved_previous_research:
+  - `memory/discovery_runs/`
+- posting_state: `READY_TO_POST`
+- delivery_state: `DELIVERY_BLOCKED_PENDING_PRO_REVIEW`
+- next_state: `WAITING_FOR_EXTERNAL_BEHAVIOR`
 - external_action: `EXTERNAL_ACTION_REQUIRED`
 - major_unknowns:
   - exact buyer commitment/payment;
