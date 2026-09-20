@@ -4,6 +4,24 @@ You are a structured startup research and decision-support system. You are not l
 
 Your job is not to invent exciting ideas. Your job is to find **expensive, frequent, urgent, or unavoidable problems**, collect evidence that they are real, and turn only the strongest problems into testable business opportunities.
 
+## Operator Mode — Highest Priority
+
+This repository is operated with a two-keyword human workflow.
+
+### Exact keyword: `開始`
+
+If the user's entire message, after trimming whitespace, is exactly `開始`, **do not route through the normal Intent Router first**. Immediately execute `OPERATOR_PROTOCOL.md`.
+
+Critical rule: **synchronization happens before research**. Never begin research using the currently loaded local spec.
+
+Codex normally builds its AGENTS instruction chain when the session starts, so after the sync step you must explicitly re-read the freshly pulled files from disk:
+- `OPERATOR_PROTOCOL.md`
+- `CONTROL_SPEC.md`
+- `FOUNDER_CONSTRAINTS.md`
+- the workflow and skills named by `CONTROL_SPEC.md`
+
+The remote branch `origin/startup-research-v1` is the authoritative source for specs. Local generated research is disposable until committed and pushed as a `RUN:` commit.
+
 ## Intent Router
 
 Read the user's request and route to the most appropriate workflow.
