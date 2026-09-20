@@ -1,0 +1,84 @@
+{
+  "run_date": "2026-09-21",
+  "phase": "focused_validation_ecommerce_finalists",
+  "overall_status": "validated-enough-to-test",
+  "candidate_a": {
+    "name": "multi-channel e-commerce month-close/reconciliation",
+    "status": "READY_FOR_REAL_WORLD_TEST",
+    "external_demand": "observed",
+    "external_demand_stage": "buyer_request",
+    "payment_or_commitment": "unproven for exact wedge; comparable accounting outsourcing has paid_transaction evidence",
+    "payment_proven": false,
+    "payment_evidence": null,
+    "category_demand": "observed",
+    "target_segment": "Taiwan company using website plus multiple e-commerce channels",
+    "segment_match": "observed",
+    "segment_evidence": ["https://www.tasker.com.tw/cases?selected_tags=250%2C60%2C64"],
+    "exact_wedge_demand": "inferred",
+    "evidence_items": [
+      {"source":"https://www.tasker.com.tw/cases?selected_tags=250%2C60%2C64","evidence_role":"buyer_request","commercial_stage":"buyer_request","claim_type":"observed","tier":"A","date":"2026-08-28","limitation":"budget/proposal count are not payment; one buyer request"},
+      {"source":"https://www.104.com.tw/jobs/search/?jobcat=2003001000&keyword=%E5%B0%8D%E5%B8%B3%E5%96%AE","evidence_role":"paid_labor","commercial_stage":"not_applicable","claim_type":"observed","tier":"A","date":"2026-06/07","limitation":"internal labor, not external demand by itself"},
+      {"source":"https://www.pro360.com.tw/category/accounting_service","evidence_role":"transaction","commercial_stage":"paid_transaction","claim_type":"observed","tier":"A","date":"2026-09","limitation":"comparable accounting service, not exact e-commerce exception package"},
+      {"source":"https://www.etax.nat.gov.tw/etwmain/tax-info/understanding/tax-q-and-a/national/business-tax/invoice/NELbx22","evidence_role":"regulatory_context","commercial_stage":"not_applicable","claim_type":"observed","tier":"A","date":"2025-10-09 update","limitation":"proves invoice/refund requirements, not pain or demand"}
+    ],
+    "recurrence_trigger":"monthly close, refund/allowance events and accountant handoff",
+    "recurrence_type":"same-customer and cross-customer plausible; month-two repeat unproven",
+    "standardizable_unit":"channel intake map, exception taxonomy, QA checklist and accountant handoff pack",
+    "leverage_path":"templates/rules, standardized intake, trained QA and selective automation",
+    "founder_labor_scaling_risk":"medium",
+    "regulatory_boundary":"data preparation/QA/handoff may be a safer test boundary; formal bookkeeping, tax filing/advice/representation requires qualified scope review",
+    "incumbent_strength":"high",
+    "desk_researchable": ["official boundary and mandate rules", "public alternatives", "workflow artifacts", "price/labor anchors", "online acquisition channels"],
+    "behavioral_only": ["file sharing", "accepted quote/commitment/payment", "same schema across two buyers", "month-two repeat", "hours after exceptions"],
+    "contradictions": ["bookkeeping firms/ERP integrations may already cover the layer", "customer exceptions may prevent standardization", "exact wedge has no completed payment evidence"],
+    "next_test": "one-month redacted-data reconciliation pack with fixed scope, via Tasker/PRO360/referral/community; seek accepted quote/continuation, not survey interest"
+  },
+  "candidate_b": {
+    "name": "fixed-scope e-commerce back-office operations",
+    "status": "DEMOTE_TO_SERVICE",
+    "external_demand": "observed",
+    "external_demand_stage": "buyer_request",
+    "payment_or_commitment": "broad category paid_transaction observed; exact fixed package unproven",
+    "payment_proven": false,
+    "payment_evidence": null,
+    "category_demand": "observed",
+    "target_segment": "Taiwan e-commerce business seeking long-term channel operations",
+    "segment_match": "observed",
+    "segment_evidence": ["https://www.tasker.com.tw/cases?selected_tags=133", "https://www.pro360.com.tw/category/ec_third_partner"],
+    "exact_wedge_demand": "inferred",
+    "evidence_items": [
+      {"source":"https://www.tasker.com.tw/cases/TK26042823STIL34","evidence_role":"buyer_request","commercial_stage":"buyer_request","claim_type":"observed","tier":"A","date":"2026-05-02","limitation":"displayed budget/request not payment; exact execution scope is one listing"},
+      {"source":"https://www.tasker.com.tw/cases?selected_tags=133","evidence_role":"buyer_request","commercial_stage":"buyer_request","claim_type":"observed","tier":"A","date":"2026-08","limitation":"broad scopes and budgets; completion/payment not verified"},
+      {"source":"https://www.pro360.com.tw/category/ec_third_partner","evidence_role":"transaction","commercial_stage":"paid_transaction","claim_type":"observed","tier":"A","date":"2026-09","limitation":"broad e-commerce outsourcing category, not fixed package"},
+      {"source":"https://www.104.com.tw/jobs/search/?keyword=%E9%9B%BB%E5%95%86","evidence_role":"paid_labor","commercial_stage":"not_applicable","claim_type":"observed","tier":"A","date":"2026-08/09","limitation":"internal employment"}
+    ],
+    "recurrence_trigger":"daily/weekly listings, orders, customer replies, inventory/returns and campaign cycles",
+    "recurrence_type":"same-customer plausible; task mix and volume unproven",
+    "standardizable_unit":"one platform, fixed SKU/order band, response SLA and exception queue",
+    "leverage_path":"SOPs, batching, templates, trained operators and selective automation",
+    "founder_labor_scaling_risk":"high",
+    "regulatory_boundary":"lower formal accounting risk if limited to platform operations; do not promise tax/accounting compliance",
+    "incumbent_strength":"high",
+    "desk_researchable": ["existing agencies/operators", "public scope/price models", "task categories", "marketplace acquisition channels"],
+    "behavioral_only": ["execution-only acceptance", "same package across buyers", "operator-hours per volume band", "repeat/retention", "exception rate"],
+    "contradictions": ["full-service providers bundle strategy/ads/creative", "customer-specific work may expand scope", "labor may scale 1:1"],
+    "next_phase_condition": "Only revisit as a startup if two buyers accept the same narrow bundle and measured operator-hours stay bounded; otherwise keep as service."
+  },
+  "strongest_evidence": [
+    "Recent Tasker buyer request explicitly names multi-channel reconciliation, refunds/allowances, monthly reporting and long-term outsourcing.",
+    "Recent Tasker e-commerce assistant request explicitly names execution-only operations, orders, listings, replies and shipping.",
+    "PRO360 category reviews/payment workflow prove external service categories exist, but not the exact proposed wedges."
+  ],
+  "weakest_claims": [
+    "Exact-wedge payment or accepted commitment for either finalist.",
+    "Common schema/margin after real exceptions.",
+    "Month-two repeat and retention.",
+    "Whether an unlicensed operator can safely perform every intended reconciliation task."
+  ],
+  "unsupported_precision": ["No TAM, CAC, LTV, conversion, retention, exact savings or margin estimate."],
+  "research_saturation": {
+    "desk_researchable_remaining": ["clarifying public regulation and alternatives", "finding more comparable workflow artifacts"],
+    "behavioral_only_remaining": ["accepted exact scope", "file sharing", "commitment/payment", "repeat cycle", "operator-hours and exceptions"],
+    "decision": "Stop broad desk research; test A in the real world, keep B as service unless a narrower package earns repeatable commitment."
+  }
+}
