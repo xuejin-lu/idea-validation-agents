@@ -58,6 +58,16 @@ Save one evidence record per problem.
 
 Reject problems supported only by generic trend articles or a single anecdote.
 
+## Taiwan Evidence Gate
+
+Before a problem can advance from evidence collection into the main opportunity shortlist:
+
+- the buyer/user must exist in Taiwan;
+- at least two independent Taiwan-specific sources must support the problem/workaround;
+- at least one Taiwan-specific source must be Tier A or Tier B;
+- foreign evidence may inform the hypothesis but cannot substitute for Taiwan evidence;
+- foreign-only candidates belong under **Foreign inspiration — Taiwan unvalidated**, never Top Opportunities.
+
 ## Step 3 — Convert evidence into opportunity hypotheses
 
 For the strongest evidence clusters, create 5–8 opportunity hypotheses.
@@ -105,7 +115,7 @@ Prefer:
 - manual concierge service,
 - paid pilot offer,
 - landing page with price,
-- outbound to a narrow buyer list,
+- outreach through existing online communities, marketplaces, directories, referrals, partnerships, or other non-cold channels,
 - workflow mockup + commitment request,
 - deposit / LOI / trial request when appropriate.
 
