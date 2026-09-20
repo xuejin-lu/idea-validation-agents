@@ -1,26 +1,29 @@
 # Run Manifest
 
-- spec_commit: `c8dff1e7711254cdf83415d5055012153351bae5`
-- workflow: `focused validation / RESEARCH_GATES.md`
+- spec_commit: `a2662a5dcfa370f9fd4d2a17074a0d96af5e58a4`
+- workflow: `behavioral test preparation / CONTROL_SPEC.md`
 - started_from_keyword: `開始`
 - status: `completed`
 - research_date: `2026-09-21`
 - primary_outputs:
-  - `memory/finalist_validation.md`
-  - `memory/finalist_evidence_audit.json`
+  - `memory/behavioral_test_package.md`
+  - `memory/marketplace_listing_copy.md`
+  - `memory/intake_form_spec.md`
+  - `memory/sample_deliverable_spec.md`
+  - `memory/test_launch_checklist.md`
 - preserved_previous_run:
-  - `memory/discovery_runs/run-4cb73dd/`
-- finalists:
-  - `multi-channel e-commerce month-close/reconciliation: READY_FOR_REAL_WORLD_TEST`
-  - `fixed-scope e-commerce back-office operations: DEMOTE_TO_SERVICE`
+  - `memory/discovery_runs/run-d83a792/`
+- output_state: `READY_TO_LAUNCH`
+- external_action: `EXTERNAL_ACTION_REQUIRED`
 - major_unknowns:
-  - exact-scope commitment/payment;
-  - month-two repeat and file-sharing;
-  - shared schema and exception rate;
-  - regulatory/professional boundary for operational reconciliation;
-  - operator-hours and leverage for back-office execution.
+  - exact buyer commitment/payment;
+  - sample/file-sharing;
+  - month-two repeat;
+  - same input/output structure across two buyers;
+  - professional boundary confirmation;
+  - operator-hours after exceptions.
 - delivery_checks:
   - latest remote specs fetched before research: passed;
-  - generated outputs committed with `RUN:` message: passed;
-  - pushed to `origin/startup-research-v1`: passed;
+  - generated outputs committed with RUN message: passed;
+  - pushed to origin/startup-research-v1: passed;
   - remote SHA verified against local RUN commit SHA: passed.

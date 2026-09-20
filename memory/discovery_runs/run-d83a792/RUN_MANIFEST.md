@@ -1,0 +1,26 @@
+# Run Manifest
+
+- spec_commit: `c8dff1e7711254cdf83415d5055012153351bae5`
+- workflow: `focused validation / RESEARCH_GATES.md`
+- started_from_keyword: `開始`
+- status: `completed`
+- research_date: `2026-09-21`
+- primary_outputs:
+  - `memory/finalist_validation.md`
+  - `memory/finalist_evidence_audit.json`
+- preserved_previous_run:
+  - `memory/discovery_runs/run-4cb73dd/`
+- finalists:
+  - `multi-channel e-commerce month-close/reconciliation: READY_FOR_REAL_WORLD_TEST`
+  - `fixed-scope e-commerce back-office operations: DEMOTE_TO_SERVICE`
+- major_unknowns:
+  - exact-scope commitment/payment;
+  - month-two repeat and file-sharing;
+  - shared schema and exception rate;
+  - regulatory/professional boundary for operational reconciliation;
+  - operator-hours and leverage for back-office execution.
+- delivery_checks:
+  - latest remote specs fetched before research: passed;
+  - generated outputs committed with `RUN:` message: passed;
+  - pushed to `origin/startup-research-v1`: passed;
+  - remote SHA verified against local RUN commit SHA: passed.
