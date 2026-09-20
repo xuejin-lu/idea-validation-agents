@@ -2,164 +2,196 @@
 
 ## Phase
 
-**Behavioral Test Preparation — Candidate A**
+**Launch Asset Finalization — Candidate A**
 
-Do not run broad discovery.
-Do not compare unrelated startup ideas.
+Do not reopen broad discovery.
 Do not build software.
+Do not claim the market test has launched.
 
-The selected candidate is:
+Selected candidate:
 
-> **Taiwan multi-channel e-commerce month-close / reconciliation**
+> Taiwan multi-channel e-commerce month-close / reconciliation preparation
 
-Current research state:
+Current status:
 
-`READY_FOR_REAL_WORLD_TEST`
-
-The decisive unknowns are now behavioral:
-- will a matching Taiwan buyer share a redacted month?
-- will they accept a fixed scope?
-- will they make a concrete commitment?
-- will the same workflow repeat in month two?
-- can two buyers share the same input/output structure?
-- can the work stay outside regulated accounting/tax representation?
+- research: complete enough for behavioral testing
+- exact-wedge payment: unproven
+- posting/lead-generation assets: mostly prepared
+- actual delivery boundary: not yet professionally confirmed
+- next objective: make the test package executable without fabricating external actions
 
 Read and obey:
 - `FOUNDER_CONSTRAINTS.md`
 - `RESEARCH_GATES.md`
-- latest `memory/finalist_validation.md`
-- latest `memory/finalist_evidence_audit.json`
+- `PROJECT_STATE.md`
+- latest behavioral-test package files under `memory/`
 
-## Goal
+## Important state split
 
-Prepare the smallest honest real-world test package that the founder could launch without software and within NT$5,000.
+Do not use one generic `READY_TO_LAUNCH` state.
 
-This run prepares the test. It does **not** fabricate demand and does **not** claim the test was launched.
+Separate:
 
-## Exact target segment
+1. `READY_TO_POST`
+   - listing copy, intake, privacy notice, demo and measurement log are ready;
+   - founder may publish the offer to collect real buyer behavior.
 
-Use only the segment supported by evidence:
+2. `READY_TO_DELIVER`
+   - actual buyer-data handling and service delivery are allowed only after the professional/accounting boundary has been reviewed and the data-handling process is acceptable.
 
-> Taiwan company using a website plus multiple e-commerce channels.
+3. `DELIVERY_BLOCKED_PENDING_PRO_REVIEW`
+   - posting/commitment-seeking may proceed, but real delivery must not start yet.
 
-Do not silently narrow this to microbrands, a particular vertical, or a company-size range unless supported by new evidence.
+The goal of this run is to finish Stage 1 assets and make the Stage 2 blocker explicit.
 
-## Test offer
+## Required outputs
 
-Design a fixed-scope:
+Create/update all of the following in Traditional Chinese.
 
-> **One-month multi-channel reconciliation preparation pack**
+### 1. Direct-use intake asset
 
-The offer may include:
-- collecting buyer-provided exports/files,
-- normalizing them into one working table,
-- reconciling observable platform/bank/invoice/refund fields,
-- flagging unresolved differences,
-- preparing an evidence/exception list,
-- preparing a handoff checklist for the buyer's accountant/bookkeeper.
+Create:
 
-It must explicitly exclude:
-- tax filing,
-- tax advice,
-- formal bookkeeping representation,
-- accounting certification/sign-off,
-- legal advice,
-- any claim that the founder is a licensed accounting professional.
+`memory/intake_form.md`
 
-If the exact boundary is uncertain, label it and design the test so no regulated service is actually delivered before qualified review.
+It must be directly copyable into a form tool or sent to a prospect.
 
-## Required assets
+Include:
+- minimum qualification questions,
+- explicit request for redacted sample only,
+- no password/OTP/backend login,
+- privacy/data-handling notice,
+- professional-boundary disclaimer,
+- request for a fixed-scope quote/commitment.
 
-Create all of the following in Traditional Chinese:
+Do not merely describe what a form should contain.
 
-1. `memory/behavioral_test_package.md`
-   - exact offer
-   - exact target segment
-   - fixed scope
-   - exclusions
-   - required buyer inputs
-   - expected output
-   - turnaround assumption
-   - what counts as commitment
-   - success signal
-   - kill criterion
-   - maximum validation spend
-   - what would justify month-two testing
+### 2. Actual synthetic demo package
 
-2. `memory/marketplace_listing_copy.md`
-   - one concise listing suitable for Tasker/PRO360-style intent
-   - no fabricated credentials
-   - no fabricated customer results
-   - no promise of tax/accounting compliance
-   - ask for a redacted sample
-   - clear fixed-scope positioning
+Create a small demo directory using only synthetic data:
 
-3. `memory/intake_form_spec.md`
-   - minimum fields needed to qualify a prospect
-   - channel/platform list
-   - file types available
-   - number of monthly orders/transactions only as optional ranges, not forced precision
-   - current process
-   - biggest exception/pain
-   - whether they can provide redacted sample data
-   - whether they want a one-month fixed-scope quote
-   - privacy/data-handling notice requirements
+`memory/demo/`
 
-4. `memory/sample_deliverable_spec.md`
-   - structure of the deliverable using synthetic/demo data only
-   - normalized table
-   - exception list
-   - source/evidence link field
-   - unresolved-items field
-   - accountant-handoff checklist
-   - clearly mark what requires professional accounting review
+At minimum:
+- `normalized_demo.csv`
+- `exceptions_demo.csv`
+- `accountant_handoff_demo.md`
+- `README.md`
 
-5. `memory/test_launch_checklist.md`
-   - launch channels
-   - exact manual steps
-   - what can be automated
-   - what requires external account/browser access
-   - data/privacy precautions
-   - stop conditions
-   - measurement log fields
+The data must be invented/demo-only and clearly labeled as such.
 
-## Behavioral standard
+The demo must demonstrate:
+- traceability back to source IDs,
+- at least one matched item,
+- at least one missing/refund/fee exception,
+- unresolved items,
+- accountant-review flags,
+- no tax/accounting conclusion.
 
-Do not use surveys as the main proof.
+### 3. Measurement log
 
-The strongest desired signal is:
+Create:
 
-`commitment`
+`memory/measurement_log.csv`
 
-Examples:
-- accepted fixed-scope quote,
-- scheduled start with real files,
-- explicit agreement to provide a redacted month,
-- scheduled second-month continuation after a first delivery.
+Columns must cover:
+- timestamp
+- channel
+- listing/version
+- inbound case ID
+- segment match
+- commercial stage
+- redacted sample offered
+- fixed-scope quote accepted
+- scheduled start
+- paid commitment
+- exception categories
+- operator hours
+- professional review required
+- stop/rejection reason
+- month-two continuation
 
-Do not count:
-- likes,
-- views,
-- generic praise,
-- "sounds useful",
-- marketplace proposal counts.
+Seed with header only. Do not fabricate prospects.
 
-## No fake launch
+### 4. Privacy/data-handling notice
 
-If Codex does not have authorized access to an external marketplace/account, do not pretend to post or contact buyers.
+Create:
 
-Instead mark:
+`memory/data_handling_notice.md`
 
-`EXTERNAL_ACTION_REQUIRED`
+It must state:
+- what data is requested,
+- what must be redacted,
+- what must never be sent,
+- temporary storage expectations,
+- access limitation,
+- deletion/retention procedure,
+- no reuse for model training/public portfolio,
+- what happens if regulated/professional accounting judgment is required.
 
-and state exactly which external action cannot be completed from the repository alone.
+Do not claim compliance certifications that do not exist.
 
-## Output state
+### 5. Professional-boundary review brief
 
-At the end classify the package as:
+Create:
 
-- `READY_TO_LAUNCH` — assets and boundaries are sufficient for a real-world posting/test.
-- `BLOCKED_BY_SCOPE_OR_REGULATION` — test cannot be responsibly launched yet.
-- `NEEDS_MORE_DESK_RESEARCH` — only if one concrete desk-researchable question truly blocks launch.
+`memory/professional_review_brief.md`
 
-Do not reopen broad opportunity discovery.
+This is a short question list that can be handed to a Taiwan-qualified accountant/bookkeeping/tax professional.
+
+Ask them to review:
+- whether the proposed data-preparation/reconciliation scope crosses into regulated bookkeeping/accounting/tax representation,
+- which wording should be removed,
+- which output fields require professional review,
+- whether accepting a paid fixed-scope data-preparation engagement is acceptable before formal bookkeeping/tax work,
+- minimum contract/disclaimer/data-handling precautions.
+
+Do not answer these questions yourself unless directly supported by authoritative Taiwan law.
+
+### 6. Launch handoff
+
+Create:
+
+`memory/launch_handoff.md`
+
+It must contain exactly:
+- which listing copy to use,
+- which demo files to attach/show,
+- which intake asset to send,
+- what counts as commitment,
+- what NOT to promise,
+- where human/external account action is required,
+- how to record responses in `measurement_log.csv`.
+
+## State decision
+
+At the end, set both states separately:
+
+- `posting_state: READY_TO_POST | NOT_READY_TO_POST`
+- `delivery_state: READY_TO_DELIVER | DELIVERY_BLOCKED_PENDING_PRO_REVIEW | NOT_READY_TO_DELIVER`
+
+Expected default if assets are complete but no professional review has occurred:
+
+- `posting_state: READY_TO_POST`
+- `delivery_state: DELIVERY_BLOCKED_PENDING_PRO_REVIEW`
+
+Do not label the whole project simply `READY_TO_LAUNCH`.
+
+## External action rule
+
+If Codex does not have authorized external marketplace/account access:
+- do not attempt to fabricate posting;
+- do not claim a buyer was contacted;
+- mark `EXTERNAL_ACTION_REQUIRED`.
+
+This run ends after assets are created, committed, pushed, and remote delivery is verified.
+
+## Next phase
+
+After this run, further `開始` commands must **not** regenerate the same assets.
+
+If no real buyer behavior has been imported into the repository yet, stop with:
+
+`WAITING_FOR_EXTERNAL_BEHAVIOR`
+
+and identify the missing external evidence rather than repeating research or preparation.
