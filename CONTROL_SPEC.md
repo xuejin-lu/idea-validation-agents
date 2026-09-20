@@ -263,3 +263,53 @@ Re-audit the current shortlist:
 - E-commerce reconciliation: Tasker listings are buyer requests, not completed transactions. Keep as a test candidate only if the distinction is explicit.
 - Tender preflight: PRO360 completed-service reviews may count as transaction evidence for the broad category; Tasker proposal listings are buyer requests. The narrow preflight wedge still has no payment evidence.
 - PDF conversion and construction: visible marketplace budgets/requests must not be described as transactions unless completion/payment is independently supported.
+
+
+## Segment-Match Gate — Mandatory
+
+Do not silently shrink broad category evidence into a narrow ICP.
+
+For every Top Startup Opportunity, distinguish:
+
+- **category evidence** — proves the broader workflow/category exists.
+- **segment evidence** — proves the proposed target segment itself experiences/buys the workflow.
+- **exact-wedge evidence** — proves the proposed narrow offer itself is requested/bought.
+
+A candidate may be `startup-ready-to-test` when exact-wedge payment is still unproven, but the report must not present the narrow ICP as observed unless there is direct segment evidence.
+
+### Required fields
+
+For each candidate output:
+
+- `category_demand: observed | unproven`
+- `target_segment: <explicit segment>`
+- `segment_match: observed | inferred | unproven`
+- `segment_evidence: <sources or null>`
+- `exact_wedge_demand: observed | inferred | unproven`
+
+### Hard rule
+
+If sources represent:
+- larger firms,
+- generic marketplace buyers,
+- broad category customers,
+- or an unknown company size,
+
+do not rewrite them as evidence for:
+- 1–3 person microbrands,
+- 5–20 person SMEs,
+- a specific vertical,
+- first-time buyers,
+- or another narrower ICP.
+
+If the narrow segment is only an inference, say so and make segment validation the next test.
+
+## Review correction for next run
+
+Re-audit the current top candidates:
+
+- E-commerce back-office operations: broad e-commerce outsourcing is proven; the specific `1–3 person microbrand` segment is not yet directly proven. Either find direct Taiwan segment evidence or label the segment as inferred.
+- E-commerce reconciliation: the workflow and external request are strong, but company size/vertical fit must come from the buyer evidence itself rather than being assumed.
+- Tender preflight: full tender-service category demand is proven; the specific vertical/low-frequency bidder segment remains a hypothesis until directly supported.
+
+Do not create a narrow ICP merely because it sounds strategically attractive.
