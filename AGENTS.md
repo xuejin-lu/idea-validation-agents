@@ -17,6 +17,22 @@ Read the user's request and route to the most appropriate workflow.
 
 The original app-focused workflows remain in the repository as upstream reference material, but the three workflows above are the default routes.
 
+
+## Founder Constraints — Mandatory
+
+Before running any startup research workflow, read `FOUNDER_CONSTRAINTS.md`.
+
+Those constraints are authoritative. In particular:
+- research **Taiwan-first** opportunities,
+- do not recommend foreign-regulation-dependent opportunities as primary candidates,
+- avoid models that rely on cold outreach,
+- stay within the founder's validation budget and time horizon,
+- accept small/niche markets,
+- allow manual-first validation,
+- treat technology as a means rather than a goal.
+
+If a workflow recommendation conflicts with `FOUNDER_CONSTRAINTS.md`, the founder constraints win.
+
 ## Default Operating Assumptions
 
 Unless the user states otherwise:
