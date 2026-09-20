@@ -1,77 +1,113 @@
 {
-  "run_scope": "Fresh Taiwan-first opportunity discovery",
+  "status": "validated-enough-to-test",
+  "run_scope": "Fresh Taiwan-first opportunity discovery under the stricter Evidence Role Gate",
   "date": "2026-09-20",
-  "evidence_policy": "Every material claim is labeled Observed, Inferred, Estimated, or Unknown in the supporting records and report.",
-  "candidates": [
+  "claim_audit": [
     {
-      "id": "A",
-      "slug": "taiwan_tender_bid_readiness",
-      "taiwan_evidence_gate": "PASS",
+      "candidate": "taiwan_construction_quantity_billing",
+      "taiwan_gate": "PASS",
+      "roles_that_qualify": ["pain", "paid_labor"],
+      "independent_qualifying_items": 3,
+      "tier_a_or_b_qualifying_items": 3,
       "buyer_identified": true,
-      "repeated_or_tier_ab_pain": true,
       "current_workaround_known": true,
-      "value_mechanism_measurable": true,
-      "online_acquisition_path": "Plausible: PRO360, tender communities, LINE/content/search; no cold outbound required for the test.",
-      "cheap_validation": "Public vertical checklist + live-document intake; no build, no payment, no legal advice.",
+      "value_mechanism": "Estimated only until a live file test: time, rework, and billing delay can be measured.",
+      "online_reach": "Tasker, construction communities, remote engineering service listings, and search content.",
+      "cheap_test": "De-identified drawing / quantity-list intake; no software build or formal sign-off.",
       "confidence": "medium",
-      "critical_unknowns": ["vertical-level volume", "preflight willingness to pay", "founder credibility"],
-      "contradictory_evidence": ["CITYGLOW and PRO360 already provide adjacent services", "proposal quality needs experience"],
-      "source_count": 5,
-      "tier_a_or_b_source_count": 5
+      "weakest_claims": ["Tasker budget is not confirmed payment", "old workflow study is stale"],
+      "contradictions": ["ERP vendors already bundle the workflow", "engineering expertise and liability are non-trivial"],
+      "critical_unknowns": ["best trade vertical", "qualified collaborator", "repeat monthly demand"]
     },
     {
-      "id": "B",
-      "slug": "taiwan_food_label_preflight",
-      "taiwan_evidence_gate": "PASS_WITH_REGULATORY_BOUNDARY",
+      "candidate": "taiwan_tender_readiness_strict",
+      "taiwan_gate": "PASS",
+      "roles_that_qualify": ["paid_labor", "transaction"],
+      "independent_qualifying_items": 2,
+      "tier_a_or_b_qualifying_items": 2,
       "buyer_identified": true,
-      "repeated_or_tier_ab_pain": true,
       "current_workaround_known": true,
-      "value_mechanism_measurable": true,
-      "online_acquisition_path": "Plausible: food-brand/design communities, directories, search/content, qualified practitioner referrals.",
-      "cheap_validation": "Lead-generation and referral intake only; founder must not provide formal compliance sign-off.",
-      "confidence": "medium-low",
-      "critical_unknowns": ["qualified practitioner partner", "real SKU change frequency", "data completeness/trust"],
-      "contradictory_evidence": ["existing food technicians and report agencies", "regulated responsibility cannot be delegated casually"],
-      "source_count": 5,
-      "tier_a_or_b_source_count": 5
+      "value_mechanism": "Observed workflow; time and missing-document reduction can be measured.",
+      "online_reach": "PRO360, tender communities, LINE groups, search content.",
+      "cheap_test": "Vertical checklist + real public tender document intake; no payment or legal advice.",
+      "confidence": "medium-high",
+      "weakest_claims": ["platform reviews/requests have selection bias", "preflight willingness to pay is not direct"],
+      "contradictions": ["CITYGLOW and consultants already offer adjacent services", "industry credibility matters"],
+      "critical_unknowns": ["best vertical", "repeatable document schema", "paid conversion after free intake"]
     },
     {
-      "id": "C",
-      "slug": "taiwan_multichannel_ecommerce_reconciliation",
-      "taiwan_evidence_gate": "PASS",
+      "candidate": "taiwan_ecommerce_reconciliation_strict",
+      "taiwan_gate": "PASS",
+      "roles_that_qualify": ["pain", "paid_labor"],
+      "independent_qualifying_items": 2,
+      "tier_a_or_b_qualifying_items": 2,
       "buyer_identified": true,
-      "repeated_or_tier_ab_pain": true,
       "current_workaround_known": true,
-      "value_mechanism_measurable": true,
-      "online_acquisition_path": "Plausible: seller communities, accounting/e-commerce content, existing platform ecosystems; no cold outbound required for test.",
-      "cheap_validation": "Manual one-month exception report from de-identified CSV; no API or software build.",
+      "value_mechanism": "Time to close, unexplained differences, and returned/fee leakage can be measured.",
+      "online_reach": "Seller communities, e-commerce accounting content, and service marketplaces.",
+      "cheap_test": "Manual report from de-identified CSV; no API or software build.",
       "confidence": "medium",
-      "critical_unknowns": ["best vertical", "report sharing willingness", "repeatability across months"],
-      "contradictory_evidence": ["ERP/e-invoice/outsourced accounting alternatives are established", "platform schema maintenance may be costly"],
-      "source_count": 5,
-      "tier_a_or_b_source_count": 5
+      "weakest_claims": ["the strongest community pain source is old", "current platform rules may have changed"],
+      "contradictions": ["ERP and accountants already solve part of it", "some sellers tolerate delayed reconciliation"],
+      "critical_unknowns": ["best vertical", "data-sharing trust", "repeatability"]
     },
     {
-      "id": "D",
-      "slug": "taiwan_sme_payroll_close",
-      "taiwan_evidence_gate": "PASS",
-      "buyer_identified": true,
-      "repeated_or_tier_ab_pain": true,
+      "candidate": "taiwan_payroll_exception_strict",
+      "taiwan_gate": "PASS_FOR_RESEARCH_MORE",
+      "roles_that_qualify": ["pain", "paid_labor"],
+      "independent_qualifying_items": 3,
+      "tier_a_or_b_qualifying_items": 3,
+      "buyer_identified": "Partially; employer-side buyer remains uncertain.",
       "current_workaround_known": true,
-      "value_mechanism_measurable": true,
-      "online_acquisition_path": "Plausible: HR/admin communities, accounting firms, existing payroll ecosystems; no cold outbound required for test.",
-      "cheap_validation": "Anonymous workflow study and exception checklist; no payroll data handling or legal advice.",
-      "confidence": "medium-low",
-      "critical_unknowns": ["pain after existing SaaS/outsourcing", "privacy/trust", "partner channel with accounting firms"],
-      "contradictory_evidence": ["low-price incumbents and payroll outsourcers", "regulated personal data and labor-law trust burden"],
-      "source_count": 5,
-      "tier_a_or_b_source_count": 5
+      "value_mechanism": "Can measure exception collection time, but employer ROI is not yet proven.",
+      "online_reach": "HR/admin communities and accounting firms.",
+      "cheap_test": "Anonymous workflow samples only; no payroll data handling.",
+      "confidence": "low-medium",
+      "weakest_claims": ["pain evidence is worker-side", "no direct small-business transaction evidence"],
+      "contradictions": ["low-price SaaS and payroll outsourcers", "privacy and labor-law trust barrier"],
+      "critical_unknowns": ["employer willingness to pay", "legal data-handling boundary"]
+    },
+    {
+      "candidate": "taiwan_food_label_strict",
+      "taiwan_gate": "PASS_FOR_RESEARCH_MORE",
+      "roles_that_qualify": ["pain", "paid_labor"],
+      "independent_qualifying_items": 2,
+      "tier_a_or_b_qualifying_items": 2,
+      "buyer_identified": "Partially; direct recent micro-brand buyer evidence is missing.",
+      "current_workaround_known": true,
+      "value_mechanism": "Potentially measurable through rework and missing-document cycles.",
+      "online_reach": "Food-brand/design communities, search, and qualified practitioners.",
+      "cheap_test": "Recent buyer evidence collection plus practitioner referral intake; no compliance sign-off.",
+      "confidence": "low-medium",
+      "weakest_claims": ["pain case is single and old", "paid-labor signal comes mainly from larger food companies"],
+      "contradictions": ["food technicians and customs brokers already serve the need", "regulated responsibility"],
+      "critical_unknowns": ["recent frequency", "partner supply", "data completeness"]
     }
   ],
-  "not_recommended": [
-    {"claim": "Generic payroll SaaS", "reason": "Incumbents and price anchors are strong; no differentiated wedge evidenced."},
-    {"claim": "Generic e-invoice/ERP integration", "reason": "Established local vendors; no narrow repeatable exception proven."},
-    {"claim": "Generic AI tender writer", "reason": "Trust and domain experience are unresolved; adjacent vendors already combine AI and consultants."}
+  "strongest_evidence": [
+    "Tasker buyer-side construction estimation request with visible budget",
+    "104 repeated paid-labor listings for tender, e-commerce reconciliation, construction billing, and payroll",
+    "PRO360 tender client requests/reviews",
+    "PTT/Dcard direct Taiwan workflow workarounds"
   ],
-  "foreign_inspiration_taiwan_unvalidated": []
+  "weakest_claims": [
+    "Vendor pricing is not demand proof and is marked competition only",
+    "Old forum posts need fresh replication",
+    "No candidate has yet produced a verified new payment or conversion test in this run"
+  ],
+  "contradictions": [
+    "Existing platforms, ERP, SaaS, consultants, and in-house labor already solve parts of every candidate",
+    "Construction and food opportunities require professional trust or partner qualifications",
+    "Community pain may be selected and not representative"
+  ],
+  "unsupported_precision": [
+    "No TAM, CAC, LTV, retention, conversion, or market-share numbers are asserted",
+    "Tasker budgets and job salaries are not converted into market size"
+  ],
+  "critical_unknowns": [
+    "Which narrow Taiwan vertical will share real documents online",
+    "Whether a manual report earns a payment or commitment within 3 months",
+    "Whether founder credibility and qualified partners can be established without cold outbound"
+  ],
+  "next_evidence_to_collect": "Run the three cheapest intake tests in order: construction drawing/quantity sample, one-vertical tender document, and one-vertical e-commerce CSV. Seek real document submission and repeat use before any build or paid pilot."
 }

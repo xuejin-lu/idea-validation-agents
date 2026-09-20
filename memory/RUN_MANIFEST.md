@@ -1,5 +1,5 @@
 # Run Manifest
-- spec_commit: ea4ef23598dbe8ea91502f5937aec74c5c903a3d
+- spec_commit: 9e6fee8e833ceafa6b28ced80e881aa653532f8c
 - workflow: workflows/opportunity-discovery.md
 - started_from_keyword: 開始
 - status: completed
@@ -8,13 +8,14 @@
   - memory/opportunity_hypotheses.md
   - memory/opportunity_competitor_map.md
   - memory/evidence_audit.json
-  - memory/problem_evidence/taiwan_sme_payroll_close.json
-  - memory/problem_evidence/taiwan_multichannel_ecommerce_reconciliation.json
-  - memory/problem_evidence/taiwan_tender_bid_readiness.json
-  - memory/problem_evidence/taiwan_food_label_preflight.json
+  - memory/problem_evidence/taiwan_construction_quantity_billing.json
+  - memory/problem_evidence/taiwan_tender_readiness_strict.json
+  - memory/problem_evidence/taiwan_ecommerce_reconciliation_strict.json
+  - memory/problem_evidence/taiwan_payroll_exception_strict.json
+  - memory/problem_evidence/taiwan_food_label_strict.json
 - major_unknowns:
-  - Vertical-level frequency and urgency for tender preflight.
-  - Willingness to provide real tender, label, or e-commerce files online.
-  - Whether an appropriately qualified food-safety practitioner can partner within the validation period.
-  - Whether the founder has credibility or a channel advantage in any selected niche.
-  - Whether existing SaaS/outsourcing already resolves payroll and reconciliation pain for the target segment.
+  - Best narrow Taiwan vertical for construction, tender, and e-commerce tests.
+  - Whether target buyers will submit real documents or CSVs online.
+  - Whether manual outputs produce a payment or commitment within 3 months.
+  - Availability of qualified engineering and food-safety collaborators.
+  - Whether current ERP/SaaS/consultants already resolve the problem adequately.

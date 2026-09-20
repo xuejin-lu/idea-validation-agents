@@ -1,75 +1,87 @@
 # Opportunity Hypotheses
 
-All hypotheses are Taiwan-specific and intentionally framed as tests, not build recommendations. Evidence references point to the records in `memory/problem_evidence/`.
+All hypotheses are tests, not software build recommendations. Evidence roles follow the stricter control spec.
 
-## H1 — IT／專業服務商的標案文件預檢包
+## H1 — 室內裝修公司的圖說數量清單外包
 
-- Target user: 5–50 人台灣 IT、顧問或專業服務公司負責標案的行政／PM。
-- Economic buyer: 公司負責人。
-- Exact job/workflow: 從政府採購網下載一案，判斷資格、整理必備文件與期限，檢查服務建議書是否缺章節或附件。
-- Observed pain: 官方投標須知呈現多文件、多階段要求；104 職缺與 PRO360 顯示相鄰工作被付費雇用／外包。
-- Current substitute: 老闆／行政人工讀 PDF、重用舊標書、外包顧問。
-- Measurable value: 預檢交付時間、缺件數、被排除的不可投案件數。
-- Smallest testable offer: 一頁檢查表＋收到一份公開招標文件後 24 小時內輸出「適投／不適投／缺件」範例；不提供法律意見。
-- Evidence references: `taiwan_tender_bid_readiness.json` E1–E5.
-- Largest unknown: 目標垂直的案量與預檢付費意願。
+- Target user: 5–30 人室內裝修／機電工程公司的估算或工務人員。
+- Economic buyer: 負責人或工務主管。
+- Exact job/workflow: 從 PDF／CAD 圖說整理工程數量、材料與發包前估算表。
+- Observed pain: Tasker 有公開的遠端工程數量計算需求與 NT$100,000 預算；Tasker 服務商也把「案件多、人手不足、不想慢慢算」列為外包理由。
+- Current substitute: 內部估算人員、Excel、外包工程估算師。
+- Measurable value: 每張圖／每案整理工時、返工次數、發包前錯誤項目。
+- Smallest testable offer: 只處理一個工種的一份去識別化圖說，交付數量表範例；工程責任由合作估算師承擔。
+- Evidence references: `taiwan_construction_quantity_billing.json` E1, E2, E5.
+- Largest unknown: 創辦人能否取得具工程專業的協作者。
 
-## H2 — 標案機會「適投清單」訂閱／轉介
+## H2 — 公共工程估驗資料包預檢
 
-- Target user: 沒有標案專員但想嘗試政府勞務案的台灣小公司。
-- Economic buyer: 負責接案的老闆。
-- Exact job/workflow: 每週從公告中篩選符合公司登記範圍、實績、地區、期限與預算的案件。
-- Observed pain: CITYGLOW 已將標案推播與初判商品化，說明「找對案」是被包裝的工作；104 職缺也顯示標案資料蒐集是付費勞動。
-- Current substitute: 人工盯政府電子採購網、平台推播、熟人顧問。
-- Measurable value: 每週收到的案件中，符合資格且能在期限內準備的比例。
-- Smallest testable offer: 一個垂直的公開週報，要求申請者填公司類型與過去實績，以量測精準度；不先做爬蟲或軟體。
-- Evidence references: `taiwan_tender_bid_readiness.json` E2–E5.
-- Largest unknown: 免費推播已有競品，使用者是否願意留下足夠資料或轉成高價預檢。
+- Target user: 有公共工程但內業人手不足的台灣小型營造廠。
+- Economic buyer: 工務經理／營造廠負責人。
+- Exact job/workflow: 對照契約、施工日誌、照片、數量與請款資料，檢查本期估驗包缺件。
+- Observed pain: 台灣研究與官方程序描述多種文件、數量核對與分期請款；104 職缺明確付薪處理估驗與請款資料。
+- Current substitute: 內部工務／估算員逐件整理、ERP。
+- Measurable value: 退件次數、文件完整時間、請款提送延誤天數。
+- Smallest testable offer: 契約附件＋一個月文件的人工缺件表，不簽章、不取代技師／監造。
+- Evidence references: `taiwan_construction_quantity_billing.json` E2–E4.
+- Largest unknown: 外部預檢能否接觸工程資料且不觸及法定簽核。
 
-## H3 — 食品包裝標示「印刷前風險分流」
+## H3 — IT 服務商標案適投／缺件檢查
 
-- Target user: 台灣微型食品品牌、進口商與食品包裝設計公司。
-- Economic buyer: 品牌負責人／設計案 PM。
-- Exact job/workflow: 上傳去識別化標示稿與配方資料，先分出「資料缺漏／需食品技師審查／可進一步人工核對」三類。
-- Observed pain: TFDA 官方列出多個法定欄位與罰則；在地服務按件定價。
-- Current substitute: 自行查規定、照舊稿、找食品技師或報驗行。
-- Measurable value: 來回補件次數、印刷前發現的問題數、從稿件到可送專業審查的時間。
-- Smallest testable offer: 自檢清單＋合格食品技師轉介表單；創辦人不給正式法規結論。
-- Evidence references: `taiwan_food_label_preflight.json` E1–E5.
-- Largest unknown: 客戶是否願意在線上提供配方與外文資料，以及技師合作供給。
+- Target user: 5–50 人台灣 IT／系統整合／顧問服務公司。
+- Economic buyer: 負責接案的老闆或 PM。
+- Exact job/workflow: 閱讀招標文件、確認公司資格、列出缺件與期限。
+- Observed pain: 104 付薪職缺、PRO360 客戶評價／需求與官方投標文件共同支持。
+- Current substitute: 行政人工閱讀、標案顧問、標案平台。
+- Measurable value: 讀案時間、發現缺件數、放棄不適投案件數。
+- Smallest testable offer: 一案一頁預檢報告＋文件來源索引，不代寫、不保證得標。
+- Evidence references: `taiwan_tender_readiness_strict.json` E1–E4.
+- Largest unknown: 預檢是否有獨立付費價值。
 
-## H4 — 進口食品中文標示資料完整性包
+## H4 — 活動／行銷公司提案附件資料夾整理
 
-- Target user: 少量進口食品／零食／保健品的台灣小型進口商。
-- Economic buyer: 進口商負責人或採購／報關窗口。
-- Exact job/workflow: 在報關／印刷前彙整外文成分、營養資料、進口商資訊、原產地與中文標示所需附件。
-- Observed pain: 官方說明指出進口食品可能缺中文標示；報驗行按件收費且要求多項文件。
-- Current substitute: 報關行／報驗行一次性處理、人工翻譯與 Excel 文件夾。
-- Measurable value: 缺件補件回合、每件 SKU 整理時間、送審前退回次數。
-- Smallest testable offer: 文件需求清單與資料完整性檢查，不碰法規判斷；從進口商社群與報驗行合作頁取得有意願者。
-- Evidence references: `taiwan_food_label_preflight.json` E1, E5 plus the official source note.
-- Largest unknown: 與報驗行／報關行既有合作的轉換摩擦。
+- Target user: 常投政府活動／宣傳／教育訓練標案的台灣小型公司。
+- Economic buyer: 負責人或企劃主管。
+- Exact job/workflow: 從歷年實績、團隊履歷、證照、報價與附件建立可重用的投標資料夾。
+- Observed pain: PRO360 頁面有活動／勞務類標案需求與多筆客戶評價；104 標案職缺顯示文件管理為付費工作。
+- Current substitute: 每案複製 Word／雲端資料夾、外包企劃。
+- Measurable value: 每案尋找資料時間、缺附件數、重複改稿次數。
+- Smallest testable offer: 用一個公開案例做資料夾模板與附件索引，邀請公司提交一案文件需求；不碰投標策略。
+- Evidence references: `taiwan_tender_readiness_strict.json` E1–E2.
+- Largest unknown: 活動公司的文件是否足夠相似可重用。
 
-## H5 — 電商月結差異清單（食品／保健垂直）
+## H5 — 食品／保健品牌通路對帳差異包
 
-- Target user: 在蝦皮、momo、官網同時賣貨的台灣品牌營運／會計。
-- Economic buyer: 品牌負責人或記帳士事務所。
-- Exact job/workflow: 匯入各平台月報與銀行／發票資料，列出退款、平台費、物流、入帳與商品銷售額的異常。
-- Observed pain: 台灣在地服務商直接拆解該對帳流程；電子發票系統與多通路記帳已成付費類別。
-- Current substitute: Excel 手工對帳、兼任會計、ERP／電子發票整合。
-- Measurable value: 月結完成日、未解釋差異金額、人工核對行數。
-- Smallest testable offer: 一個月的人工差異報告範例，不串 API；要求客戶提供去識別化 CSV。
-- Evidence references: `taiwan_multichannel_ecommerce_reconciliation.json` E1–E5.
-- Largest unknown: 垂直特有的例外是否足以避開通用整合競爭。
+- Target user: 同時經營蝦皮、momo、官網的台灣食品／保健品牌。
+- Economic buyer: 品牌負責人或財務主管。
+- Exact job/workflow: 對照平台銷售、退款、平台費、物流、發票與銀行入帳，列出異常。
+- Observed pain: 104 職缺把該流程列為付薪工作，PTT 賣家描述對帳麻煩並長期延後。
+- Current substitute: Excel、電商會計、記帳士、ERP。
+- Measurable value: 異常金額、異常筆數、月結完成時間。
+- Smallest testable offer: 一個月 CSV 的人工差異報告，不做申報、不串 API。
+- Evidence references: `taiwan_ecommerce_reconciliation_strict.json` E1–E4.
+- Largest unknown: 垂直內的重複異常規則。
 
-## H6 — 電商退款／平台費毛利異常週報
+## H6 — 電商退貨／平台費毛利週報
 
-- Target user: 月交易量中等、跨平台且 SKU 較多的台灣 D2C 品牌。
+- Target user: SKU 多、退貨頻率高的台灣多平台賣家。
 - Economic buyer: 品牌主或營運主管。
-- Exact job/workflow: 將退款、折扣、物流與平台費映射到 SKU／通路，找出毛利低於門檻的例外。
-- Observed pain: 在地文章把平台費、退款與物流列為對帳拆解項；本地服務有按月外包價格。
-- Current substitute: 月底一次性人工整理，或只看平台總額。
-- Measurable value: 發現的異常筆數、可能追回／修正的金額、每週報告閱讀／處置率。
-- Smallest testable offer: 對一個月匿名資料做一頁例外報告；不做即時監控、不連接平台。
-- Evidence references: `taiwan_multichannel_ecommerce_reconciliation.json` E1–E4.
-- Largest unknown: 品牌是否願意每週採取行動，而不是只想要月結帳。
+- Exact job/workflow: 將退款、運費、抽成與折扣對應到 SKU／平台，找出毛利異常。
+- Observed pain: 賣家討論描述退款運費與抽成侵蝕利潤；職缺要求平台對帳與退款處理。
+- Current substitute: 月底一次性對帳，或容忍差異。
+- Measurable value: 發現的異常金額、可追回／修正的款項、週報處置率。
+- Smallest testable offer: 手工一頁異常週報範例，要求去識別化資料。
+- Evidence references: `taiwan_ecommerce_reconciliation_strict.json` E1–E3.
+- Largest unknown: 品牌是否每週採取動作，而非只要稅務帳。
+
+## H7 — 小企業薪資例外資料收集器
+
+- Target user: 台灣餐飲、零售、服務業的兼任人資／行政。
+- Economic buyer: 10–50 人企業負責人。
+- Exact job/workflow: 收集跨夜班、加班、請假、獎金、到離職與勞健保異動，整理給薪資計算者。
+- Observed pain: Dcard 直接描述 Excel／手算容易錯；104 顯示此流程是付薪職責。
+- Current substitute: Excel、打卡系統、薪資 SaaS、記帳士。
+- Measurable value: 每月追資料時間、待補資料件數、重算次數。
+- Smallest testable offer: 匿名化例外清單與流程範本，不接觸真實薪資、不提供勞法意見。
+- Evidence references: `taiwan_payroll_exception_strict.json` E1–E4.
+- Largest unknown: 雇主端是否願意付費，現有工具是否已足夠。

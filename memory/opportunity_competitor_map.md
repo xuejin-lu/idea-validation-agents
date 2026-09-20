@@ -1,47 +1,56 @@
 # Opportunity Competitor Map
 
-## A. 標案文件預檢／適投篩選
+## A. 工程數量／估驗請款資料
 
-| Alternative | Evidence / price anchor | What it replaces | Switching friction | Gap to test |
+| Alternative | Evidence / price anchor | Strength | Switching friction | Testable gap |
 |---|---|---|---|---|
-| 政府電子採購網＋人工 | [官方採購附件](https://www.iapke.nat.gov.tw/fapi/AttFile?id=17886&type=NewsAttFile) | 內部行政時間 | 低現金成本、但需懂規則 | 垂直化「能不能投＋缺什麼」摘要 |
-| PRO360 顧問市場 | [987 則評論／4.87](https://www.pro360.com.tw/category/tender_proposal) | 外包標書／提案 | 信任與顧問品質差異 | 先做標準化預檢，不承諾代寫 |
-| CITYGLOW | [NT$699／1,299 月；分析 NT$3,000 起；文件檢查 NT$5,000 起](https://citiesglow.com/) | 推播、健檢、文件檢查 | 已有產品與先發優勢 | 只選一個產業，聚焦可複用文件資料夾／實績庫 |
-| 個人標案顧問／企劃撰寫者 | [Tasker 例：100 萬案約 NT$10,000 撰寫](https://www.tasker.com.tw/workroom/2KWpZB/service-detail/43954) | 寫計畫書 | 個人專業與案例信任 | 將低價、低風險的適投預檢切開 |
-| 不投／晚投 | 隱性替代 | 避免投入時間與押標金 | 放棄營收機會 | 用「判斷不值得投」也能交付價值 |
+| 內部估算／工務人員 | [104 估驗計價職缺](https://www.104.com.tw/jobs/search?isnew=3&keyword=%E4%BC%B0%E9%A9%97%E8%A8%88%E5%83%B9) | 工程知識與現場脈絡在內部 | 人力成本、招募與多案瓶頸 | 只接尖峰／單案資料整理 |
+| 工程估算外包 | [Tasker 需求 NT$100,000](https://www.tasker.com.tw/cases/TK26010208DNOV49) | 專業可遠端交付 | 圖說資料與信任 | 先做小範圍、可審閱的數量表 |
+| 營建 ERP | [華薪工程 ERP](https://www.hssoft.com.tw/services/construction-interior-erp) | 管理估驗、成本、採購與進度 | 導入、資料維護、成本 | 不導入系統，先補人工作業 |
+| 工程顧問／技師 | [公共工程技術服務規範](https://www.pcc.gov.tw/content/index?eid=2834&lang=1&type=C) | 能承擔專業責任 | 費用、資格、排程 | 行政資料整理與專業審查分離 |
 
-Assessment: strong paid substitutes and clear workflow. Do not compete on generic AI writing. Test a narrow preflight and lead with public educational content / existing service marketplaces.
+Assessment: strongest opportunity if a qualified engineering collaborator is available. The gap is operational overflow, not a new ERP.
 
-## B. 食品標示前置檢查／專業轉介
+## B. 標案適投／文件預檢
 
-| Alternative | Evidence / price anchor | What it replaces | Switching friction | Gap to test |
+| Alternative | Evidence / price anchor | Strength | Switching friction | Testable gap |
 |---|---|---|---|---|
-| 食品技師／食安顧問 | [北極星 NT$500／3,000 起／18,880 月](https://startxing.com/food-label-review/) | 正式標示／文案審查 | 資格、信任、完整資料 | 將需求收集與文件整理前置，轉介合格人士 |
-| FoodFact | [NT$1,490／份起](https://foodfact.co/tw/pricing) | 營養標示計算與報告 | 配方與資料格式 | 只服務資料完整性與專業轉介，不取代計算工具 |
-| 報驗行 | [三信收費資料摘要](https://www.scribd.com/document/858375657/2024%E4%B8%89%E4%BF%A1%E5%A0%B1%E9%A9%97%E8%A1%8C%E5%AF%A9%E6%9F%A5%E6%94%B6%E8%B2%BB%E8%A1%A8) | 中文標示、標籤製作、成分審查 | 一站式便利、既有報關關係 | 找新品／微量 SKU 的線上資料完整性缺口 |
-| 代工廠／設計公司範本 | 業者常見內部替代，需訪談再驗證 | 自行審查 | 既有合作關係 | 提供印刷前第二雙眼，但必須清楚責任邊界 |
-| 直接自行讀 TFDA | [衛福部官方標示說明](https://www.mohw.gov.tw/fp-2636-21172-1.html) | 專業服務費 | 免費但耗時、風險由品牌承擔 | 先用清單協助發現缺件，再導向專業服務 |
+| 政府電子採購網＋人工 | [官方標案資料](https://www.iapke.nat.gov.tw/fapi/AttFile?id=17886&type=NewsAttFile) | 免費、資訊源頭 | 閱讀與資格判斷時間 | 以垂直模板縮短篩選 |
+| PRO360 標案顧問 | [4.87／5、987 則評論](https://www.pro360.com.tw/category/tender_proposal) | 有顧問供給與客戶評價 | 信任與顧問品質 | 低風險「預檢」而非代寫 |
+| CITYGLOW | [NT$699–5,000+ 方案](https://citiesglow.com/) | 推播、健檢、文件檢查 | 先發平台、服務範圍廣 | 聚焦特定產業的文件資料庫 |
+| 內部行政／老闆 | [104 標案職缺](https://www.104.com.tw/jobs/search/?keyword=%E6%A8%99%E6%A1%88) | 最懂自身實績 | 時間與文件分散 | 只在投標截止前提供檢查清單 |
 
-Assessment: attractive price anchors but regulated. Only test as lead-generation / document-preparation / referral until qualified review capacity is secured.
+Assessment: demand-side evidence is stronger than prior run because it includes client requests/reviews. Still avoid generic AI proposal writing.
 
-## C. 多平台電商月結差異清單
+## C. 多平台電商對帳
 
-| Alternative | Evidence / price anchor | What it replaces | Switching friction | Gap to test |
+| Alternative | Evidence / price anchor | Strength | Switching friction | Testable gap |
 |---|---|---|---|---|
-| Excel／Google Sheets 人工對帳 | [映流拆解流程](https://inflow.com.tw/blog/inflow-channel-reconciliation) | 外部費用 | 已習慣、無軟體費 | 固定輸出異常，不重做全套帳 |
-| 電子發票／ERP 整合 | [PureInvoice NT$4,800／年；買斷 NT$38,600](https://www.puredata.com.tw/products/pureeinvoice) | 開票、對帳與系統互通 | 導入、資料映射、平台差異 | 先處理一個垂直的人工例外，不導入系統 |
-| 記帳士／兼任會計 | [多通路記帳 NT$3,000–8,000／月](https://wachiwi.com/research/2026-q2-accounting-tax-pricing/) | 月結與申報 | 信任、個資與責任 | 面向品牌主的營運毛利例外，而非申報 |
-| 平台原生報表 | 各平台後台，需以使用者訪談驗證 | 訂單／款項查詢 | 欄位分散、退款與費用跨平台 | 跨平台統一差異語言 |
+| Excel／人工對帳 | [PTT 賣家討論](https://www.ptt.cc/bbs/e-seller/M.1529819958.A.DF7.html) | 低現金成本、彈性 | 麻煩、延後、依賴個人 | 固定格式的例外報告 |
+| 電商會計／對帳助理 | [104 電商平台職缺](https://www.104.com.tw/jobs/search/?jobcat=2003001000&keyword=%E9%9B%BB%E5%95%86%E5%B9%B3%E5%8F%B0) | 可處理平台細節 | 招募、薪資、流動 | 外包尖峰月結，不取代會計 |
+| ERP／發票整合 | [PureInvoice](https://www.puredata.com.tw/products/pureeinvoice) | 自動化與系統整合 | 導入與平台欄位維護 | 先人工驗證例外是否值得自動化 |
+| 記帳士 | [台灣多通路記帳價格整理](https://wachiwi.com/research/2026-q2-accounting-tax-pricing/) | 能處理申報與帳務 | 轉換與責任信任 | 聚焦營運毛利例外，不碰申報 |
 
-Assessment: problem is real, but solution space is crowded. Only advance if one vertical has repeatable exceptions and customers provide real reports.
+Assessment: real paid-labor pain, but a vertical wedge and repeatable exception taxonomy are mandatory.
 
-## D. 薪資／勞健保月結例外
+## D. 薪資例外整理
 
-| Alternative | Evidence / price anchor | What it replaces | Switching friction | Gap to test |
+| Alternative | Evidence / price anchor | Strength | Switching friction | Testable gap |
 |---|---|---|---|---|
-| 104 薪資系統 | [7,500+ 企業自述、法令／勞健保／稅務](https://marketing.pro.104.com.tw/hrm/payroll.html) | Excel＋人工核薪 | 系統導入與資料移轉 | 只解決例外資料追蹤，不重做薪資核心 |
-| Mirro 薪資小工具 | [NT$3,888／年、30 天試用](https://www.mirro.com.tw/products/salary-tool) | 小企業簡易薪資 | 低價、易上手 | 找「已有工具但仍需人工追例外」窄客群 |
-| 記帳士／薪資代辦 | [NT$1,500–12,000／月依人數](https://wachiwi.com/research/2026-q2-accounting-tax-pricing/) | 內部行政時間與責任 | 信任、個資、轉換 | 可能與事務所合作，而非取代 |
-| 內部 Excel＋打卡 | Mirro 案例文字描述此常見工作流 | SaaS／外包費 | 免費、彈性但易錯 | 只測量月結例外與補件耗時 |
+| Excel／手算 | [Dcard 自製計算器](https://www.dcard.tw/f/job/p/260676521) | 免費、可自訂 | 公式錯誤與維護 | 只追跨夜／加班／異動例外 |
+| 內部薪酬人員 | [104 薪資管理職缺](https://www.104.com.tw/jobs/search/?keyword=%E8%96%AA%E8%B3%87%E7%AE%A1%E7%90%86%E5%B8%AB) | 熟悉公司制度 | 固定人事成本 | 研究外包資料收集，而非計薪 |
+| 104／Mirro 薪資系統 | [104 薪資系統](https://marketing.pro.104.com.tw/hrm/payroll.html)、[Mirro](https://www.mirro.com.tw/products/salary-tool) | 法規／薪資功能成熟 | 資料與信任 | 找已有工具仍靠人工追資料的客群 |
+| 薪資代辦／記帳士 | [費用行情](https://wachiwi.com/research/2026-q2-accounting-tax-pricing/) | 專業與責任承擔 | 既有合作關係 | 成為事務所的前置資料整理夥伴 |
 
-Assessment: recurring and priced, but do not test by touching real payroll or giving legal advice. First validate workflow pain anonymously.
+Assessment: keep in research-more; do not touch real payroll data until privacy and employer-side demand are proven.
+
+## E. 食品中文標示整理
+
+| Alternative | Evidence / price anchor | Strength | Switching friction | Testable gap |
+|---|---|---|---|---|
+| 內部品保／法規人員 | [104 食品法規職缺](https://www.104.com.tw/jobs/search/?keyword=%E5%93%81%E4%BF%9D%E6%B3%95%E8%A6%8F) | 專業與責任在內部 | 人事成本 | 微型品牌沒有專職人員 |
+| 食品技師／顧問 | [在地審查價格](https://startxing.com/food-label-review/) | 可提供正式判斷 | 資格、信任、資料 | 做前置資料完整性與轉介 |
+| 報驗行／代工廠 | [食品標示官方說明](https://www.mohw.gov.tw/fp-2636-21172-1.html) | 已有進口／代工關係 | 一站式但可能排程 | 小量 SKU 的線上文件收集 |
+| 自行查法規 | TFDA 官方規範 | 免費 | 時間與不確定性 | 清單化缺件，不提供法律結論 |
+
+Assessment: demand is not yet recent or repeated enough for Top Opportunities. Need direct buyer evidence.
