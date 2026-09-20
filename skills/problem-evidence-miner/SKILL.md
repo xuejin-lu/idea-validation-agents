@@ -54,7 +54,8 @@ For every evidence item capture:
 - publication/update date,
 - target user/buyer represented,
 - exact claim supported,
-- `evidence_role`: pain | paid_labor | transaction | competition | regulatory_context | market_context,
+- `evidence_role`: pain | paid_labor | buyer_request | transaction | competition | regulatory_context | market_context,
+- `commercial_stage`: interest | buyer_request | commitment | paid_transaction | not_applicable,
 - `claim_type`: observed | inferred | estimated,
 - `tier`: A | B | C | D,
 - independence from other evidence,
@@ -89,10 +90,12 @@ Do not treat all strong-looking sources as proof of the same thing.
 - Government regulations/process documents usually prove `regulatory_context`, not buyer pain.
 - Vendor pricing/features usually prove `competition` or a price anchor, not demand.
 - Job postings can prove `paid_labor` when the exact workflow appears in recurring duties.
-- Customer requests/reviews, workflow discussions, case evidence, and actual submissions can prove `pain`.
-- Documented purchases, service transactions, or conversion behavior can prove `transaction`.
+- Active marketplace/service requests can prove `buyer_request` and externalization, but not payment.
+- Customer reviews, workflow discussions, case evidence, and actual submissions can prove `pain`.
+- Documented completed purchases, paid engagements, signed/accepted orders, or clearly completed buyer reviews can prove `transaction`.
+- A visible budget or number of proposals does not convert a buyer request into a transaction.
 
-To qualify as a real problem opportunity, require at least two independent Taiwan-specific items whose primary roles are among `pain`, `paid_labor`, or `transaction`. At least one should be `paid_labor` or `transaction`, unless the buyer-side pain evidence is exceptionally direct and repeated.
+To qualify as a real problem opportunity, require at least two independent Taiwan-specific items whose primary roles are among `pain`, `paid_labor`, `buyer_request`, or `transaction`. At least one should be `paid_labor`, `buyer_request`, or `transaction`, unless the buyer-side pain evidence is exceptionally direct and repeated.
 
 Do not let regulatory complexity + vendor pricing pass as demand validation.
 
@@ -122,7 +125,8 @@ Include:
   "evidence_items": [
     {
       "source": "",
-      "evidence_role": "pain | paid_labor | transaction | competition | regulatory_context | market_context",
+      "evidence_role": "pain | paid_labor | buyer_request | transaction | competition | regulatory_context | market_context",
+      "commercial_stage": "interest | buyer_request | commitment | paid_transaction | not_applicable",
       "claim_type": "observed | inferred | estimated",
       "tier": "A | B | C | D"
     }
@@ -135,3 +139,16 @@ Include:
   "research_gaps": []
 }
 ```
+
+
+## Commercial proof discipline
+
+When reading marketplace evidence:
+- listing/request posted by buyer = `buyer_request`;
+- stated budget = still `buyer_request`;
+- number of proposals = supply response only;
+- accepted quote/order/deposit = `commitment`;
+- verified paid/completed job = `transaction`;
+- completed buyer review can be `transaction` only if completion is clear.
+
+Always preserve the strongest **verified** commercial stage. Never infer payment from a budget field.
