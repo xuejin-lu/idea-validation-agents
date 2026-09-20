@@ -38,6 +38,7 @@ Assign evidence tier:
 11. **Repeatability** — does the workflow recur for the same customer or repeat across similar customers?
 12. **Standardization** — is there a reusable unit of work, or is every job fully bespoke?
 13. **Leverage** — can templates, delegation, automation, or software reduce founder-hours per unit of revenue?
+14. **Segment match** — do the sources actually represent the proposed ICP, or only a broader category?
 
 ## Hard-stop conditions
 
@@ -102,3 +103,22 @@ Hard rule:
 - if completion/payment is ambiguous, choose the weaker classification.
 
 A candidate can be `startup-ready-to-test` without proven payment, but the report must say payment is unproven and the next behavioral test should seek commitment/payment.
+
+
+## Segment-match audit
+
+For each candidate include:
+- `category_demand`
+- `target_segment`
+- `segment_match`: observed | inferred | unproven
+- `segment_evidence`
+- `exact_wedge_demand`: observed | inferred | unproven
+
+Downgrade confidence when a broad category source is used to justify a much narrower ICP.
+
+Never treat:
+`broad category demand`
+as equivalent to:
+`narrow segment demand`.
+
+A narrow segment can remain a hypothesis for testing, but must be labeled as such.
