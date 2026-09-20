@@ -1,27 +1,49 @@
 # Operator Protocol — 「開始」
 
-This file defines the entire normal Codex-side interaction. The user should only need to type:
+The human should only need to type:
 
 > 開始
 
-## Non-negotiable ordering
+A run is complete **only after the research commit is verified on GitHub**.
 
-Do not research first. Do not trust a previously loaded CONTROL_SPEC. The order is:
+## Fixed pipeline
 
 ```
-sync remote spec
-→ clean stale local runtime outputs
-→ re-read latest spec from disk
-→ execute research
-→ audit
-→ commit results
+開始
+→ protect any unrelated local work
+→ fetch/reset to latest remote control branch
+→ delete stale generated research
+→ re-read the freshly synced specs
+→ research
+→ write RUN_MANIFEST
+→ stage only generated research
+→ commit with RUN:
 → push
-→ tell user to type "review" in ChatGPT
+→ verify remote SHA == local RUN commit SHA
+→ tell user to type review
 ```
 
-## 1. Synchronize before doing any work
+## 0. Safety check: never destroy unrelated local work
 
-Repository control branch:
+Before any reset:
+
+```bash
+git status --porcelain
+```
+
+Delete only known generated research outputs under `memory/`.
+
+If other local changes remain, preserve them automatically:
+
+```bash
+git stash push -u -m "AUTO-BACKUP before 開始"
+```
+
+Never silently destroy edits outside generated research paths.
+
+## 1. Synchronize FIRST
+
+The authoritative branch is:
 
 `startup-research-v1`
 
@@ -33,31 +55,22 @@ git switch startup-research-v1
 git reset --hard origin/startup-research-v1
 ```
 
-If switching is blocked by unrelated local edits outside generated research paths, stop rather than deleting unknown user work. Under normal operation this should not occur.
-
-Record:
+Then record:
 
 ```bash
 git rev-parse HEAD
 ```
 
-as `spec_commit` for the run.
+as `spec_commit`.
 
-## 2. Remove stale runtime research
+Research must not begin before this succeeds.
 
-The GitHub control/spec files are authoritative. Old **uncommitted generated research** must not influence a new run.
+## 2. Clear stale generated research
 
-Delete only generated research outputs, never specs or founder constraints.
-
-Clean ignored generated data under `memory/`:
+Delete only runtime outputs:
 
 ```bash
 git clean -fdX memory/
-```
-
-Also remove these known non-ignored runtime outputs if present:
-
-```bash
 rm -f memory/opportunity_shortlist.md
 rm -f memory/opportunity_hypotheses.md
 rm -f memory/opportunity_competitor_map.md
@@ -67,46 +80,33 @@ rm -rf memory/discovery_runs
 rm -rf memory/problem_evidence
 ```
 
-Do not delete:
-- `AGENTS.md`
-- `CONTROL_SPEC.md`
-- `FOUNDER_CONSTRAINTS.md`
-- `OPERATOR_PROTOCOL.md`
-- `REVIEW_PROTOCOL.md`
-- `workflows/`
-- `skills/`
-- tracked README / configuration files
+Never delete control/spec files.
 
-## 3. Re-read the freshly synced control files
+## 3. Re-read the latest specs from disk
 
-Even if these files were read earlier in the session, open them again **after sync**:
+Even if they were read earlier in the same Codex session, explicitly open these files again after synchronization:
 
 1. `CONTROL_SPEC.md`
 2. `FOUNDER_CONSTRAINTS.md`
-3. the workflow specified by CONTROL_SPEC
-4. all skills required by that workflow
+3. the workflow named by `CONTROL_SPEC.md`
+4. every skill required by that workflow
 
-The newest `CONTROL_SPEC.md` wins over an older in-session understanding.
+Do not rely on an older in-session copy.
 
 ## 4. Execute autonomously
 
-Run the task in CONTROL_SPEC end-to-end.
+Run the current `CONTROL_SPEC.md` end-to-end.
 
-Normal behavior:
-- do not ask the user to choose a topic;
-- do not ask for confirmation;
-- use the founder constraints already stored in the repo;
-- browse/research as needed;
-- do not recommend implementation before required evidence gates pass.
+Do not ask the user to choose a topic or repeat stored founder constraints.
 
-## 5. Produce a run manifest
+## 5. Write the run manifest
 
-Write `memory/RUN_MANIFEST.md` containing:
+Create `memory/RUN_MANIFEST.md`:
 
 ```markdown
 # Run Manifest
-- spec_commit: <SHA from step 1>
-- workflow: <workflow used>
+- spec_commit: <SHA>
+- workflow: <workflow>
 - started_from_keyword: 開始
 - status: completed | partial | failed
 - primary_outputs:
@@ -115,11 +115,9 @@ Write `memory/RUN_MANIFEST.md` containing:
   - ...
 ```
 
-## 6. Commit the research results
+## 6. Stage ONLY run outputs
 
-Stage only research results and the run manifest. Generated research under ignored memory paths may require `git add -f`.
-
-At minimum, stage files that were actually produced, such as:
+Stage generated research, forcing ignored runtime files when necessary:
 
 ```bash
 git add -f memory/RUN_MANIFEST.md
@@ -129,36 +127,61 @@ git add -f memory/market_insights 2>/dev/null || true
 git add -f memory/ideas 2>/dev/null || true
 ```
 
-Do **not** commit secrets, environment files, credentials, logs, or unrelated local files.
-
-Commit message format:
-
-```
-RUN: <short description>
-```
-
-Example:
-
-```
-RUN: Taiwan opportunity discovery
-```
-
-## 7. Push
-
-Push the completed run to:
+Inspect:
 
 ```bash
-git push origin startup-research-v1
+git diff --cached --name-only
 ```
 
-A run is not complete until the push succeeds. If Git authentication or a local security approval blocks the push, state that clearly.
+Rules:
+- every staged file must be a generated research artifact under `memory/`;
+- no spec, config, secret, log, or unrelated file may be staged;
+- if there is no staged research output, the run failed and must not be reported as complete.
 
-## 8. User-facing completion message
+## 7. Commit — mandatory
 
-Keep the response extremely short and in Traditional Chinese. Do not dump the English report into chat.
+Commit message must start with `RUN:`.
 
-Use:
+```bash
+git commit -m "RUN: Taiwan opportunity discovery"
+```
 
-> 完成，結果已 push 到 GitHub。請回 ChatGPT 輸入「review」。
+Capture:
 
-If the run was partial or push failed, replace that sentence with a concise Traditional-Chinese explanation.
+```bash
+RUN_SHA=$(git rev-parse HEAD)
+```
+
+A run without a `RUN:` commit is incomplete.
+
+## 8. Push — mandatory
+
+```bash
+git push origin HEAD:startup-research-v1
+```
+
+If push fails, do not say the run is complete.
+
+## 9. Verify GitHub received it — mandatory
+
+After push:
+
+```bash
+REMOTE_SHA=$(git ls-remote origin refs/heads/startup-research-v1 | awk '{print $1}')
+test "$REMOTE_SHA" = "$RUN_SHA"
+```
+
+Only when this comparison succeeds is the run complete.
+
+If it fails:
+- diagnose and retry a safe push once if appropriate;
+- otherwise report a concise failure in Traditional Chinese;
+- never claim completion.
+
+## 10. Final message
+
+On verified success, respond only with a short Traditional-Chinese completion message:
+
+> 完成，RUN 已 commit、push 並確認 GitHub 收到。請回 ChatGPT 輸入「review」。
+
+Do not paste the English research report into chat.
