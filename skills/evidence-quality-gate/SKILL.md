@@ -32,7 +32,7 @@ Assign evidence tier:
 5. **Contradiction** — is there credible counter-evidence?
 6. **Precision** — are precise numbers backed by data, or created by a model?
 7. **Selection bias** — are complaints/reviews being mistaken for population prevalence?
-8. **Commercial signal** — is there evidence of spend/commitment, or only interest?
+8. **Commercial signal** — distinguish interest, buyer request, commitment, and completed paid transaction. Never treat a posted budget as payment.
 9. **Externalizability** — does the evidence show buyers will purchase/outsourced the workflow, or only that they hire employees to do it internally?
 10. **Recency of buyer pain** — is there recent Taiwan buyer-side evidence, especially within the last 24 months?
 11. **Repeatability** — does the workflow recur for the same customer or repeat across similar customers?
@@ -87,3 +87,18 @@ Every reviewed opportunity must receive one of:
 - `insufficient` — evidence does not justify more time now.
 
 A `service-ready-to-test` result is not a failure. It may be a useful cash-flow business or manual discovery vehicle, but do not label it a Top Startup Opportunity until repeatability/leverage improves.
+
+
+## Commercial-stage audit
+
+For every candidate record:
+- `external_demand_stage`: none | interest | buyer_request | commitment | paid_transaction
+- `payment_proven`: true | false
+- `payment_evidence`: exact supporting source or null
+
+Hard rule:
+- marketplace request + budget + proposal count = `buyer_request`, payment_proven=false;
+- completed purchase/payment/accepted paid order = `paid_transaction`;
+- if completion/payment is ambiguous, choose the weaker classification.
+
+A candidate can be `startup-ready-to-test` without proven payment, but the report must say payment is unproven and the next behavioral test should seek commitment/payment.
