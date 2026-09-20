@@ -54,6 +54,7 @@ For every evidence item capture:
 - publication/update date,
 - target user/buyer represented,
 - exact claim supported,
+- `evidence_role`: pain | paid_labor | transaction | competition | regulatory_context | market_context,
 - `claim_type`: observed | inferred | estimated,
 - `tier`: A | B | C | D,
 - independence from other evidence,
@@ -81,6 +82,20 @@ For each problem, derive:
 - **contradictory evidence**
 - **unknowns**
 
+## Evidence-role rule
+
+Do not treat all strong-looking sources as proof of the same thing.
+
+- Government regulations/process documents usually prove `regulatory_context`, not buyer pain.
+- Vendor pricing/features usually prove `competition` or a price anchor, not demand.
+- Job postings can prove `paid_labor` when the exact workflow appears in recurring duties.
+- Customer requests/reviews, workflow discussions, case evidence, and actual submissions can prove `pain`.
+- Documented purchases, service transactions, or conversion behavior can prove `transaction`.
+
+To qualify as a real problem opportunity, require at least two independent Taiwan-specific items whose primary roles are among `pain`, `paid_labor`, or `transaction`. At least one should be `paid_labor` or `transaction`, unless the buyer-side pain evidence is exceptionally direct and repeated.
+
+Do not let regulatory complexity + vendor pricing pass as demand validation.
+
 ## Validation rules
 
 Mark `problem_evidence_status`:
@@ -104,7 +119,14 @@ Include:
   "user": "",
   "economic_buyer": "",
   "problem_evidence_status": "strong | moderate | weak | unsupported",
-  "evidence_items": [],
+  "evidence_items": [
+    {
+      "source": "",
+      "evidence_role": "pain | paid_labor | transaction | competition | regulatory_context | market_context",
+      "claim_type": "observed | inferred | estimated",
+      "tier": "A | B | C | D"
+    }
+  ],
   "current_workaround": [],
   "spend_or_labor_evidence": [],
   "willingness_to_pay_evidence": [],
