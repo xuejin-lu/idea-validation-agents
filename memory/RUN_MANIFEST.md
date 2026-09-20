@@ -1,5 +1,5 @@
 # Run Manifest
-- spec_commit: 9e6fee8e833ceafa6b28ced80e881aa653532f8c
+- spec_commit: 8a0677b718a58c35a9c28844929f48b13db53f1a
 - workflow: workflows/opportunity-discovery.md
 - started_from_keyword: 開始
 - status: completed
@@ -8,14 +8,15 @@
   - memory/opportunity_hypotheses.md
   - memory/opportunity_competitor_map.md
   - memory/evidence_audit.json
-  - memory/problem_evidence/taiwan_construction_quantity_billing.json
-  - memory/problem_evidence/taiwan_tender_readiness_strict.json
-  - memory/problem_evidence/taiwan_ecommerce_reconciliation_strict.json
-  - memory/problem_evidence/taiwan_payroll_exception_strict.json
-  - memory/problem_evidence/taiwan_food_label_strict.json
+  - memory/problem_evidence/taiwan_document_to_structured_data.json
+  - memory/problem_evidence/taiwan_ecommerce_outsourced_reconciliation.json
+  - memory/problem_evidence/taiwan_tender_external_demand_recent.json
+  - memory/problem_evidence/taiwan_construction_external_demand_recent.json
+  - memory/problem_evidence/taiwan_payroll_externalization_unproven.json
+  - memory/problem_evidence/taiwan_food_label_externalization_unproven.json
 - major_unknowns:
-  - Best narrow Taiwan vertical for construction, tender, and e-commerce tests.
-  - Whether target buyers will submit real documents or CSVs online.
-  - Whether manual outputs produce a payment or commitment within 3 months.
-  - Availability of qualified engineering and food-safety collaborators.
-  - Whether current ERP/SaaS/consultants already resolve the problem adequately.
+  - Repeat frequency and standardization of the document-conversion workflows.
+  - Month-two retention and data-access trust for e-commerce reconciliation.
+  - Whether tender preflight and remote construction sub-wedges can be sold separately from full-service providers.
+  - Qualified partner and responsibility boundaries for accounting/engineering/regulated work.
+  - Whether first ten prospects can be reached through marketplaces and content without cold outbound.
