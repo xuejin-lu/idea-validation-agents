@@ -1,315 +1,108 @@
 # Current Control Spec
 
-## Task
+## Phase
 
-Run a **fresh Taiwan-first opportunity discovery** from scratch.
+**Focused Validation — E-commerce finalists**
 
-Use:
+Do not run broad opportunity discovery in this run.
+
+The prior discovery phase has converged on two Taiwan candidates:
+
+1. **Multi-channel e-commerce month-close / reconciliation**
+2. **Fixed-scope e-commerce back-office operations**
+
+Read and obey:
 - `FOUNDER_CONSTRAINTS.md`
-- `workflows/opportunity-discovery.md`
+- `RESEARCH_GATES.md`
+- `workflows/evidence-validation.md`
 - `skills/problem-evidence-miner/SKILL.md`
 - `skills/competitor-research/SKILL.md`
 - `skills/evidence-quality-gate/SKILL.md`
 
-Do not reuse the conclusions from earlier US-focused discovery runs.
+Use the latest archived/current research as prior evidence, but re-check material claims when necessary.
 
-## Taiwan Evidence Gate — Mandatory
+## Goal
 
-A candidate may appear in **Top Opportunities** only if all of the following are true:
+Determine whether public evidence can still materially distinguish the two finalists, and identify exactly what can no longer be answered by desk research.
 
-1. The target user or economic buyer exists in Taiwan.
-2. The problem/workflow is demonstrated with **Taiwan-specific evidence**.
-3. There are at least **two independent Taiwan-specific sources that directly support the pain, workaround, paid labor, or actual buyer behavior**.
-4. At least one of those two sources must be a **demand-side or paid-labor signal**: e.g. customer reviews/requests, recurring job duties, documented manual workflow, service transactions, buyer-side case evidence, or actual conversion/usage behavior.
-5. **Regulation, official process complexity, vendor feature pages, and vendor pricing are context/competition evidence only. They cannot by themselves satisfy the pain-evidence requirement.**
-6. The candidate can plausibly reach its first 10 Taiwanese prospects online without making cold calling/cold email the primary channel.
-7. A meaningful behavioral validation can be attempted within NT$5,000 and three months.
+Do not search for unrelated new startup ideas unless both finalists fail a hard gate.
 
-Foreign sources may:
-- inspire a search hypothesis,
-- explain a business model,
-- provide comparison context.
+## Candidate A — Month-close / reconciliation
 
-Foreign sources may **not** by themselves:
-- qualify a candidate for the shortlist,
-- prove Taiwan demand,
-- prove Taiwan willingness to pay,
-- prove Taiwan regulatory applicability.
+Validate:
+- the exact workflow boundary between operational reconciliation and regulated bookkeeping/tax work;
+- whether Taiwan buyers repeatedly outsource this operational layer;
+- whether the same input/output schema is plausible across comparable multi-channel businesses;
+- existing Taiwan alternatives that already offer this exact operational layer;
+- accessible acquisition paths that do not depend primarily on cold outreach;
+- what evidence supports recurrence versus what is merely inferred.
 
-If an idea has strong foreign evidence but insufficient Taiwan evidence, put it under:
+## Candidate B — Fixed-scope back-office operations
 
-`Foreign inspiration — Taiwan unvalidated`
+Validate:
+- whether buyers actually accept execution-only scopes without strategy/ads/creative;
+- which recurring tasks can be bounded cleanly;
+- whether one-platform / fixed-SKU-or-order-band packaging appears compatible with observed buyer requests;
+- existing Taiwan operators/virtual-assistant/agency substitutes;
+- accessible acquisition paths that do not depend primarily on cold outreach;
+- labor-scaling and exception risks.
 
-It must not appear in the Top Opportunities.
+## Required comparison
 
-## Source preference for this run
+For both candidates produce a side-by-side evidence matrix covering:
 
-Search Taiwan-specific evidence first. Examples:
-- Taiwan government / laws / official statistics
-- Taiwan industry associations
-- 104 / local job listings when they reveal paid workflow labor
-- Taiwan vendor/service pricing
-- Taiwanese company documentation and case studies
-- local marketplaces/directories
-- PTT, Dcard, Mobile01, Facebook/LINE/community discussions when relevant
-- Traditional-Chinese complaints, workflow discussions, templates, or service requests
+- exact buyer/segment supported by evidence
+- exact job
+- strongest recent Taiwan buyer evidence
+- commercial proof stage
+- exact-wedge demand
+- recurrence
+- standardization
+- externalizability
+- founder-labor scaling risk
+- regulation/professional-boundary risk
+- incumbent/substitute strength
+- online acquisition path
+- what is still desk-researchable
+- what is behavioral-only
 
-Community anecdotes alone are not enough; use them to find stronger corroboration.
+Do not manufacture a numeric score.
 
-## Opportunity shape
+## Research Saturation Decision
 
-Do not force AI, SaaS, or an app.
+At the end, classify each finalist as one of:
 
-Prefer problems where:
-- a small/niche Taiwan market is acceptable,
-- manual service can be the first version,
-- value can be measured in time, money, error/risk, or revenue,
-- technical skill creates leverage but is not the reason the business exists.
+- `KEEP_RESEARCHING` — a material desk-researchable question remains.
+- `READY_FOR_REAL_WORLD_TEST` — remaining decisive unknowns require buyer behavior.
+- `DEMOTE_TO_SERVICE` — commercially real but weak startup leverage.
+- `DROP_FOR_NOW` — fails a hard gate.
+
+If either candidate is `READY_FOR_REAL_WORLD_TEST`, design the **single cheapest next behavioral test** for that candidate.
+
+The test must fit:
+- Taiwan market
+- ≤ NT$5,000
+- ≤ 3 months
+- no software build
+- no cold call/cold email as primary acquisition
+- seek real commitment rather than survey interest
+
+Specify:
+- exact offer
+- exact target segment
+- acquisition channel
+- what the prospect must do
+- strongest success signal
+- kill criterion
+- what result would justify moving to the next phase
+
+Do not run the real-world test yourself in this run.
 
 ## Output
 
-Produce:
-- `memory/opportunity_shortlist.md`
-- `memory/opportunity_hypotheses.md`
-- `memory/opportunity_competitor_map.md`
-- `memory/evidence_audit.json`
-- supporting evidence files as needed
+Write:
+- `memory/finalist_validation.md`
+- `memory/finalist_evidence_audit.json`
 - `memory/RUN_MANIFEST.md`
 
-Do **not** recommend building software yet.
-Do **not** recommend a paid pilot yet.
-The purpose of this run is to find Taiwan-grounded candidates for ChatGPT review.
-
-
-## Evidence Role Gate — Mandatory
-
-For every evidence item, assign exactly one primary role:
-
-- `pain` — directly shows the target user experiences the problem/workaround.
-- `paid_labor` — shows people are paid to perform the workflow.
-- `buyer_request` — shows a buyer actively asks for an external provider, quote, proposal, or service; this is external-demand evidence but **not proof of payment**.
-- `transaction` — shows a completed purchase, paid engagement, signed contract, verified completed order, or buyer review that clearly refers to a completed service.
-- `competition` — proves an alternative/vendor exists.
-- `regulatory_context` — proves a legal/process requirement.
-- `market_context` — shows market size/infrastructure/attention, but not pain.
-
-A candidate may enter Top Opportunities only if it has:
-- at least two independent Taiwan-specific items across `pain`, `paid_labor`, `buyer_request`, or `transaction`;
-- and at least one of those is `paid_labor`, `buyer_request`, or `transaction`, or an unusually strong buyer-side `pain` signal.
-
-Do not count a regulation plus two vendor pricing pages as three confirmations of customer pain.
-
-If this gate fails, place the idea under:
-`Interesting but pain not yet demonstrated`.
-
-## This run's review correction
-
-The previous run over-credited some evidence:
-- official rules prove obligations, not unresolved pain;
-- vendor pricing proves supply/price anchors, not demand volume;
-- vendor blog posts may describe a workflow but can have sales bias.
-
-Re-research prior candidates under the stricter Evidence Role Gate. Preserve any candidate that still passes; demote candidates that do not. Search for new Taiwan candidates if needed.
-
-
-## Externalizability Gate — Mandatory
-
-A recurring paid workflow is not automatically a startup opportunity.
-
-Evidence role `paid_labor` proves that the work exists and consumes payroll. It does **not** prove that the buyer wants an external vendor, software product, or new service.
-
-To enter **Top Opportunities**, a candidate must now satisfy BOTH:
-
-### A. Problem-existence evidence
-At least two independent Taiwan-specific items across `pain`, `paid_labor`, `buyer_request`, or `transaction`.
-
-### B. Externalizability / buying evidence
-At least one **recent Taiwan-specific demand-side signal** showing one of:
-- a buyer actively requests an external service or quote,
-- a marketplace contains actual customer requests/reviews for that service category,
-- a company publicly describes outsourcing the workflow,
-- a customer pays for a comparable external service,
-- repeated buyer-side discussions ask for a provider/tool rather than merely describing internal work.
-
-A job posting alone cannot satisfy B.
-A vendor pricing page alone cannot satisfy B.
-A government requirement cannot satisfy B.
-
-If A passes but B does not, classify the candidate as:
-
-`Real workflow, external demand unproven`
-
-not Top Opportunity.
-
-## Recency Gate
-
-For pain/externalizability evidence:
-- prefer evidence from the last 24 months;
-- evidence older than 24 months may support workflow continuity, but cannot be the sole direct pain signal;
-- if the only buyer-side pain evidence is stale, the candidate must be `research-more` until refreshed.
-
-## Review correction for next run
-
-Re-check the current candidates:
-
-- Construction quantity/billing: the Tasker request is useful buyer-side externalization evidence, but one request and an unconfirmed budget are not enough to call the opportunity strongest. Find additional independent recent buyer-side requests or demote.
-- Tender readiness: PRO360 buyer requests/reviews are stronger externalization evidence; verify that the specific wedge is preflight/readiness rather than full proposal writing.
-- E-commerce reconciliation: paid-labor evidence is strong, but the direct seller pain source is old. Find 2025–2026 buyer-side evidence for external help or demote.
-
-Do not rank a candidate above another merely because the internal labor burden is larger. External buying behavior matters.
-
-
-## Repeatability & Leverage Gate — Mandatory
-
-A paid external service is not automatically a startup opportunity.
-
-A candidate may be commercially real but still behave like one-off freelancing if every customer requires fully custom founder labor.
-
-To appear in **Top Startup Opportunities**, a candidate must satisfy at least one of:
-
-### A. Customer recurrence
-There is evidence or a highly credible workflow reason that the same customer needs the service repeatedly:
-- monthly,
-- quarterly,
-- per shipment,
-- per tender,
-- per project phase,
-- or another recurring trigger.
-
-### B. Cross-customer standardization
-The workflow can plausibly reuse the same:
-- input format,
-- checklist,
-- template,
-- rules,
-- QA process,
-- or automation across multiple similar customers.
-
-And the candidate must have a plausible **leverage path**:
-- automation,
-- reusable templates,
-- delegation to trained operators,
-- software-assisted processing,
-- standardized intake/output,
-- or another way to avoid founder-hours scaling 1:1 with revenue.
-
-Do not require software from day one. Manual-first remains valid.
-But if repeatability and leverage are both unproven, classify the candidate as:
-
-`Real paid service, startup repeatability unproven`
-
-not Top Startup Opportunity.
-
-## Ranking rule
-
-Separate these concepts:
-
-1. **External demand strength** — will someone pay an outsider?
-2. **Repeatability** — will the same workflow recur?
-3. **Standardization** — can similar jobs share a process?
-4. **Leverage** — can revenue grow without founder labor growing 1:1?
-
-Do not rank a one-off freelance task above a recurring workflow solely because its marketplace evidence is newer or its visible budget is larger.
-
-## Review correction for next run
-
-Re-check current candidates:
-
-- Vertical PDF/image conversion: external demand is real, but repeat purchase and reusable schema are not yet proven. Demote unless a narrow document family shows recurring volume and shared structure.
-- E-commerce reconciliation: monthly recurrence is structurally stronger; verify whether the same input/output pattern repeats and whether customers need month-two service.
-- Tender preflight: per-tender recurrence may exist; measure how often the target vertical bids and whether reusable company-document profiles reduce marginal work.
-- Construction preconstruction/estimation: project recurrence exists, but professional expertise and custom scope may keep labor linear; require evidence of a standardizable sub-workflow.
-
-For each candidate, explicitly output:
-- recurrence trigger,
-- expected recurrence type: same-customer | cross-customer | none/unknown,
-- standardizable unit,
-- leverage path,
-- founder-labor scaling risk: low | medium | high.
-
-
-## Commercial Proof Ladder — Mandatory
-
-Do not collapse buyer interest into payment.
-
-For every demand-side evidence item, assign one commercial stage:
-
-1. `interest` — discussion, complaint, or generic intent.
-2. `buyer_request` — active request for quote/provider/service; may include a stated budget or proposal count.
-3. `commitment` — deposit, signed LOI/order, scheduled paid work, accepted quote, or equivalent concrete commitment.
-4. `paid_transaction` — verified completed payment/purchase/engagement, or a buyer review clearly referring to a completed paid service.
-
-Rules:
-- A marketplace listing with a budget is `buyer_request`, **not** `transaction`.
-- Proposal count is supply response, **not** payment.
-- A vendor price page is `competition`, not willingness-to-pay evidence.
-- A buyer review may be `paid_transaction` only when the text/context clearly indicates completed service; otherwise classify conservatively.
-- Never write "customers pay", "transaction evidence", or "willingness to pay proven" when the strongest evidence is only a buyer request.
-
-## Ranking implication
-
-A candidate may still be `startup-ready-to-test` with strong buyer-request evidence, because the purpose is to justify a cheap behavioral test.
-
-But the report must separately state:
-- `external demand: observed`
-- `payment/commitment: observed | unproven`
-
-When two candidates are otherwise similar, prefer:
-`paid_transaction > commitment > buyer_request > interest`.
-
-## Review correction for next run
-
-Re-audit the current shortlist:
-- E-commerce reconciliation: Tasker listings are buyer requests, not completed transactions. Keep as a test candidate only if the distinction is explicit.
-- Tender preflight: PRO360 completed-service reviews may count as transaction evidence for the broad category; Tasker proposal listings are buyer requests. The narrow preflight wedge still has no payment evidence.
-- PDF conversion and construction: visible marketplace budgets/requests must not be described as transactions unless completion/payment is independently supported.
-
-
-## Segment-Match Gate — Mandatory
-
-Do not silently shrink broad category evidence into a narrow ICP.
-
-For every Top Startup Opportunity, distinguish:
-
-- **category evidence** — proves the broader workflow/category exists.
-- **segment evidence** — proves the proposed target segment itself experiences/buys the workflow.
-- **exact-wedge evidence** — proves the proposed narrow offer itself is requested/bought.
-
-A candidate may be `startup-ready-to-test` when exact-wedge payment is still unproven, but the report must not present the narrow ICP as observed unless there is direct segment evidence.
-
-### Required fields
-
-For each candidate output:
-
-- `category_demand: observed | unproven`
-- `target_segment: <explicit segment>`
-- `segment_match: observed | inferred | unproven`
-- `segment_evidence: <sources or null>`
-- `exact_wedge_demand: observed | inferred | unproven`
-
-### Hard rule
-
-If sources represent:
-- larger firms,
-- generic marketplace buyers,
-- broad category customers,
-- or an unknown company size,
-
-do not rewrite them as evidence for:
-- 1–3 person microbrands,
-- 5–20 person SMEs,
-- a specific vertical,
-- first-time buyers,
-- or another narrower ICP.
-
-If the narrow segment is only an inference, say so and make segment validation the next test.
-
-## Review correction for next run
-
-Re-audit the current top candidates:
-
-- E-commerce back-office operations: broad e-commerce outsourcing is proven; the specific `1–3 person microbrand` segment is not yet directly proven. Either find direct Taiwan segment evidence or label the segment as inferred.
-- E-commerce reconciliation: the workflow and external request are strong, but company size/vertical fit must come from the buyer evidence itself rather than being assumed.
-- Tender preflight: full tender-service category demand is proven; the specific vertical/low-frequency bidder segment remains a hypothesis until directly supported.
-
-Do not create a narrow ICP merely because it sounds strategically attractive.
+Preserve prior discovery artifacts; do not overwrite them as the primary result of this phase.
