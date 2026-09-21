@@ -1,0 +1,36 @@
+# Run Manifest
+
+- spec_commit: `3d0c66c631c7b6630ba85773399919a23967433b`
+- workflow: `launch asset finalization / CONTROL_SPEC.md`
+- started_from_keyword: `開始`
+- status: `completed`
+- research_date: `2026-09-21`
+- primary_outputs:
+  - `memory/intake_form.md`
+  - `memory/demo/README.md`
+  - `memory/demo/normalized_demo.csv`
+  - `memory/demo/exceptions_demo.csv`
+  - `memory/demo/accountant_handoff_demo.md`
+  - `memory/measurement_log.csv`
+  - `memory/data_handling_notice.md`
+  - `memory/professional_review_brief.md`
+  - `memory/launch_handoff.md`
+  - `memory/behavioral_test_package.md`
+- preserved_previous_research:
+  - `memory/discovery_runs/`
+- posting_state: `READY_TO_POST`
+- delivery_state: `DELIVERY_BLOCKED_PENDING_PRO_REVIEW`
+- next_state: `WAITING_FOR_EXTERNAL_BEHAVIOR`
+- external_action: `EXTERNAL_ACTION_REQUIRED`
+- major_unknowns:
+  - exact buyer commitment/payment;
+  - sample/file-sharing;
+  - month-two repeat;
+  - same input/output structure across two buyers;
+  - professional boundary confirmation;
+  - operator-hours after exceptions.
+- delivery_checks:
+  - latest remote specs fetched before research: passed;
+  - generated outputs committed with RUN message: passed;
+  - pushed to origin/startup-research-v1: passed;
+  - remote SHA verified against local RUN commit SHA: passed.

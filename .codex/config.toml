@@ -1,11 +1,28 @@
 #:schema https://developers.openai.com/codex/config-schema.json
 
-# Enable live web search
+# Research requires live web search.
 web_search = "live"
 
-# Apply project permissions profile
-default_permissions = "project"
+# Let routine workspace work stay sandboxed, but automatically review
+# boundary requests such as Git metadata writes needed for commit/push.
+approval_policy = "on-request"
+approvals_reviewer = "auto_review"
+default_permissions = "startup-workspace"
 
-[permissions.project.filesystem.":project_roots"]
-"." = "read"
-"memory" = "write"
+[features]
+network_proxy = true
+
+[permissions.startup-workspace]
+description = "Startup research workspace with GitHub sync access."
+extends = ":workspace"
+
+[permissions.startup-workspace.filesystem.":workspace_roots"]
+"**/*.env" = "deny"
+
+[permissions.startup-workspace.network]
+enabled = true
+
+[permissions.startup-workspace.network.domains]
+"github.com" = "allow"
+"api.github.com" = "allow"
+"raw.githubusercontent.com" = "allow"

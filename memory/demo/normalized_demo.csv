@@ -1,0 +1,5 @@
+record_id,period,source_order_id,channel,order_date,settlement_date,gross_amount,platform_fee,refund_amount,expected_net,observed_settlement,masked_invoice_ref,source_file_id,source_row_ref,status,notes
+DEMO-001-001,2026-08,ORD-DEMO-001,DEMO_SHOP_A,2026-08-03,2026-08-07,1200,60,0,1140,1140,INV-DEMO-001,DEMO-SHOP-202608,r3,matched,synthetic matched example
+DEMO-001-002,2026-08,ORD-DEMO-002,DEMO_SHOP_A,2026-08-04,2026-08-07,800,40,0,760,748,INV-DEMO-002,DEMO-SHOP-202608,r4,fee_difference,observed settlement differs from mechanical comparison; professional review not performed
+DEMO-001-003,2026-08,ORD-DEMO-003,DEMO_SHOP_A,2026-08-09,2026-08-12,1500,75,300,1125,1125,INV-DEMO-003,DEMO-SHOP-202608,r8,refund_exception,refund is visible in synthetic source but supporting reason is unresolved
+DEMO-001-004,2026-08,ORD-DEMO-004,DEMO_SHOP_A,2026-08-15,,600,30,0,570,,INV-DEMO-004,DEMO-SHOP-202608,r11,missing_settlement,bank settlement row is absent from synthetic bank source

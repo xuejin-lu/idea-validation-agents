@@ -1,0 +1,19 @@
+{
+  "problem": "Taiwan tender preflight/document readiness",
+  "user": "Taiwan tender-active company",
+  "economic_buyer": "Company owner or bid/operations manager",
+  "problem_evidence_status": "moderate",
+  "evidence_items": [
+    {"source":"https://www.pro360.com.tw/category/tender_proposal","source_type":"Taiwan proposal-service marketplace","publication_or_update_date":"current page, reviews through 2026-06","target_user_or_buyer":"Taiwan tender buyers","claim_supported":"Customer reviews clearly describe completed service-proposal work under time pressure.","evidence_role":"transaction","commercial_stage":"paid_transaction","claim_type":"observed","tier":"A","independence":"Taiwan completed-review marketplace category","geography":"Taiwan","freshness":"recent","limitations":"full proposal, not preflight-only"},
+    {"source":"https://www.tasker.com.tw/cases?selected_tags=442%2C88","source_type":"Taiwan marketplace buyer request","publication_or_update_date":"2026-05-21","target_user_or_buyer":"Taiwan public-sector proposal buyer","claim_supported":"Buyer requests external proposal writing, staged fees and long-term cooperation.","evidence_role":"buyer_request","commercial_stage":"buyer_request","claim_type":"observed","tier":"A","independence":"separate Taiwan request","geography":"Taiwan","freshness":"recent","limitations":"request/budget not payment; scope broader than preflight"},
+    {"source":"https://www.104.com.tw/jobs/search/?keyword=%E5%82%99%E6%A8%99","source_type":"Taiwan job listings","publication_or_update_date":"2026-06","target_user_or_buyer":"Taiwan tender employers","claim_supported":"Paid roles cover tender-data collection, reading requirements, bid meetings, proposal presentation, formatting and integration.","evidence_role":"paid_labor","commercial_stage":"not_applicable","claim_type":"observed","tier":"A","independence":"Taiwan job source","geography":"Taiwan","freshness":"recent","limitations":"internal labor"}
+  ],
+  "current_workaround":["internal bid staff","proposal consultant/writer","company profile folder","manual checking"],
+  "spend_or_labor_evidence":["completed proposal reviews","buyer requests","paid bid roles"],
+  "willingness_to_pay_evidence":["full proposal paid transactions; preflight-only unproven"],
+  "segment_match":{"target_segment":"Taiwan tender-active company","segment_match":"inferred","segment_evidence":["https://www.pro360.com.tw/category/tender_proposal"]},
+  "recurrence_and_leverage":{"recurrence_trigger":"each tender","expected_recurrence_type":"same-customer plausible","standardizable_unit":"qualification matrix, company profile and attachment checklist","leverage_path":"reusable profiles/templates and delegated QA","founder_labor_scaling_risk":"medium-high"},
+  "contradictory_evidence":["full proposal may be only valued scope","trust/credentials/liability may block lightweight entry"],
+  "unknowns":["preflight-only commitment","specific segment/frequency","repeat purchase"],
+  "research_gaps":["one explicit segment","accepted preflight quote","repeat request"]
+}

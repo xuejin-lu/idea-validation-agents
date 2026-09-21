@@ -1,0 +1,18 @@
+{
+  "problem": "Taiwan construction quantity/progress/billing support",
+  "user": "Taiwan contractor, subcontractor or project owner",
+  "economic_buyer": "Contractor owner, project manager or subcontractor lead",
+  "problem_evidence_status": "moderate",
+  "evidence_items": [
+    {"source":"https://www.tasker.com.tw/cases?selected_tags=49%2C58%2C472","source_type":"Taiwan construction marketplace requests","publication_or_update_date":"2026-02 to 2026-07","target_user_or_buyer":"Taiwan construction buyers","claim_supported":"Requests include remote quantity/initial estimates, measurement, scope and longer cooperation.","evidence_role":"buyer_request","commercial_stage":"buyer_request","claim_type":"observed","tier":"A","independence":"Taiwan buyer requests","geography":"Taiwan","freshness":"recent","limitations":"request/budget not payment; scopes vary"},
+    {"source":"https://www.104.com.tw/jobs/search?isnew=3&keyword=%E4%BC%B0%E9%A9%97%E8%A8%88%E5%83%B9","source_type":"Taiwan job listings","publication_or_update_date":"2026-06","target_user_or_buyer":"Taiwan construction employers","claim_supported":"Paid duties cover subcontractor periodic billing, invoices, evidence, progress and quantities.","evidence_role":"paid_labor","commercial_stage":"not_applicable","claim_type":"observed","tier":"A","independence":"Taiwan jobs source","geography":"Taiwan","freshness":"recent","limitations":"internal labor; external standardized service unproven"}
+  ],
+  "current_workaround":["internal estimator/site staff","trade spreadsheets","engineering freelancer","manual evidence collection"],
+  "spend_or_labor_evidence":["buyer requests","paid internal roles"],
+  "willingness_to_pay_evidence":["buyer requests only; payment unproven"],
+  "segment_match":{"target_segment":"Taiwan contractor/subcontractor in one trade","segment_match":"unproven","segment_evidence":null},
+  "recurrence_and_leverage":{"recurrence_trigger":"project phases and periodic billing","expected_recurrence_type":"same-customer plausible","standardizable_unit":"single-trade billing packet","leverage_path":"templates/QA; expert judgment remains","founder_labor_scaling_risk":"high"},
+  "contradictory_evidence":["professional judgment/trust may keep scope bespoke","additional independent commitments lacking"],
+  "unknowns":["repeat buyer","delegability","trade standardization","payment"],
+  "research_gaps":["one trade","second phase same buyer","accepted quote"]
+}

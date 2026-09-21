@@ -1,0 +1,19 @@
+{
+  "problem": "Taiwan data-entry/PDF-to-structured-data service",
+  "user": "Taiwan operations, accounting, research or admin team",
+  "economic_buyer": "SME owner, operations lead or project manager",
+  "problem_evidence_status": "moderate",
+  "evidence_items": [
+    {"source":"https://www.pro360.com.tw/category/data_entry","source_type":"Taiwan data-entry marketplace","publication_or_update_date":"2026-06/09","target_user_or_buyer":"Taiwan data-entry buyers","claim_supported":"Recent customer reviews describe completed work and ongoing cooperation/speed outcomes.","evidence_role":"transaction","commercial_stage":"paid_transaction","claim_type":"observed","tier":"A","independence":"Taiwan completed-review category","geography":"Taiwan","freshness":"recent","limitations":"generic data entry, not recurring PDF schema"},
+    {"source":"https://www.tasker.com.tw/workroom/tinobrief/service-detail/47337","source_type":"Taiwan provider page","publication_or_update_date":"2026-09-18","target_user_or_buyer":"Taiwan buyers with PDFs/scans/statements","claim_supported":"Provider offers batch PDF/scan/statement-to-Excel and QA at NT$3,000+ per job.","evidence_role":"competition","commercial_stage":"not_applicable","claim_type":"observed","tier":"A","independence":"Taiwan provider page","geography":"Taiwan","freshness":"recent","limitations":"price/supply is not demand proof"},
+    {"source":"https://www.tasker.com.tw/cases?selected_tags=393%2C1%2C89%2C63","source_type":"Taiwan marketplace buyer requests","publication_or_update_date":"2026-06/07","target_user_or_buyer":"Taiwan organizations with PDF/image tables","claim_supported":"Requests include multiple PDFs/images and complex tables to convert to Excel/Word.","evidence_role":"buyer_request","commercial_stage":"buyer_request","claim_type":"observed","tier":"A","independence":"Taiwan buyer requests","geography":"Taiwan","freshness":"recent","limitations":"batch/project-shaped; repeat not shown"}
+  ],
+  "current_workaround":["manual key-in","Excel cleanup","freelancer","custom scripts"],
+  "spend_or_labor_evidence":["completed generic data-entry reviews","buyer requests","provider price anchor"],
+  "willingness_to_pay_evidence":["generic data-entry paid reviews; exact PDF package unproven"],
+  "segment_match":{"target_segment":"Taiwan team with repeated documents of one family","segment_match":"unproven","segment_evidence":null},
+  "recurrence_and_leverage":{"recurrence_trigger":"unknown; recurring reports possible","expected_recurrence_type":"cross-customer until proven","standardizable_unit":"document-family extraction/QA","leverage_path":"scripts/templates/batch QA","founder_labor_scaling_risk":"medium-high"},
+  "contradictory_evidence":["formats heterogeneous","generic reviews may not represent PDF work"],
+  "unknowns":["same buyer recurrence","shared schema","error liability"],
+  "research_gaps":["two same-family buyers","repeat commitment","hours per batch"]
+}
